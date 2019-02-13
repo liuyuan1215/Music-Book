@@ -1,0 +1,42 @@
+#h1{
+    color:#00ddcc;
+    background: #0000cc;
+    width: 100px;
+    height: 100px;
+}
+#t1{
+    width: 100px;
+    height: 50px;
+}
+#div1{
+    color:red;
+}
+div{
+    width: 100px;
+    background: aquamarine;
+}
+.d2{
+    color:blue;
+}
+#div4 span{
+    color:yellow;
+}
+body{
+    margin:0;
+}
+#div5{
+    width: 90px;
+    height: 30px;
+    background: lightgreen;
+    color:red;
+    margin:10px 20px 30px;
+    padding:10px;
+    border-right:10px solid red;
+    border-bottom:10px solid red;
+    font-size: 30px;
+    text-align:center;
+    line-height:30px;
+}
+#triangle{
+    border-width:50px;
+}
