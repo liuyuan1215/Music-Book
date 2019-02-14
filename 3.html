@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        list-style:none;
+    }
+    #big .one >a{
+        text-decoration: none;
+        color:#fff;
+        display: block;
+        width: 100px;
+        height: 40px;
+        background: lightgreen;
+        text-align: center;
+        line-height: 40px;
+    }
+    #big .one{
+        float: left;
+        margin-right: 5px;
+        width: 100px;
+        height: 40px;
+    }
+    #big{
+        width: 500px;
+        height: 50px;
+    }
+    #big .one >a:hover{
+        background: #bbc;
+    }
+    #big .one #small li a{
+        background: #00cccc;
+        text-decoration: none;
+        display:block;
+        width: 100px;
+        height: 40px;
+    }
+    #big .one #small li a:hover{
+        background: antiquewhite;
+    }
+    #big .one #small{
+        display:none;
+    }
+    #big .one:hover #small{
+        display: block;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul id="big">
+        <li class="one"><a href="">001</a></li>
+        <li class="one"><a href="">002</a></li>
+        <li class="one"><a href="">003</a></li>
+        <li class="one">
+            <a href="">004</a>
+            <ul id="small">
+                <li><a href="">01</a></li>
+                <li><a href="">02</a></li>
+                <li><a href="">03</a></li>
+                <li><a href="">04</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
