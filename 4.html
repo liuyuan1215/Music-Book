@@ -11,15 +11,20 @@
     #wai{
         background: #ddd;
         display: block;
-        width: 1450px;
+        width: 99%;
         height: 30px;
-        border: 0.5px solid #bbccbb;
+        border: 1px solid #bbccbb;
     }
     #left >li{
         float:left;
     }
-    #right >li{
+    #right >.zz{
         float:right;
+    }
+    .yy{
+        width: 70px;
+        position: absolute;
+        right: 430px;
     }
     #wai #right .aa >a {
         text-decoration: none;
@@ -59,6 +64,9 @@
     }
     #ul li{
         background: #ddd;
+        width: 100px;
+        position: relative;
+        right: 30px;
     }
     #ul li >a{
         text-decoration: none;
@@ -67,6 +75,7 @@
         /*background: #fff;*/
         text-decoration: underline;
         /*border: 1px solid;*/
+        width: 100px;
     }
     #wai #right li #ul{
         display: none;
@@ -87,13 +96,13 @@
             <li><a href="">免费注册</a></li>
         </ul>
         <ul id="right">
-            <li class="aa"><a class="bb" href="">网站导航</a></li>
-            <li class="aa"><a href="">商家支持</a></li>
-            <li class="aa"><a href="http://www.taobao.com" target="_blank">淘宝网</a></li>
-            <li class="aa"><a href="">手机版</a></li>
-            <li class="aa"><a href="">收藏夹</a></li>
-            <li class="aa"><a href="">购物车0件</a></li>
-            <li class="aa dd" >
+            <li class="aa zz"><a class="bb" href="">网站导航</a></li>
+            <li class="aa zz"><a href="">商家支持</a></li>
+            <li class="aa zz"><a href="http://www.taobao.com" target="_blank">淘宝网</a></li>
+            <li class="aa zz"><a href="">手机版</a></li>
+            <li class="aa zz"><a href="">收藏夹</a></li>
+            <li class="aa zz"><a href="">购物车0件</a></li>
+            <li class="aa dd yy" >
                 <a href="">我的淘宝</a>
                 <ul id="ul">
                     <li class="002"><a href="">已买到的宝贝</a></li>
