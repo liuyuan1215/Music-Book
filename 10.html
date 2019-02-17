@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .div1{
+        background: #cccccc;
+        margin-right: 3px;
+        float: left;
+    }
+    .div1:hover{
+        background: #ff0000;
+    }
+    .div1 .a1{
+        text-decoration: none;
+        display: block;
+        width: 80px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .div1 .div2 > a{
+        text-decoration: none;
+        display: block;
+        width: 80px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .div1 .div2{
+        background: #cccccc;
+    }
+    .div1 .div2:hover{
+        background: #00ff00;
+    }
+    #div4 .div2{
+        display: none;
+    }
+    #div4:hover .div2{
+        display: block;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="div1" class="div1"><a href="" class="a1">001</a></div>
+    <div id="div2" class="div1"><a href="" class="a1">002</a></div>
+    <div id="div3" class="div1"><a href="" class="a1">003</a></div>
+    <div id="div4" class="div1">
+        <a href="" class="a1">004</a>
+        <div class="div2"><a href="">01</a></div>
+        <div class="div2"><a href="">02</a></div>
+        <div class="div2"><a href="">03</a></div>
+    </div>
+</body>
+</html>
