@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body{
+        margin: 0;
+    }
+    .yuan,.yuan::after{
+        width: 200px;
+        height: 200px;
+        border: 10px solid;
+        position: absolute;
+        border-radius: 110px;
+
+    }
+    .yuan::after{
+        content: '';
+        top: -10px;
+        left: -10px;
+    }
+    .one::after{
+        border-color: blue;
+        z-index: 1;
+        border-bottom-color: transparent;
+    }
+    .two::after{
+        border-color: black;
+        z-index: 1;
+        border-left-color: transparent;
+    }
+    .three::after{
+        border-color: red;
+        z-index: 2;
+        border-left-color: transparent;
+    }
+    .four::after{
+        border-color:  green;
+    }
+    .five::after{
+        border-color:yellow;
+        z-index: 1;
+        border-top-color: transparent;
+    }
+    .one{
+        border-color: blue;
+        top: 0;
+        left: 0;
+    }
+    .two{
+        border-color: black;
+        top: 0;
+        left: 230px;
+    }
+    .three{
+        border-color: red;
+        top: 0;
+        left: 460px;
+    }
+    .four{
+        border-color:  green;
+        top: 110px;
+        left: 110px;
+    }
+    .five{
+        border-color:yellow;
+        top: 110px;
+        left: 340px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>五环</title>
+</head>
+<body>
+    <div class="yuan one"></div>
+    <div class="yuan two"></div>
+    <div class="yuan three"></div>
+    <div class="yuan four"></div>
+    <div class="yuan five"></div>
+</body>
+</html>
