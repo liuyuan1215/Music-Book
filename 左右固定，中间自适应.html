@@ -2,8 +2,28 @@
 <html lang="en">
 <style>
     .box1{
-        width: 50px;
+        /*width: 50px;*/
+        flex-grow: 2;
+        height: 100px;
         background: #aaccbb;
+        top: 0;
+        left: 0;
+    }
+    .box2{
+        height: 100px;
+        background: #ccbbaa;
+        /*width: 100%;*/
+        flex-grow: 1;
+    }
+    .box3{
+        height: 100px;
+        width: 100px;
+        background: #ffccbb;
+        top: 0;
+        right: 0;
+    }
+    #parent{
+        display: flex;
     }
 </style>
 <head>
@@ -11,7 +31,7 @@
     <title>Title</title>
 </head>
 <body>
-<div parent>
+<div id="parent">
     <div class="box box1"></div>
     <div class="box box2"></div>
     <div class="box box3"></div>
