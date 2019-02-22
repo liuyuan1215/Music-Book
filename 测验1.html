@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .div{
+        width: 200px;
+        height: 200px;
+        background: #ffffff;
+    }
+    #wai .div{
+        border: 1px solid #f00;
+        float: left;
+    }
+    #wai{
+        position: relative;
+    }
+    #wai .xian{
+        position: absolute;
+        border: 1px solid #ff0;
+        display: none;
+        width: 200px;
+        height: 200px;
+        z-index: 1;
+    }
+    #wai #div1:hover .xian{
+        position: absolute;
+        display: block;
+        z-index: 1;
+    }
+    #wai #div1:hover{
+        border: hidden;
+    }
+    #wai{
+        width: 404px;
+        height: 404px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="wai">
+    <div id="div1" class="div"><div class="xian"></div></div>
+    <div id="div2" class="div"></div>
+    <div id="div3" class="div"></div>
+    <div id="div4" class="div"></div>
+</div>
+</body>
+</html>
