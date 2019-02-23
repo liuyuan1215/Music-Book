@@ -17,6 +17,18 @@
         //类型：number(数字，小数/整数)  string(字符串/字符,带引号的)  bollean(true/flase) undefined  null
         //变量名字不能以数字开头，可以用_或$开头
         // NAN not a number
+        // ==判断值是否相等，===判断是否严格相等
+        //0是false,其他数字是true
+        //空字符串是true  非空字符串是false
+        var a=5,b=6;
+        var c=a>b?a:b;
+        //如果？前语句正确，则输入：前的，否则输入：后的
+        console.log(c);
+
+        ''===false;  true
+        ' '===false;  false
+        // prompt("请输入",0);
+
         var a= 5;
         console.log(typeof a);
         // alert(a);
@@ -35,7 +47,46 @@
         var g=e+f;
         console.log(g);
         console.log(typeof g);
-    
+
+        var sum=0;
+        for(var i=1;i<=10;i++){
+            sum+=i;
+        }
+        console.log(sum);
+
+        var z=0;
+        while(z<10){
+            console.log(z++);
+        }
+        //满足条件才执行
+
+        var z=0;
+        do{
+            console.log(z++);
+        }while(z<10);
+        //至少执行一次，先执行在判断
+
+        //函数 function
+        function  sum1() {
+            console.log(3+4);
+        }
+        sum1();  //函数名+（）； 调用
+
+        function  sum2(x,y) {//形参
+            console.log(x+y);
+        }
+        sum2(3,4);  //实参
+        sum2(5,6);
+
+        function  sum3(x,y) {
+            var result=x+y;
+            return result;
+            //return后面写的代码不会执行
+        }
+        var suma=sum3(3,4);
+        console.log(suma);
+        
+
     </script>
 </body>
 </html>
