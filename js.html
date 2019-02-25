@@ -14,8 +14,9 @@
 
         document.write("<h2>Hello,JavaScriptWorld!</h2>");
         // js弱类型
-        //类型：number(数字，小数/整数)  string(字符串/字符,带引号的)  bollean(true/flase) undefined  null
+        //基本数据类型：number(数字，小数/整数)  string(字符串/字符,带引号的)  bollean(true/flase) undefined  null
         //变量名字不能以数字开头，可以用_或$开头
+        // i++ 先显示自己，然后自增   ++i先自增，然后显示
         // NAN not a number
         // ==判断值是否相等，===判断是否严格相等
         //0是false,其他数字是true
@@ -90,6 +91,67 @@
         var y='123';
         console.log(x-y);
 
+        //变量提升
+        console.log(k);
+        var k=5;
+        console.log(k);
+
+        // var k;
+        // console.log(k);
+        // k=5;
+
+        var sum=function (m,n) {
+            return m+n;
+        };
+        console.log(sum(5,6));
+
+        //数组
+        var array=[2,3,3];
+
+        var arr=new Array(4,5,6);
+        console.log(arr);
+
+        var arr=new Array(4);//数组长度为4
+        console.log(arr);
+
+        //对象 object  基于面向对象
+        //key value 与顺序无关 通过key
+        var person={
+            name:'xiecheng',
+            age:33,
+            code:function () {
+                console.log('coding...');
+
+            }
+        };
+        console.log(person);
+        console.log(person.age);
+        console.log(person['age']);
+        person.code();
+
+        var arr=[
+            {
+                name:1,
+                age:1
+            },
+            {
+                name:2,
+                age:2
+            },
+            {
+                name:3,
+                age:3
+            }
+        ];
+        document.write("<ul>");
+        for(var i=0;i<arr.length;i++){
+            document.write('<li>'+arr[i].name+':'+arr[i].age+'</li>');
+        };
+        document.write("</ul>");
+
+        //对象.属性 属性是固定的
+        //对象[属性]
+        // for in 循环遍历对象
     </script>
 </body>
 </html>
