@@ -152,6 +152,18 @@
         //对象.属性 属性是固定的
         //对象[属性]
         // for in 循环遍历对象
+
+        var person = {
+            age: 33,
+            name: 'xiecheng',
+            code: function () {
+                console.log('coding...');
+            }
+        };
+
+        for (var p in person) {
+            console.log(p + ':' + person[p]); // person.p
+        }
     </script>
 </body>
 </html>

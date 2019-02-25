@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js.html" afterDir="false" />
-    </list>
+    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -92,8 +89,8 @@
       <file leaf-file-name="js.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="149" column="32" lean-forward="true" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
+            <state relative-caret-position="1004">
+              <caret line="156" column="7" lean-forward="true" selection-start-line="156" selection-start-column="7" selection-end-line="156" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -265,7 +262,7 @@
       <workItem from="1550885313939" duration="15961000" />
       <workItem from="1550933582363" duration="107000" />
       <workItem from="1550981548950" duration="13305000" />
-      <workItem from="1551056238716" duration="5909000" />
+      <workItem from="1551056238716" duration="6565000" />
     </task>
     <task id="LOCAL-00001" summary="水平导航菜单">
       <created>1550059062624</created>
@@ -537,7 +534,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136801000" />
+    <option name="totallyTimeSpent" value="137457000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -949,8 +946,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="149" column="32" lean-forward="true" selection-start-line="149" selection-start-column="32" selection-end-line="149" selection-end-column="32" />
+        <state relative-caret-position="1004">
+          <caret line="156" column="7" lean-forward="true" selection-start-line="156" selection-start-column="7" selection-end-line="156" selection-end-column="7" />
         </state>
       </provider>
     </entry>
