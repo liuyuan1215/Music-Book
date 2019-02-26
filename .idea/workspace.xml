@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js5.4.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js5.7.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js5.8.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js5.9.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.9.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="js5.8.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js5.8.html">
+      <file leaf-file-name="js5.9.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js5.9.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="418">
+              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -82,7 +79,6 @@
         <option value="$PROJECT_DIR$/js5.1.html" />
         <option value="$PROJECT_DIR$/js5.6.html" />
         <option value="$PROJECT_DIR$/js5.7.html" />
-        <option value="$PROJECT_DIR$/js5.9.html" />
         <option value="$PROJECT_DIR$/js6.1.html" />
         <option value="$PROJECT_DIR$/js6.2.html" />
         <option value="$PROJECT_DIR$/js6.3.html" />
@@ -96,6 +92,7 @@
         <option value="$PROJECT_DIR$/js.html" />
         <option value="$PROJECT_DIR$/js5.4.html" />
         <option value="$PROJECT_DIR$/js5.8.html" />
+        <option value="$PROJECT_DIR$/js5.9.html" />
       </list>
     </option>
   </component>
@@ -105,7 +102,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-85" />
     <option name="y" value="5" />
     <option name="width" value="1750" />
@@ -193,7 +190,7 @@
       <workItem from="1551056238716" duration="9845000" />
       <workItem from="1551086871924" duration="5604000" />
       <workItem from="1551159148862" duration="8520000" />
-      <workItem from="1551189102456" duration="1577000" />
+      <workItem from="1551189102456" duration="2067000" />
     </task>
     <task id="LOCAL-00001" summary="水平导航菜单">
       <created>1550059062624</created>
@@ -500,10 +497,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156438000" />
+    <option name="totallyTimeSpent" value="156928000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16471355" />
@@ -847,13 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js5.9.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js5.5.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -914,6 +904,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js5.9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
         </state>
       </provider>
     </entry>
