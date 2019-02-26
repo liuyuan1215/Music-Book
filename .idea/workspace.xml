@@ -2,26 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/js5.7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js5.8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js5.9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js6.1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js6.2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js6.3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js6.4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js6.5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js.html" beforeDir="false" afterPath="$PROJECT_DIR$/js.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js10.html" beforeDir="false" afterPath="$PROJECT_DIR$/js4.7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js11.html" beforeDir="false" afterPath="$PROJECT_DIR$/js4.8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js12.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js13.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js14.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js15.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js16.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js17.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js18.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js2.html" beforeDir="false" afterPath="$PROJECT_DIR$/js3.1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js3.html" beforeDir="false" afterPath="$PROJECT_DIR$/js3.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js4.html" beforeDir="false" afterPath="$PROJECT_DIR$/js4.1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js5.html" beforeDir="false" afterPath="$PROJECT_DIR$/js4.2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js6.html" beforeDir="false" afterPath="$PROJECT_DIR$/js4.3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js7.html" beforeDir="false" afterPath="$PROJECT_DIR$/js4.4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js8.html" beforeDir="false" afterPath="$PROJECT_DIR$/js4.5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js9.html" beforeDir="false" afterPath="$PROJECT_DIR$/js4.6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js5.1.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js5.3.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js5.6.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js5.7.html" beforeDir="false" afterPath="$PROJECT_DIR$/js5.7.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,11 +27,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="js5.1.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js5.1.html">
+      <file leaf-file-name="js5.4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js5.4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+            <state relative-caret-position="198">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js5.8.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js5.8.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js5.9.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js5.9.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js6.1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js6.1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js6.2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js6.2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js6.3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js6.3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js6.4.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js6.4.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js6.5.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js6.5.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js6.6.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js6.6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js5.7.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js5.7.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -61,18 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/6.html" />
-        <option value="$PROJECT_DIR$/8.html" />
-        <option value="$PROJECT_DIR$/7.html" />
-        <option value="$PROJECT_DIR$/9.html" />
-        <option value="$PROJECT_DIR$/4.html" />
-        <option value="$PROJECT_DIR$/10.html" />
-        <option value="$PROJECT_DIR$/11.html" />
-        <option value="$PROJECT_DIR$/12.html" />
-        <option value="$PROJECT_DIR$/测验.html" />
-        <option value="$PROJECT_DIR$/1.html" />
-        <option value="$PROJECT_DIR$/测验1.html" />
-        <option value="$PROJECT_DIR$/imgs/田字格.html" />
         <option value="$PROJECT_DIR$/13.html" />
         <option value="$PROJECT_DIR$/五环.html" />
         <option value="$PROJECT_DIR$/15.html" />
@@ -112,6 +173,18 @@
         <option value="$PROJECT_DIR$/js4.5.html" />
         <option value="$PROJECT_DIR$/js4.6.html" />
         <option value="$PROJECT_DIR$/js4.8.html" />
+        <option value="$PROJECT_DIR$/js5.1.html" />
+        <option value="$PROJECT_DIR$/js5.3.html" />
+        <option value="$PROJECT_DIR$/js5.6.html" />
+        <option value="$PROJECT_DIR$/js5.7.html" />
+        <option value="$PROJECT_DIR$/js5.8.html" />
+        <option value="$PROJECT_DIR$/js5.9.html" />
+        <option value="$PROJECT_DIR$/js6.1.html" />
+        <option value="$PROJECT_DIR$/js6.2.html" />
+        <option value="$PROJECT_DIR$/js6.3.html" />
+        <option value="$PROJECT_DIR$/js6.4.html" />
+        <option value="$PROJECT_DIR$/js6.5.html" />
+        <option value="$PROJECT_DIR$/js6.6.html" />
       </list>
     </option>
   </component>
@@ -208,7 +281,7 @@
       <workItem from="1550981548950" duration="13305000" />
       <workItem from="1551056238716" duration="9845000" />
       <workItem from="1551086871924" duration="5604000" />
-      <workItem from="1551159148862" duration="4477000" />
+      <workItem from="1551159148862" duration="6649000" />
     </task>
     <task id="LOCAL-00001" summary="水平导航菜单">
       <created>1550059062624</created>
@@ -483,11 +556,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551064319730</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="js练习">
+      <created>1551164725631</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1551164725631</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150818000" />
+    <option name="totallyTimeSpent" value="152990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -547,62 +627,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="js练习" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/水平导航菜单.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/10.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2090">
-          <caret line="95" column="40" lean-forward="true" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/11.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="42" column="3" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/12.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
@@ -778,45 +802,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js5.5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
           <caret line="167" column="7" selection-start-line="167" selection-start-column="7" selection-end-line="167" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js5.4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js5.6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js5.7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js5.3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -848,24 +837,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js4.4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js4.3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
           <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js4.6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -890,6 +865,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js5.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js5.2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -897,10 +879,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js5.1.html">
+    <entry file="file://$PROJECT_DIR$/js4.4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="500">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js5.3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js5.6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js5.5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js5.7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js4.6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js5.4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js5.8.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js5.9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js6.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js6.2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js6.3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js6.4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js6.5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js6.6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
