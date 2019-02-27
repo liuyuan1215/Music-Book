@@ -3,8 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #menu{
+            width: 120px;
+            border: 1px solid;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #menu li{
+            width: 120px;
+            height: 30px;
+            border-bottom: 1px dashed;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+            list-style:none;
+        }
+        #menu li:hover{
+            background: #cccccc;
+        }
+    </style>
 </head>
 <body>
+    <ul id="menu">
+        <li>001</li>
+        <li>002</li>
+        <li>003</li>
+        <li>004</li>
+        <li>005</li>
+    </ul>
 
+    <script>
+        var oMenu=document.getElementById('menu');
+        document.oncontextmenu=function (e) {
+            e==e||window.event;
+            oMenu.style.display='block';
+            oMenu.style.left=e.clientX+'px';
+            oMenu.style.top=e.clientY+'px';
+            return false;
+        };
+        document.onclick=function () {
+          oMenu.style.display='none';
+        };
+
+        var ali = oMenu.getElementsByTagName('li');
+        for(var i=0;i<ali.length;i++){
+            ali[i].onclick=function(){
+                console.log(this.innerHTML);
+            };
+        };
+    </script>
 </body>
 </html>
