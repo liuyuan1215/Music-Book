@@ -6,5 +6,24 @@
 </head>
 <body>
 
+<script>
+
+    var fibonacci=new Array(40),i,nb=0;
+
+    for(i=0;i<fibonacci.length;i++)
+    {
+        if(i<2)
+            fibonacci[i]=1;
+        else
+            fibonacci[i] = fibonacci[i-2]+fibonacci[i-1];
+    }
+    for(i=fibonacci.length-1;i>=0;i--)
+    {
+        if(nb%6==0) document.write("\n");
+        document.write(fibonacci[i]+"\t\t");
+        nb++;
+    }
+
+</script>
 </body>
 </html>

@@ -8,12 +8,11 @@
 
 <script>
 
-    function getRangeRandom() {
-        var low=0;
-        var high=100;
+    function getRangeRandom(low,high) {
         return Math.ceil(Math.random()*(high-low)+low);
     }
-    document.write(getRangeRandom());
+    var num=getRangeRandom(0,100);
+    document.write(num);
 </script>
 </body>
 </html>
