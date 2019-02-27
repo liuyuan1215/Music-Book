@@ -7,6 +7,21 @@
 <body>
 
 <script>
+    var months=new Array(31,28,31,30,31,30,31,31,30,31,30,31),days,i;
+    function IsLeapYear(y)
+    {
+        return (y%4==0 && y%100!=0)||(y%400==0);
+    }
+    function DayOfYear(d) {
+        if(IsLeapYear(d.getFullYear())) months[2]=29;
+        days=0;
+        for(i=d.getMonth()-1;i>=0;i--) days += months[i];
+        days += d.getDate();
+        return days;
+    }
+
+    var today=new Date();
+    alert("今天("+today.toLocaleDateString()+")是本年度的第"+DayOfYear(today)+"天");
 
 </script>
 </body>
