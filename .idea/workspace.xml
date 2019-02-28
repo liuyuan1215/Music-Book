@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/html+css/课程表.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -46,8 +43,8 @@
       <file leaf-file-name="课程表.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html+css/课程表.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="186" column="29" lean-forward="true" selection-start-line="186" selection-start-column="29" selection-end-line="186" selection-end-column="29" />
+            <state relative-caret-position="564">
+              <caret line="207" column="34" lean-forward="true" selection-start-line="207" selection-start-column="34" selection-end-line="207" selection-end-column="34" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -275,14 +272,7 @@
       <workItem from="1551189102456" duration="2242000" />
       <workItem from="1551230967561" duration="18738000" />
       <workItem from="1551264164589" duration="6553000" />
-      <workItem from="1551351210489" duration="7830000" />
-    </task>
-    <task id="LOCAL-00001" summary="水平导航菜单">
-      <created>1550059062624</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1550059062624</updated>
+      <workItem from="1551351210489" duration="8513000" />
     </task>
     <task id="LOCAL-00002" summary="1、css基础">
       <created>1550059193482</created>
@@ -620,14 +610,22 @@
       <option name="project" value="LOCAL" />
       <updated>1551274546332</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="课程表">
+      <created>1551359126466</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1551359126468</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190224000" />
+    <option name="totallyTimeSpent" value="190907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16471355" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -655,7 +653,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1、css基础" />
     <MESSAGE value="1、html基础" />
     <MESSAGE value="菜单" />
     <MESSAGE value="update菜单" />
@@ -680,7 +677,8 @@
     <MESSAGE value="弹性盒模型" />
     <MESSAGE value="练习" />
     <MESSAGE value="js练习" />
-    <option name="LAST_COMMIT_MESSAGE" value="js练习" />
+    <MESSAGE value="课程表" />
+    <option name="LAST_COMMIT_MESSAGE" value="课程表" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1026,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html+css/课程表.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="186" column="29" lean-forward="true" selection-start-line="186" selection-start-column="29" selection-end-line="186" selection-end-column="29" />
+        <state relative-caret-position="564">
+          <caret line="207" column="34" lean-forward="true" selection-start-line="207" selection-start-column="34" selection-end-line="207" selection-end-column="34" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
