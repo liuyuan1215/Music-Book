@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/html+css/旋转.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html+css/课程表.html" beforeDir="false" afterPath="$PROJECT_DIR$/html+css/课程表.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,83 +17,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="15.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/15.html">
+      <file leaf-file-name="旋转.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/html+css/旋转.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="454">
+              <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="14.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/14.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="13.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/13.html">
+      <file leaf-file-name="立方体.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html+css/立方体.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-448" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="12.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/12.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="课程表.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html+css/课程表.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
-              <caret line="232" column="67" selection-start-line="232" selection-start-column="67" selection-end-line="232" selection-end-column="67" />
+            <state relative-caret-position="322">
+              <caret line="101" column="8" lean-forward="true" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="16_css属性.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/16_css属性.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/10.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="9.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/9.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="8.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/8.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="7.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/7.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -115,7 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js7.html" />
         <option value="$PROJECT_DIR$/js10.html" />
         <option value="$PROJECT_DIR$/js11.html" />
         <option value="$PROJECT_DIR$/js13.html" />
@@ -166,6 +110,7 @@
         <option value="$PROJECT_DIR$/js/js6.7.html" />
         <option value="$PROJECT_DIR$/js/js6.8.html" />
         <option value="$PROJECT_DIR$/html+css/课程表.html" />
+        <option value="$PROJECT_DIR$/html+css/旋转.html" />
       </list>
     </option>
   </component>
@@ -186,6 +131,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,7 +148,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,14 +220,8 @@
       <workItem from="1551189102456" duration="2242000" />
       <workItem from="1551230967561" duration="18738000" />
       <workItem from="1551264164589" duration="6553000" />
-      <workItem from="1551351210489" duration="11448000" />
-    </task>
-    <task id="LOCAL-00003" summary="1、html基础">
-      <created>1550059278438</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1550059278438</updated>
+      <workItem from="1551351210489" duration="11573000" />
+      <workItem from="1551424336784" duration="1241000" />
     </task>
     <task id="LOCAL-00004" summary="菜单">
       <created>1550063759179</created>
@@ -620,17 +559,24 @@
       <option name="project" value="LOCAL" />
       <updated>1551361791603</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="课程表">
+      <created>1551363024317</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1551363024317</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193842000" />
+    <option name="totallyTimeSpent" value="195208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16471355" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1484375" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32872927" />
@@ -955,13 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html+css/立方体.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="104" column="4" lean-forward="true" selection-start-line="104" selection-start-column="4" selection-end-line="104" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html+css/11.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-646" />
@@ -1007,16 +946,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html+css/14.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/html+css/13.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-448" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html+css/12.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/html+css/16_css属性.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1025,12 +958,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/五环.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1196" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html+css/课程表.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
+        <state relative-caret-position="22">
           <caret line="232" column="67" selection-start-line="232" selection-start-column="67" selection-end-line="232" selection-end-column="67" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/旋转.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/立方体.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="101" column="8" lean-forward="true" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
