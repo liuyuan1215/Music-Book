@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/html+css/旋转.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html+css/心.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,28 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="旋转.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/旋转.html">
+      <file leaf-file-name="心.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html+css/心.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="立方体.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html+css/立方体.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="101" column="8" lean-forward="true" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="484">
+              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -60,7 +43,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js10.html" />
         <option value="$PROJECT_DIR$/js11.html" />
         <option value="$PROJECT_DIR$/js13.html" />
         <option value="$PROJECT_DIR$/js12.html" />
@@ -111,6 +93,7 @@
         <option value="$PROJECT_DIR$/js/js6.8.html" />
         <option value="$PROJECT_DIR$/html+css/课程表.html" />
         <option value="$PROJECT_DIR$/html+css/旋转.html" />
+        <option value="$PROJECT_DIR$/html+css/心.html" />
       </list>
     </option>
   </component>
@@ -221,14 +204,7 @@
       <workItem from="1551230967561" duration="18738000" />
       <workItem from="1551264164589" duration="6553000" />
       <workItem from="1551351210489" duration="11573000" />
-      <workItem from="1551424336784" duration="1241000" />
-    </task>
-    <task id="LOCAL-00004" summary="菜单">
-      <created>1550063759179</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1550063759179</updated>
+      <workItem from="1551424336784" duration="2056000" />
     </task>
     <task id="LOCAL-00005" summary="update菜单">
       <created>1550114570999</created>
@@ -566,11 +542,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551363024317</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="圆环旋转">
+      <created>1551426103534</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1551426103536</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="195208000" />
+    <option name="totallyTimeSpent" value="196023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -602,7 +585,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1、html基础" />
     <MESSAGE value="菜单" />
     <MESSAGE value="update菜单" />
     <MESSAGE value="天猫导航" />
@@ -627,7 +609,8 @@
     <MESSAGE value="练习" />
     <MESSAGE value="js练习" />
     <MESSAGE value="课程表" />
-    <option name="LAST_COMMIT_MESSAGE" value="课程表" />
+    <MESSAGE value="圆环旋转" />
+    <option name="LAST_COMMIT_MESSAGE" value="圆环旋转" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -635,13 +618,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html+css/水平导航菜单.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="52" column="9" selection-start-line="34" selection-start-column="6" selection-end-line="52" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html+css/6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -975,14 +951,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html+css/旋转.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+        <state relative-caret-position="-154">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html+css/立方体.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="256">
           <caret line="101" column="8" lean-forward="true" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="8" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -992,6 +968,13 @@
             <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/心.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
         </state>
       </provider>
     </entry>
