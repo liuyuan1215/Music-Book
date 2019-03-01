@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/html+css/心.html" afterDir="false" />
+    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="心性">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html+css/心.html" beforeDir="false" afterPath="$PROJECT_DIR$/html+css/心.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="心.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html+css/心.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="352">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -204,14 +204,7 @@
       <workItem from="1551230967561" duration="18738000" />
       <workItem from="1551264164589" duration="6553000" />
       <workItem from="1551351210489" duration="11573000" />
-      <workItem from="1551424336784" duration="2056000" />
-    </task>
-    <task id="LOCAL-00005" summary="update菜单">
-      <created>1550114570999</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1550114570999</updated>
+      <workItem from="1551424336784" duration="2306000" />
     </task>
     <task id="LOCAL-00006" summary="update菜单">
       <created>1550117749949</created>
@@ -549,11 +542,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551426103536</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="心性">
+      <created>1551426869148</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1551426869148</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196023000" />
+    <option name="totallyTimeSpent" value="196273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -585,7 +585,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="菜单" />
     <MESSAGE value="update菜单" />
     <MESSAGE value="天猫导航" />
     <MESSAGE value="居中定位" />
@@ -610,7 +609,8 @@
     <MESSAGE value="js练习" />
     <MESSAGE value="课程表" />
     <MESSAGE value="圆环旋转" />
-    <option name="LAST_COMMIT_MESSAGE" value="圆环旋转" />
+    <MESSAGE value="心性" />
+    <option name="LAST_COMMIT_MESSAGE" value="心性" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -973,8 +973,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html+css/心.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state relative-caret-position="352">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
         </state>
       </provider>
     </entry>
