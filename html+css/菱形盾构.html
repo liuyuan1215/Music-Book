@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #diamond-shield {
+            width: 0;
+            border: 50px solid transparent;
+            border-bottom: 20px solid #deebff;
+            position: relative;
+            top: -50px;
+        }
+        #diamond-shield:after {
+            content: '';
+            position: absolute;
+            left: -50px; top: 20px;
+            border: 50px solid transparent;
+            border-top: 70px solid #cce3ff;
+        }
+
+    </style>
+</head>
+<body>
+<div id="diamond-shield"></div>
+</body>
+</html>

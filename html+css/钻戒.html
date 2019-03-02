@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>钻戒</title>
+    <style>
+        #diamond-shield {
+            width: 0;
+            border: 50px solid transparent;
+            border-bottom: 20px solid #e1b8ff;
+            position: relative;
+            top: -50px;
+        }
+        #diamond-shield:after {
+            content: '';
+            position: absolute;
+            left: -50px; top: 20px;
+            border: 50px solid transparent;
+            border-top: 70px solid #cce3ff;
+        }
+        .aa1{
+            width: 1px;
+            height: 26px;
+            background-color: #cce3ff;
+            position: absolute;
+            transform: rotate(40deg);
+            left: -9px;
+            top: -2.5px;
+        }
+        .aa2{
+            width: 1px;
+            height: 26px;
+            background-color: #cce3ff;
+            position: absolute;
+            transform: rotate(-40deg);
+            left: 8px;
+            top: -2.5px;
+        }
+        .aa3{
+            z-index: 1;
+            width: 1px;
+            height: 72px;
+            background-color: #b9ebff;
+            position: absolute;
+            transform: rotate(13deg);
+            left: 8px;
+            top: 19px;
+        }
+        .aa4{
+            z-index: 1;
+            width: 1px;
+            height: 72px;
+            background-color: #b9ebff;
+            position: absolute;
+            transform: rotate(-13deg);
+            left: -9px;
+            top: 19px;
+        }
+        .circle{
+            z-index: 1;
+            width: 110px;
+            height: 110px;
+            border-radius: 110px;
+            border: 4px solid #b2ccff;
+            position: absolute;
+            top: 86px;
+            left: -57px;
+        }
+    </style>
+</head>
+<body>
+<div id="diamond-shield">
+    <div class="aa">
+        <div class="aa1"></div>
+        <div class="aa2"></div>
+        <div class="aa3"></div>
+        <div class="aa4"></div>
+    </div>
+    <div class="circle"></div>
+</div>
+
+
+</body>
+</html>
