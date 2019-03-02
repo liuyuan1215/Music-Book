@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #arrow{
+            position: relative;
+            width: 0;
+            border-top: 90px solid transparent;
+            border-right: 90px solid red;
+            transform:rotate(10deg) translateX(100%);
+        }
+        #arrow:after{
+            content:'';
+            position: absolute;
+            border: 0 solid transparent;
+            border-top: 30px solid red;
+            border-radius: 200px 0 0 0;
+            top: -120px;
+            left: -90px;
+            width: 120px;
+            height: 120px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+<div id="arrow"></div>
+</body>
+</html>
