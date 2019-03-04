@@ -21,11 +21,19 @@
     var i=0;
     var timer=setInterval(function(){
         console.log(i++);
-        if(i>5){
+        if(i>3){
             clearInterval(timer);
         }
     },1000);
+    console.log(typeof timer);
 
+
+    setTimeout(function(){
+        console.log(11)
+    },0);
+    console.log(12);
+    console.log(13);
+    
 </script>
 </body>
 </html>
