@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="" />
+    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/html+css/表单.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,38 +17,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="无限.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/无限.html">
+      <file leaf-file-name="表单.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html+css/表单.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="五边形.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/五边形.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="六角星.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/六角星.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="切割钻石.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html+css/切割钻石.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="-448">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding>
+                <element signature="e#274#280#0" expanded="true" />
+                <element signature="e#286#292#0" expanded="true" />
+                <element signature="e#293#299#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,7 +48,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js4.4.html" />
         <option value="$PROJECT_DIR$/js4.5.html" />
         <option value="$PROJECT_DIR$/js4.6.html" />
         <option value="$PROJECT_DIR$/js4.8.html" />
@@ -109,15 +89,16 @@
         <option value="$PROJECT_DIR$/html+css/阴阳八卦.html" />
         <option value="$PROJECT_DIR$/html+css/月亮.html" />
         <option value="$PROJECT_DIR$/html+css/五角星.html" />
-        <option value="$PROJECT_DIR$/html+css/向下三角.html" />
-        <option value="$PROJECT_DIR$/html+css/左上三角.html" />
         <option value="$PROJECT_DIR$/html+css/无限.html" />
-        <option value="$PROJECT_DIR$/html+css/箭头.html" />
-        <option value="$PROJECT_DIR$/html+css/菱形盾构.html" />
-        <option value="$PROJECT_DIR$/html+css/钻戒.html" />
         <option value="$PROJECT_DIR$/html+css/五边形.html" />
         <option value="$PROJECT_DIR$/html+css/六角星.html" />
         <option value="$PROJECT_DIR$/html+css/切割钻石.html" />
+        <option value="$PROJECT_DIR$/html+css/向下三角.html" />
+        <option value="$PROJECT_DIR$/html+css/左上三角.html" />
+        <option value="$PROJECT_DIR$/html+css/箭头.html" />
+        <option value="$PROJECT_DIR$/html+css/菱形盾构.html" />
+        <option value="$PROJECT_DIR$/html+css/钻戒.html" />
+        <option value="$PROJECT_DIR$/html+css/表单.html" />
       </list>
     </option>
   </component>
@@ -138,7 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,12 +135,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fellows31" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -230,42 +211,8 @@
       <workItem from="1551351210489" duration="11573000" />
       <workItem from="1551424336784" duration="4097000" />
       <workItem from="1551500379116" duration="1157000" />
-      <workItem from="1551503359812" duration="244000" />
-    </task>
-    <task id="LOCAL-00016" summary="导航菜单练习">
-      <created>1550405851970</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1550405851970</updated>
-    </task>
-    <task id="LOCAL-00017" summary="form">
-      <created>1550586230053</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1550586230053</updated>
-    </task>
-    <task id="LOCAL-00018" summary="练习">
-      <created>1550586344636</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1550586344636</updated>
-    </task>
-    <task id="LOCAL-00019" summary="练习">
-      <created>1550671826560</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1550671826560</updated>
-    </task>
-    <task id="LOCAL-00020" summary="田字格">
-      <created>1550724598142</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1550724598144</updated>
+      <workItem from="1551503359812" duration="485000" />
+      <workItem from="1551689615049" duration="1935000" />
     </task>
     <task id="LOCAL-00021" summary="练习">
       <created>1550724629119</created>
@@ -575,11 +522,46 @@
       <option name="project" value="LOCAL" />
       <updated>1551503599393</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="向下三角">
+      <created>1551503642915</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1551503642915</updated>
+    </task>
+    <task id="LOCAL-00066" summary="左上三角">
+      <created>1551503694018</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1551503694018</updated>
+    </task>
+    <task id="LOCAL-00067" summary="箭头">
+      <created>1551503739397</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1551503739397</updated>
+    </task>
+    <task id="LOCAL-00068" summary="菱形盾构">
+      <created>1551503788825</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1551503788825</updated>
+    </task>
+    <task id="LOCAL-00069" summary="钻戒">
+      <created>1551503828453</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1551503828453</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199465000" />
+    <option name="totallyTimeSpent" value="201641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -611,11 +593,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="菜单练习" />
-    <MESSAGE value="html基础" />
-    <MESSAGE value="导航菜单练习" />
-    <MESSAGE value="form" />
-    <MESSAGE value="田字格" />
     <MESSAGE value="五环" />
     <MESSAGE value="三列布局，左右固定，中间自适应" />
     <MESSAGE value="三列布局，上下固定，中间自适应" />
@@ -636,7 +613,12 @@
     <MESSAGE value="五边形" />
     <MESSAGE value="六角星" />
     <MESSAGE value="切割钻石" />
-    <option name="LAST_COMMIT_MESSAGE" value="切割钻石" />
+    <MESSAGE value="向下三角" />
+    <MESSAGE value="左上三角" />
+    <MESSAGE value="箭头" />
+    <MESSAGE value="菱形盾构" />
+    <MESSAGE value="钻戒" />
+    <option name="LAST_COMMIT_MESSAGE" value="钻戒" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -644,13 +626,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html+css/立方体2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="94" column="28" selection-start-line="94" selection-start-column="28" selection-end-line="94" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DOM/事件.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -924,14 +899,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html+css/五角星.html" />
-    <entry file="file://$PROJECT_DIR$/html+css/向下三角.html" />
-    <entry file="file://$PROJECT_DIR$/html+css/左上三角.html" />
-    <entry file="file://$PROJECT_DIR$/html+css/箭头.html" />
-    <entry file="file://$PROJECT_DIR$/html+css/菱形盾构.html" />
-    <entry file="file://$PROJECT_DIR$/html+css/钻戒.html" />
     <entry file="file://$PROJECT_DIR$/html+css/无限.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state relative-caret-position="704">
           <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
         </state>
       </provider>
@@ -950,10 +920,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/箭头.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/菱形盾构.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/钻戒.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="74" column="31" lean-forward="true" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/左上三角.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/向下三角.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html+css/切割钻石.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/表单.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-448">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#274#280#0" expanded="true" />
+            <element signature="e#286#292#0" expanded="true" />
+            <element signature="e#293#299#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
