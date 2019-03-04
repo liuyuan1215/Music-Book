@@ -18,6 +18,13 @@
     var result=confirm("请输入");
     console.log(result);
 
+    var i=0;
+    var timer=setInterval(function(){
+        console.log(i++);
+        if(i>5){
+            clearInterval(timer);
+        }
+    },1000);
 
 </script>
 </body>
