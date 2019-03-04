@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/DOM/history1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DOM/hostory2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DOM/BOM1.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/BOM1.html" afterDir="false" />
     </list>
@@ -26,11 +28,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BOM1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BOM1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DOM/BOM1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="322">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="事件.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DOM/事件.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="history1.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DOM/history1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hostory2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DOM/hostory2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -61,8 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js5.1.html" />
-        <option value="$PROJECT_DIR$/js5.6.html" />
         <option value="$PROJECT_DIR$/js5.7.html" />
         <option value="$PROJECT_DIR$/js6.4.html" />
         <option value="$PROJECT_DIR$/js6.5.html" />
@@ -112,6 +135,8 @@
         <option value="$PROJECT_DIR$/html+css/练习.html" />
         <option value="$PROJECT_DIR$/DOM/BOM.html" />
         <option value="$PROJECT_DIR$/DOM/BOM1.html" />
+        <option value="$PROJECT_DIR$/DOM/hostory2.html" />
+        <option value="$PROJECT_DIR$/DOM/history1.html" />
       </list>
     </option>
   </component>
@@ -230,14 +255,7 @@
       <workItem from="1551424336784" duration="4097000" />
       <workItem from="1551500379116" duration="1157000" />
       <workItem from="1551503359812" duration="485000" />
-      <workItem from="1551689615049" duration="6942000" />
-    </task>
-    <task id="LOCAL-00027" summary="三列布局，上下固定，中间自适应">
-      <created>1550814622768</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1550814622768</updated>
+      <workItem from="1551689615049" duration="7464000" />
     </task>
     <task id="LOCAL-00028" summary="旋转的魔方">
       <created>1550822387493</created>
@@ -575,11 +593,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551697640463</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="bom">
+      <created>1551697938992</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1551697938992</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206648000" />
+    <option name="totallyTimeSpent" value="207170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -644,27 +669,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/js5.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/js5.7.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/js5.8.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/js5.4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -978,8 +982,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DOM/BOM1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="322">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/事件.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/hostory2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/history1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
