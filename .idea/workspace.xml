@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="html">
+    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,53 +19,18 @@
       <file leaf-file-name="右键菜单.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DOM/右键菜单.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+            <state relative-caret-position="330">
+              <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="15.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/15.html">
+      <file leaf-file-name="田字格.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html+css/田字格.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="14.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/14.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="13.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/13.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="12.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/12.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="11.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html+css/11.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-528" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/html+css/10.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-726" />
           </provider>
         </entry>
       </file>
@@ -178,6 +143,11 @@
               <item name="13-1" type="462c0819:PsiDirectoryNode" />
               <item name="html+css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="13-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="13-1" type="462c0819:PsiDirectoryNode" />
+              <item name="imgs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -198,13 +168,13 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\刘园\WebstormProjects\13-1\html+css" />
-      <recent name="C:\Users\刘园\WebstormProjects\13-1\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\刘园\WebstormProjects\13-1\imgs" />
       <recent name="C:\Users\刘园\WebstormProjects\13-1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\刘园\WebstormProjects\13-1\html+css" />
+      <recent name="C:\Users\刘园\WebstormProjects\13-1\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -259,14 +229,7 @@
       <workItem from="1551424336784" duration="4097000" />
       <workItem from="1551500379116" duration="1157000" />
       <workItem from="1551503359812" duration="485000" />
-      <workItem from="1551689615049" duration="3307000" />
-    </task>
-    <task id="LOCAL-00023" summary="五环">
-      <created>1550738597708</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1550738597708</updated>
+      <workItem from="1551689615049" duration="3902000" />
     </task>
     <task id="LOCAL-00024" summary="练习">
       <created>1550738737972</created>
@@ -604,11 +567,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551692521237</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="html">
+      <created>1551693139803</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1551693139803</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203013000" />
+    <option name="totallyTimeSpent" value="203608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -673,20 +643,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/js5.5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/js5.3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/js5.2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -959,27 +915,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html+css/练习.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="81" column="8" lean-forward="true" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html+css/18.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/右键菜单.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html+css/15.html">
@@ -996,22 +934,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html+css/13.html">
+    <entry file="file://$PROJECT_DIR$/html+css/水平导航菜单.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132" />
+        <state relative-caret-position="-998" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html+css/12.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/html+css/10.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html+css/11.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-528" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html+css/10.html">
+    <entry file="file://$PROJECT_DIR$/html+css/12.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/13.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-726" />
+        <state relative-caret-position="-132" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="81" column="8" lean-forward="true" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/右键菜单.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/田字格.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
+        </state>
       </provider>
     </entry>
   </component>
