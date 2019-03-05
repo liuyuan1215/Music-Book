@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/BOM1.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/BOM1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DOM/DOM.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/DOM.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/history1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/hostory2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/右键菜单.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/右键菜单.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,17 +29,17 @@
       <file leaf-file-name="DOM.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DOM/DOM.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="630">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BOM1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DOM/BOM1.html">
+      <file leaf-file-name="事件.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DOM/事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="968">
-              <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+            <state relative-caret-position="88">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -249,21 +245,7 @@
       <workItem from="1551500379116" duration="1157000" />
       <workItem from="1551503359812" duration="485000" />
       <workItem from="1551689615049" duration="11585000" />
-      <workItem from="1551785714116" duration="675000" />
-    </task>
-    <task id="LOCAL-00032" summary="练习">
-      <created>1550846196786</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1550846196786</updated>
-    </task>
-    <task id="LOCAL-00033" summary="练习">
-      <created>1550905138630</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1550905138631</updated>
+      <workItem from="1551785714116" duration="2727000" />
     </task>
     <task id="LOCAL-00034" summary="练习">
       <created>1550933621085</created>
@@ -594,11 +576,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551699450902</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="dom">
+      <created>1551786418614</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1551786418614</updated>
+    </task>
+    <task id="LOCAL-00082" summary="dom">
+      <created>1551786676137</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1551786676137</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211966000" />
+    <option name="totallyTimeSpent" value="214018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -630,7 +626,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="旋转的魔方" />
     <MESSAGE value="渐变" />
     <MESSAGE value="立方体2" />
     <MESSAGE value="弹性盒模型" />
@@ -655,7 +650,8 @@
     <MESSAGE value="form" />
     <MESSAGE value="html" />
     <MESSAGE value="bom" />
-    <option name="LAST_COMMIT_MESSAGE" value="bom" />
+    <MESSAGE value="dom" />
+    <option name="LAST_COMMIT_MESSAGE" value="dom" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -944,13 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/js5.9.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -963,13 +952,6 @@
         <state relative-caret-position="-462" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/BOM1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DOM/右键菜单.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -977,10 +959,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/BOM1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DOM/DOM.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="630">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
         </state>
       </provider>
     </entry>

@@ -24,7 +24,17 @@
         <input type="text" name="username">
     </form>
 <script>
+    var oTitle=document.getElementById('title');
+    console.log(oTitle);
+    console.log(document);
+    var oList=document.getElementById('list');
+    var aLi=oList.getElementsByTagName('li');
+    for(var i=0;i<aLi.length;i++){
+      console.log(aLi[i]);
+    };
 
+    var username=document.getElementsByName('username');
+    console.log(username[0]);
 </script>
 </body>
 </html>
