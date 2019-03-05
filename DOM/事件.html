@@ -5,7 +5,58 @@
     <title>Title</title>
 </head>
 <body>
+    <button id="btn">按钮</button>
+    <input type="text" id="username">
+    数字:
+    <select name="" id="num">
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+    </select>
 
+    <ul id="menu">
+        <li>01</li>
+        <li>02</li>
+        <li>03</li>
+        <li>04</li>
+        <li>05</li>
+    </ul>
+
+    <div id="div1">中国</div>
+
+    <script>
+        var oBtn=document.getElementById('btn');
+        oBtn.onclick=function(){
+            console.log(Math.random());
+        };
+
+        var oUserName=document.getElementById('username');
+        oUserName.onfocus=function(){
+            console.log('获取焦点');
+        };
+        oUserName.onblur=function(){
+            console.log('失去焦点');
+        };
+
+        oUserName.onkeyup=function(e){
+            console.log(e.keyCode);
+        };
+
+        var oNum=document.getElementById('num');
+        oNum.onchange=function(){
+            console.log('onchange');
+        };
+
+        window.onresize=function(){
+            console.log(Math.random());
+        };
+
+        var oDiv1=document.getElementById('div1');
+        oDiv1.onclick=function(){
+            oDiv1.className = 'color';
+            oDiv1.style.background='#8ac9cc';
+        };
+    </script>
 </body>
 </html>
 <!--
