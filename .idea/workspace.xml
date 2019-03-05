@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/DOM.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/DOM.html" afterDir="false" />
-    </list>
+    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -26,20 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DOM.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DOM/DOM.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="事件.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="事件.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DOM/事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="308">
+              <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -83,7 +71,6 @@
         <option value="$PROJECT_DIR$/js6.1.html" />
         <option value="$PROJECT_DIR$/js6.2.html" />
         <option value="$PROJECT_DIR$/js6.3.html" />
-        <option value="$PROJECT_DIR$/DOM/事件.html" />
         <option value="$PROJECT_DIR$/js/js.html" />
         <option value="$PROJECT_DIR$/js/js6.3.html" />
         <option value="$PROJECT_DIR$/DOM/选项卡.html" />
@@ -121,6 +108,7 @@
         <option value="$PROJECT_DIR$/DOM/BOM1.html" />
         <option value="$PROJECT_DIR$/DOM/右键菜单.html" />
         <option value="$PROJECT_DIR$/DOM/DOM.html" />
+        <option value="$PROJECT_DIR$/DOM/事件.html" />
       </list>
     </option>
   </component>
@@ -245,21 +233,7 @@
       <workItem from="1551500379116" duration="1157000" />
       <workItem from="1551503359812" duration="485000" />
       <workItem from="1551689615049" duration="11585000" />
-      <workItem from="1551785714116" duration="2727000" />
-    </task>
-    <task id="LOCAL-00034" summary="练习">
-      <created>1550933621085</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1550933621086</updated>
-    </task>
-    <task id="LOCAL-00035" summary="js练习">
-      <created>1550997435836</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1550997435837</updated>
+      <workItem from="1551785714116" duration="4370000" />
     </task>
     <task id="LOCAL-00036" summary="js练习">
       <created>1551006318275</created>
@@ -590,11 +564,25 @@
       <option name="project" value="LOCAL" />
       <updated>1551786676137</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="dom">
+      <created>1551788628625</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1551788628625</updated>
+    </task>
+    <task id="LOCAL-00084" summary="js">
+      <created>1551789988824</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1551789988824</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214018000" />
+    <option name="totallyTimeSpent" value="215661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -626,7 +614,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="渐变" />
     <MESSAGE value="立方体2" />
     <MESSAGE value="弹性盒模型" />
     <MESSAGE value="练习" />
@@ -651,7 +638,8 @@
     <MESSAGE value="html" />
     <MESSAGE value="bom" />
     <MESSAGE value="dom" />
-    <option name="LAST_COMMIT_MESSAGE" value="dom" />
+    <MESSAGE value="js" />
+    <option name="LAST_COMMIT_MESSAGE" value="js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -802,6 +790,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding>
+            <element signature="e#274#280#0" expanded="true" />
+            <element signature="e#286#292#0" expanded="true" />
+            <element signature="e#293#299#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -952,13 +945,6 @@
         <state relative-caret-position="-462" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/右键菜单.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DOM/BOM1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="586">
@@ -966,17 +952,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/事件.html">
+    <entry file="file://$PROJECT_DIR$/DOM/DOM.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="454">
+          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/DOM.html">
+    <entry file="file://$PROJECT_DIR$/DOM/右键菜单.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+        <state relative-caret-position="234">
+          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
         </state>
       </provider>
     </entry>
