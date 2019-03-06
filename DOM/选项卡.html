@@ -12,9 +12,13 @@
             width: 299px;
             height: 300px;
             border: 2px solid;
-            position: absolute;
+            position:relative;
             top: 10px;
             left: 20px;
+        }
+        #list{
+            width: 299px;
+            height: 40px;
         }
         #list li{
             width: 99px;
@@ -26,12 +30,17 @@
             cursor: pointer;
             list-style:none;
             float:left;
+            display: block;
         }
         #list li:last-child{
             border-right: none;
         }
         li:hover{
             background-color: lightblue;
+        }
+        #div1 #div2{
+            width: 299px;
+            height: 260px;
         }
         .next{
             display: none;
@@ -40,7 +49,7 @@
 <body>
     <div id="div1">
         <ul id="list">
-            <li>001</li>
+            <li class="aa">001</li>
             <li>002</li>
             <li>003</li>
         </ul>
@@ -59,6 +68,21 @@
             var oLi=oDiv1.getElementsByTagName('li');
             var oDiv2=document.getElementById('div2');
             var oDiv=oDiv2.getElementsByClassName('next');
+            for(var i=0;i<oLi.length;i++){
+                oLi[i].index=i;
+                oLi[i].onclick=function () {
+                    for(var i=0;i<oLi.length;i++){
+                        oLi[i].className='';
+                        oDiv[i].style.display='none';
+                    };
+                    this.className='aa';
+                    oDiv[this.index].style.display='block';
+                };
+                // for(var j=0;j<oLi.length;j++){
+                //     oLi[j].className='';
+                //     oDiv[j].style.display='none';
+                // };
+            };
         };
     </script>
 </body>
