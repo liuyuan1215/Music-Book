@@ -42,9 +42,6 @@
             width: 299px;
             height: 260px;
         }
-        .next{
-            display: none;
-        }
     </style>
 <body>
     <div id="div1">
@@ -78,10 +75,10 @@
                     this.className='aa';
                     oDiv[this.index].style.display='block';
                 };
-                // for(var j=0;j<oLi.length;j++){
-                //     oLi[j].className='';
-                //     oDiv[j].style.display='none';
-                // };
+                for(var j=1;j<oLi.length;j++){
+                    oLi[j].className='';
+                    oDiv[j].style.display='none';
+                };
             };
         };
     </script>
