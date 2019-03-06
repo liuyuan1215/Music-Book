@@ -9,54 +9,57 @@
             padding: 0;
         }
         #div1{
-            width: 300px;
+            width: 299px;
             height: 300px;
             border: 2px solid;
             position: absolute;
             top: 10px;
             left: 20px;
         }
-        #div1 #div2{
+        #list li{
+            width: 99px;
             height: 40px;
-            border-bottom: 2px solid;
-        }
-        #div1 #div2 .shang{
-            width: 90px;
-            height: 30px;
-            background: #cccccc;
-            float:left;
-            margin: 5px;
+            border-bottom: 1px solid;
+            border-right: 1px solid;
             text-align: center;
-            line-height: 30px;
+            line-height: 40px;
             cursor: pointer;
+            list-style:none;
+            float:left;
         }
-        .neirong{
+        #list li:last-child{
+            border-right: none;
+        }
+        li:hover{
+            background-color: lightblue;
+        }
+        .next{
             display: none;
         }
     </style>
 <body>
     <div id="div1">
+        <ul id="list">
+            <li>001</li>
+            <li>002</li>
+            <li>003</li>
+        </ul>
         <div id="div2">
-            <div id="a1" class="shang">
-                01
-                <div id="n1" class="neirong">001</div>
-            </div>
-            <div id="a2" class="shang">
-                02
-                <div id="n2" class="neirong">002</div>
-            </div>
-            <div id="a3" class="shang">
-                03
-                <div id="n3" class="neirong">003</div>
-            </div>
+            <div class="next">111</div>
+            <div class="next">222</div>
+            <div class="next">333</div>
         </div>
-
 
 
     </div>
 
     <script>
-
+        window.onload=function(){
+            var oDiv1=document.getElementById('div1');
+            var oLi=oDiv1.getElementsByTagName('li');
+            var oDiv2=document.getElementById('div2');
+            var oDiv=oDiv2.getElementsByClassName('next');
+        };
     </script>
 </body>
 </html>
