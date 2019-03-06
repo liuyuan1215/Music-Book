@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #wai{
+        width: 370px;
+        height: 550px;
+        border:1px solid;
+        position: relative;
+    }
+    #wai #p1{
+        position: absolute;
+        top: 0;
+        width: 370px;
+        z-index: -1;
+    }
+    h2{
+        text-align: center;
+    }
+    p,form{
+        padding-left: 20px;
+    }
+    #text{
+        width: 200px;
+    }
+    #f1{
+        position: relative;
+    }
+    #b1{
+        position: absolute;
+        right: 70px;
+        bottom: -28px;
+    }
+    #b2{
+        position: absolute;
+        right: 22px;
+        bottom: -28px;
+    }
+</style>
+<body>
+    <div id="wai">
+        <h2>问卷调查</h2>
+        <p>1、性别？</p>
+        <form action="">
+            <input type="radio">男
+            <input type="radio">女
+        </form>
+        <p>2、年级？</p>
+        <form action="">
+            <input type="radio">大一
+            <input type="radio">大二
+            <input type="radio">大三
+            <input type="radio">大四
+        </form>
+        <p>3、爱好？</p>
+        <form action="">
+            <input type="checkbox">看书
+            <input type="checkbox">运动
+            <input type="checkbox">睡觉
+            <input type="checkbox">旅游
+        </form>
+        <p>4、专业类型？</p>
+        <form action="">
+            <input type="radio">文科
+            <input type="radio">理科
+            <input type="radio">工科
+            <input type="radio">其他
+        </form>
+        <p>5、未来打算？</p>
+        <form action="">
+            <input type="radio">考研
+            <input type="radio">考公务员
+            <input type="radio">直接就业
+            <input type="radio">自主创业
+        </form>
+        <p>6、写给未来的一句话：</p>
+        <form action="">
+            <input id="text" type="text">
+        </form>
+        <form id="f1" action="">
+            <button id="b1">重置</button>
+            <button id="b2">提交</button>
+        </form>
+        <img id="p1" src="../imgs/bachground1.png" alt="">
+    </div>
+</body>
+</html>
