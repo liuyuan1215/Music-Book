@@ -10,7 +10,7 @@
         }
         #div1{
             width: 299px;
-            height: 300px;
+            height: 168px;
             border: 2px solid;
             position:relative;
             top: 10px;
@@ -39,8 +39,14 @@
             background-color: lightblue;
         }
         #div1 #div2{
+            position: absolute;
+            top: 0;
             width: 299px;
-            height: 260px;
+            height: 168px;
+            z-index: -1;
+        }
+        img{
+            width: 299px;
         }
     </style>
 <body>
@@ -51,9 +57,15 @@
         <li>003</li>
     </ul>
     <div id="div2">
-        <div class="next">111</div>
-        <div class="next">222</div>
-        <div class="next">333</div>
+        <div class="next">
+            <img src="../imgs/l1.png" alt="">
+        </div>
+        <div class="next">
+            <img src="../imgs/l2.png" alt="">
+        </div>
+        <div class="next">
+            <img src="../imgs/l3.png" alt="">
+        </div>
     </div>
 
 
@@ -66,7 +78,7 @@
     var oDiv=oDiv2.getElementsByClassName('next');
     for(var i=0;i<oLi.length;i++){
         oLi[i].index=i;
-        oLi[i].onclick=function () {
+        oLi[i].onmouseover=function () {
             for(var i=0;i<oLi.length;i++){
                 oLi[i].className='';
                 oDiv[i].style.display='none';
@@ -78,6 +90,12 @@
             oLi[j].className='';
             oDiv[j].style.display='none';
         };
+        var count=0;
+        var timer=setInterval(function(){
+            if(count>9){
+                clearInterval(timer);
+            }
+        },1000);
     };
 </script>
 </body>
