@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/html+css/半圆.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html+css/半圆2.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,11 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="半圆.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="半圆.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html+css/半圆.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="396">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="半圆2.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html+css/半圆2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -61,7 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js5.4.html" />
         <option value="$PROJECT_DIR$/js5.8.html" />
         <option value="$PROJECT_DIR$/js5.9.html" />
         <option value="$PROJECT_DIR$/js.html" />
@@ -112,6 +119,7 @@
         <option value="$PROJECT_DIR$/DOM/BOM1.html" />
         <option value="$PROJECT_DIR$/DOM/轮播图.html" />
         <option value="$PROJECT_DIR$/html+css/半圆.html" />
+        <option value="$PROJECT_DIR$/html+css/半圆2.html" />
       </list>
     </option>
   </component>
@@ -245,14 +253,7 @@
       <workItem from="1551831012177" duration="5751000" />
       <workItem from="1551848128040" duration="2786000" />
       <workItem from="1551851605614" duration="4094000" />
-      <workItem from="1551949582627" duration="678000" />
-    </task>
-    <task id="LOCAL-00044" summary="js练习">
-      <created>1551243655502</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1551243655502</updated>
+      <workItem from="1551949582627" duration="970000" />
     </task>
     <task id="LOCAL-00045" summary="js练习">
       <created>1551251455947</created>
@@ -590,11 +591,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551854910018</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="半圆">
+      <created>1551950461743</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1551950461744</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234079000" />
+    <option name="totallyTimeSpent" value="234371000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -626,7 +634,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="js练习" />
     <MESSAGE value="课程表" />
     <MESSAGE value="圆环旋转" />
     <MESSAGE value="心性" />
@@ -651,7 +658,8 @@
     <MESSAGE value="选项卡" />
     <MESSAGE value="问卷调查" />
     <MESSAGE value="轮播图" />
-    <option name="LAST_COMMIT_MESSAGE" value="轮播图" />
+    <MESSAGE value="半圆" />
+    <option name="LAST_COMMIT_MESSAGE" value="半圆" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -659,13 +667,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html+css/旋转.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html+css/立方体.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -971,8 +972,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html+css/半圆.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="396">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html+css/半圆2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
