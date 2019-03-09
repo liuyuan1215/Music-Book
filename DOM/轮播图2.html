@@ -41,6 +41,24 @@
         #list .bb{
             background: #ff0036;
         }
+        #prev,#next{
+            position:absolute;
+            width: 20px;
+            height: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 4px;
+            background: rgba(0,0,0,0.5);
+            bottom: 10px;
+            cursor:pointer;
+        }
+        #prev{
+            left: 10px;
+        }
+        #next{
+            left: 40px;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +73,8 @@
         <li>2</li>
         <li>3</li>
     </ul>
+    <span id="prev">&lt;</span>
+    <span id="next">&gt;</span>
 </div>
 
 <script>
@@ -63,19 +83,50 @@
 
     var oBox=document.getElementById('box');
     var aImg=oBox.getElementsByTagName('img');
-    
+
+    var oNext=document.getElementById('next');
+
+    var oPrev=document.getElementById('prev');
+
+    var iNow=0;
+
     for(var i=0;i<aLi.length;i++){
         aLi[i].index=i;
         aLi[i].onmouseover=function(){
-            for(var j=0;j<aLi.length;j++){
-                aLi[j].className='';
-                aImg[j].className='';
-            };
-            this.className='bb';
-            aImg[this.index].className='aa';
+            // for(var j=0;j<aLi.length;j++){
+            //     aLi[j].className='';
+            //     aImg[j].className='';
+            // };
+            // aLi[this.index].className='bb';
+            // aImg[this.index].className='aa';
+            change(this.index);
+            iNow = this.index;
         };
     };
 
+    oNext.onclick=function(){
+        iNow++;
+        if(iNow==aLi.length){
+            iNow=0;
+        };
+        change(iNow);
+    };
+
+    oPrev.onclick=function(){
+        iNow--;
+        if(iNow==-1){
+            iNow=aLi.length-1;
+        };
+        change(iNow);
+    };
+    function change(num){
+        for(var i=0; i<aLi.length;i++){
+            aLi[i].className = "";
+            aImg[i].className = "";
+        }
+        aLi[num].className = "bb";
+        aImg[num].className = "aa";
+    }
 </script>
 </body>
 </html>

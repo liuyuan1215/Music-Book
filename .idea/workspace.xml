@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/DOM/轮播图2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOM/轮播图2.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/轮播图2.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +29,12 @@
       <file leaf-file-name="轮播图2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DOM/轮播图2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+            <state relative-caret-position="410">
+              <caret line="119" column="21" lean-forward="true" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+              <folding>
+                <element signature="e#1268#1272#1" expanded="true" />
+                <element signature="e#1290#1294#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -234,14 +238,7 @@
       <workItem from="1551949582627" duration="4998000" />
       <workItem from="1552011076916" duration="4216000" />
       <workItem from="1552027878867" duration="1307000" />
-      <workItem from="1552094428695" duration="11992000" />
-    </task>
-    <task id="LOCAL-00048" summary="js练习">
-      <created>1551273970610</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1551273970610</updated>
+      <workItem from="1552094428695" duration="15774000" />
     </task>
     <task id="LOCAL-00049" summary="js练习">
       <created>1551274546332</created>
@@ -579,11 +576,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552105963271</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="轮播图">
+      <created>1552114518590</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1552114518591</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255914000" />
+    <option name="totallyTimeSpent" value="259696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -636,11 +640,11 @@
     <MESSAGE value="js" />
     <MESSAGE value="选项卡" />
     <MESSAGE value="问卷调查" />
-    <MESSAGE value="轮播图" />
     <MESSAGE value="半圆" />
     <MESSAGE value="table" />
     <MESSAGE value="dom" />
-    <option name="LAST_COMMIT_MESSAGE" value="dom" />
+    <MESSAGE value="轮播图" />
+    <option name="LAST_COMMIT_MESSAGE" value="轮播图" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -959,8 +963,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DOM/轮播图2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="65" selection-end-column="4" />
+        <state relative-caret-position="410">
+          <caret line="119" column="21" lean-forward="true" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+          <folding>
+            <element signature="e#1268#1272#1" expanded="true" />
+            <element signature="e#1290#1294#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
