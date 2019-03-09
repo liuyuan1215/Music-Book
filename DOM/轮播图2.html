@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #big-box{
+            width: 900px;
+            position: relative;
+            margin:100px auto;
+        }
+        #box img{
+            width: 900px;
+            display: none;
+        }
+        #box .aa{
+            display: block;
+        }
+        #list{
+            list-style: none;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        #list li{
+            width: 20px;
+            height: 20px;
+            float:left;
+            background: rgba(0,0,0,0.5);
+            border-radius:4px;
+            margin-right: 5px;
+            cursor:pointer;
+            text-align: center;
+            line-height: 20px;
+            color:#fff;
+        }
+        #list .bb{
+            background: #ff0036;
+        }
+    </style>
+</head>
+<body>
+<div id="big-box">
+    <div id="box">
+        <img class="aa" src="../imgs/l1.png" alt="">
+        <img src="../imgs/l2.png" alt="">
+        <img src="../imgs/l3.png" alt="">
+    </div>
+    <ul id="list">
+        <li class="bb">1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div>
+
+<script>
+    var oList=document.getElementById('list');
+    var aLi=oList.getElementsByTagName('li');
+
+    var oBox=document.getElementById('box');
+    var aImg=oBox.getElementsByTagName('img');
+    
+    for(var i=0;i<aLi.length;i++){
+        aLi[i].index=i;
+        aLi[i].onmouseover=function(){
+            for(var j=0;j<aLi.length;j++){
+                aLi[j].className='';
+                aImg[j].className='';
+            };
+            this.className='bb';
+            aImg[this.index].className='aa';
+        };
+    };
+
+</script>
+</body>
+</html>
