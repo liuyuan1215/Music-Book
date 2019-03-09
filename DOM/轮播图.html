@@ -48,6 +48,25 @@
         img{
             width: 299px;
         }
+        #prev,#next{
+            position:absolute;
+            width: 20px;
+            height: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 4px;
+            background: rgba(0,0,0,0.5);
+            bottom: 10px;
+            cursor:pointer;
+            /*visibility: hidden;*/
+        }
+        #prev{
+            left: 10px;
+        }
+        #next{
+            left: 40px;
+        }
     </style>
 <body>
 <div id="div1">
@@ -67,29 +86,77 @@
             <img src="../imgs/l3.png" alt="">
         </div>
     </div>
-
+    <span id="prev">&lt;</span>
+    <span id="next">&gt;</span>
 
 </div>
 
 <script>
     var oDiv1=document.getElementById('div1');
-    var oLi=oDiv1.getElementsByTagName('li');
+    var aLi=oDiv1.getElementsByTagName('li');
     var oDiv2=document.getElementById('div2');
     var oDiv=oDiv2.getElementsByClassName('next');
-    for(var i=0;i<oLi.length;i++){
-        oLi[i].index=i;
-        oLi[i].onmouseover=function () {
-            for(var i=0;i<oLi.length;i++){
-                oLi[i].className='';
+    var aImg=oDiv.getElementsByTagName('img');
+
+    var oNext=document.getElementById('next');
+    var oPrev=document.getElementById('prev');
+
+    var iNow=0;
+    var timer;
+    for(var i=0;i<aLi.length;i++){
+        aLi[i].index=i;
+        aLi[i].onmouseover=function () {
+            for(var i=0;i<aLi.length;i++){
+                aLi[i].className='';
                 oDiv[i].style.display='none';
             };
             this.className='aa';
             oDiv[this.index].style.display='block';
         };
-        for(var j=1;j<oLi.length;j++){
-            oLi[j].className='';
+        for(var j=1;j<aLi.length;j++){
+            aLi[j].className='';
             oDiv[j].style.display='none';
         };
+    };
+
+
+    oNext.onclick=function(){
+        iNow++;
+        if(iNow==aLi.length){
+            iNow=0;
+        };
+        change(iNow);
+    };
+
+    oPrev.onclick=function(){
+        iNow--;
+        if(iNow==-1){
+            iNow=aLi.length-1;
+        };
+        change(iNow);
+    };
+    function change(num){
+        for(var i=0; i<aLi.length;i++){
+            aLi[i].className = "";
+            aImg[i].className = "";
+        }
+        aLi[num].className = "bb";
+        aImg[num].className = "aa";
+    }
+
+    run();
+
+    oDiv1.onmouseover=function () {
+        clearInterval(timer);
+    };
+
+    oDiv1.onmouseout=function () {
+        run();
+    }
+    function run(){
+        timer=setInterval(function(){
+            oNext.onclick();
+        },1000);
     };
 </script>
 </body>
