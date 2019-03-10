@@ -98,19 +98,60 @@
 
         var oPrev=document.getElementById('prev');
 
+        var iNow=0;
+        var timer;
+
         for(var i=0;i<aLi.length;i++){
             aLi[i].index=i;
             aLi[i].onclick=function(){
-                for(var j=0;j<aLi.length;j++){
-                    aLi[j].className='';
-                };
-                this.className='bb';
-                oBox.style.left=-this.index*900+'px';
+                // for(var j=0;j<aLi.length;j++){
+                //     aLi[j].className='';
+                // };
+                // this.className='bb';
+                // oBox.style.left=-this.index*900+'px';
+
+                change(this.index);
+                iNow = this.index;
             };
         };
 
-        
+        oNext.onclick=function(){
+            iNow++
+            if(iNow==aLi.length){
+                iNow=0;
+            };
+            change(iNow);
+        };
 
+        oPrev.onclick=function(){
+            iNow--;
+            if(iNow==-1){
+                iNow=aLi.length-1;
+            };
+            change(iNow);
+        };
+    function change(num){
+        for(var j=0; j<aLi.length;j++){
+            aLi[j].className = "";
+        }
+        aLi[num].className = "bb";
+        oBox.style.left=-num*900+'px';
+    };
+
+    // run();
+
+    // oBig.onmouseover=function () {
+    //   clearInterval(timer);
+    // };
+
+    // oBig.onmouseout=function () {
+    //     run();
+    // }
+    // function run(){
+    //     timer=setInterval(function(){
+    //         oNext.onclick();
+    //     },1000);
+    // };
     </script>
 </body>
 </html>
