@@ -12,20 +12,21 @@
         }
         #big-box{
             width: 900px;
+            height: 507px;
             position: relative;
             margin:100px auto;
             overflow: hidden;
         }
         #box{
             width: 2700px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition:left .5s ease;
         }
         #box img{
             width: 900px;
             float:left;
-            display: none;
-        }
-        #box .aa{
-            display: block;
         }
         #list{
             list-style: none;
@@ -59,7 +60,6 @@
             background: rgba(0,0,0,0.5);
             bottom: 10px;
             cursor:pointer;
-            /*visibility: hidden;*/
         }
         #prev{
             left: 10px;
@@ -101,20 +101,16 @@
         for(var i=0;i<aLi.length;i++){
             aLi[i].index=i;
             aLi[i].onclick=function(){
-                change(this.index);
+                for(var j=0;j<aLi.length;j++){
+                    aLi[j].className='';
+                };
+                this.className='bb';
+                oBox.style.left=-this.index*900+'px';
             };
-        };
-
-        function change(num){
-            for(var i=0;i<aLi.length;i++){
-                aLi[i].className='';
-                aImg[i].className='';
-            };
-            aLi[num].className='bb';
-            aImg[num].className='aa';
         };
 
         
+
     </script>
 </body>
 </html>
