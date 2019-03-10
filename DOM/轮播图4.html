@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #big-box{
+            width: 1000px;
+            position: relative;
+            margin: 100px auto;
+        }
+        #big-box img{
+            width: 1000px;
+            display: none;
+            transition:opcaity 5s ease;
+            opacity: 0;
+        }
+        #big-box .aa{
+            display: block;
+            opacity: 1;
+        }
+        #big-box #btn{
+            position: absolute;
+            bottom: 10px;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        #big-box #btn div{
+            width: 60px;
+            height: 12px;
+            background:rgba(0,0,0,.4); 
+            float:left;
+            margin-right: 5px;
+        }
+        #big-box #btn .small{
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="big-box">
+        <div id="box">
+            <img class="aa" src="../imgs/l1.png" alt="">
+            <img src="../imgs/l2.png" alt="">
+            <img src="../imgs/l3.png" alt="">
+        </div>
+        <div id="btn">
+            <div class="small"></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script>
+        var oBig=document.getElementById('big-box');
+
+        var oBox=document.getElementById('box');
+        var aImg=oBox.getElementsByTagName('img');
+
+        var oBtn=document.getElementById('btn');
+        var aDiv=oBtn.getElementsByTagName('div');
+
+        for(var i=0;i<aDiv.length;i++){
+            aDiv[i].index=i;
+            aDiv[i].onclick=function(){
+                for(var j=0;j<aDiv.length;j++){
+                    aDiv[j].className='';
+                    aImg[j].className='';
+                };
+                aDiv[this.index].className='small';
+                aImg[this.index].className='aa';
+            };
+        };        
+    </script>
+</body>
+</html>
