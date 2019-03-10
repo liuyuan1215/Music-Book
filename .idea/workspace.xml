@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/轮播图.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/轮播图.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/轮播图2.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/轮播图2.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="轮播图2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DOM/轮播图2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="93" column="11" lean-forward="true" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
+            <state relative-caret-position="2046">
+              <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -39,8 +37,8 @@
       <file leaf-file-name="轮播图.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DOM/轮播图.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="113" column="10" lean-forward="true" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
+            <state relative-caret-position="22">
+              <caret line="69" selection-start-line="69" selection-end-line="69" />
             </state>
           </provider>
         </entry>
@@ -169,7 +167,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,12 +193,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fellows31" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -281,21 +279,8 @@
       <workItem from="1552011076916" duration="4216000" />
       <workItem from="1552027878867" duration="1307000" />
       <workItem from="1552094428695" duration="18475000" />
-      <workItem from="1552139779847" duration="497000" />
-    </task>
-    <task id="LOCAL-00051" summary="课程表">
-      <created>1551361791602</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1551361791603</updated>
-    </task>
-    <task id="LOCAL-00052" summary="课程表">
-      <created>1551363024317</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1551363024317</updated>
+      <workItem from="1552139779847" duration="1444000" />
+      <workItem from="1552180616564" duration="10000" />
     </task>
     <task id="LOCAL-00053" summary="圆环旋转">
       <created>1551426103534</created>
@@ -626,15 +611,28 @@
       <option name="project" value="LOCAL" />
       <updated>1552120979956</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="轮播图">
+      <created>1552140490459</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1552140490460</updated>
+    </task>
+    <task id="LOCAL-00101" summary="轮播图">
+      <created>1552140620083</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1552140620086</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262894000" />
+    <option name="totallyTimeSpent" value="263851000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1484375" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1012,15 +1010,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DOM/轮播图2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="93" column="11" lean-forward="true" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
+        <state relative-caret-position="2046">
+          <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DOM/轮播图.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="113" column="10" lean-forward="true" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
+        <state relative-caret-position="22">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
         </state>
       </provider>
     </entry>
