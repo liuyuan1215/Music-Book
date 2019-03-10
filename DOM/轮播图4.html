@@ -15,14 +15,20 @@
             position: relative;
             margin: 100px auto;
         }
-        #big-box img{
+        #big-box #box{
             width: 1000px;
-            display: none;
-            transition:opcaity 5s ease;
+            height: 567px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        #big-box img{
+            position:absolute;
+            width: 1000px;
+            transition:opacity 2s ease;
             opacity: 0;
         }
         #big-box .aa{
-            display: block;
             opacity: 1;
         }
         #big-box #btn{
@@ -68,7 +74,7 @@
 
         for(var i=0;i<aDiv.length;i++){
             aDiv[i].index=i;
-            aDiv[i].onclick=function(){
+            aDiv[i].onmouseover=function(){
                 for(var j=0;j<aDiv.length;j++){
                     aDiv[j].className='';
                     aImg[j].className='';
