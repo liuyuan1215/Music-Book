@@ -6,66 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-          *{
+        *{
             margin: 0;
             padding: 0;
         }
         #big-box{
-            width: 900px;
-            height: 507px;
+            width: 1000px;
             position: relative;
-            margin:100px auto;
-            overflow: hidden;
+            margin: 100px auto;
         }
-        #box{
-            width: 2700px;
-            position: absolute;
-            left: 0;
+        #big-box #box{
+            width: 1000px;
+            height: 567px;
+            position: relative;
             top: 0;
-            transition:left .5s ease;
+            left: 0;
         }
-        #box img{
-            width: 900px;
-            float:left;
-        }
-        #list{
-            list-style: none;
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
-        }
-        #list li{
-            width: 20px;
-            height: 20px;
-            float:left;
-            background: rgba(0,0,0,0.5);
-            border-radius:4px;
-            margin-right: 5px;
-            cursor:pointer;
-            text-align: center;
-            line-height: 20px;
-            color:#fff;
-        }
-        #list .bb{
-            background: #ff0036;
-        }
-        #prev,#next{
+        #big-box img{
             position:absolute;
-            width: 20px;
-            height: 20px;
-            color: #ffffff;
-            text-align: center;
-            line-height: 20px;
-            border-radius: 4px;
-            background: rgba(0,0,0,0.5);
+            width: 1000px;
+            transition:opacity 2s ease;
+            opacity: 0;
+        }
+        #big-box .aa{
+            opacity: 1;
+        }
+        #big-box #btn{
+            position: absolute;
             bottom: 10px;
-            cursor:pointer;
+            left:50%;
+            transform: translateX(-50%);
         }
-        #prev{
-            left: 10px;
+        #big-box #btn div{
+            width: 60px;
+            height: 12px;
+            background:rgba(0,0,0,.4); 
+            float:left;
+            margin-right: 5px;
         }
-        #next{
-            left: 40px;
+        #big-box #btn .small{
+            background: #ccc;
         }
     </style>
 </head>
@@ -76,13 +56,11 @@
             <img src="../imgs/l2.png" alt="">
             <img src="../imgs/l3.png" alt="">
         </div>
-        <ul id="list">
-            <li class="bb">1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-        <span id="prev">&lt;</span>
-        <span id="next">&gt;</span>
+        <div id="btn">
+            <div class="small"></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
     <script>
@@ -91,67 +69,20 @@
         var oBox=document.getElementById('box');
         var aImg=oBox.getElementsByTagName('img');
 
-        var oList=document.getElementById('list');
-        var aLi=oList.getElementsByTagName('li');
+        var oBtn=document.getElementById('btn');
+        var aDiv=oBtn.getElementsByTagName('div');
 
-        var oNext=document.getElementById('next');
-
-        var oPrev=document.getElementById('prev');
-
-        var iNow=0;
-        var timer;
-
-        for(var i=0;i<aLi.length;i++){
-            aLi[i].index=i;
-            aLi[i].onclick=function(){
-                // for(var j=0;j<aLi.length;j++){
-                //     aLi[j].className='';
-                // };
-                // this.className='bb';
-                // oBox.style.left=-this.index*900+'px';
-
-                change(this.index);
-                iNow = this.index;
+        for(var i=0;i<aDiv.length;i++){
+            aDiv[i].index=i;
+            aDiv[i].onmouseover=function(){
+                for(var j=0;j<aDiv.length;j++){
+                    aDiv[j].className='';
+                    aImg[j].className='';
+                };
+                aDiv[this.index].className='small';
+                aImg[this.index].className='aa';
             };
-        };
-
-        oNext.onclick=function(){
-            iNow++
-            if(iNow==aLi.length){
-                iNow=0;
-            };
-            change(iNow);
-        };
-
-        oPrev.onclick=function(){
-            iNow--;
-            if(iNow==-1){
-                iNow=aLi.length-1;
-            };
-            change(iNow);
-        };
-    function change(num){
-        for(var j=0; j<aLi.length;j++){
-            aLi[j].className = "";
-        }
-        aLi[num].className = "bb";
-        oBox.style.left=-num*900+'px';
-    };
-
-    // run();
-
-    // oBig.onmouseover=function () {
-    //   clearInterval(timer);
-    // };
-
-    // oBig.onmouseout=function () {
-    //     run();
-    // }
-    // function run(){
-    //     timer=setInterval(function(){
-    //         oNext.onclick();
-    //     },1000);
-    // };
+        };        
     </script>
 </body>
 </html>
