@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <style>
         *{
             margin: 0;
@@ -10,36 +12,40 @@
         }
         #big-box{
             width: 900px;
+            height: 507px;
             position: relative;
             margin:100px auto;
+            overflow: hidden;
+        }
+        #box{
+            width: 3600px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* transition:left .5s ease; */
         }
         #box img{
             width: 900px;
-            display: none;
-        }
-        #box .aa{
-            display: block;
+            float:left;
         }
         #list{
             list-style: none;
             position: absolute;
-            right: 10px;
+            left: 50%;
+            transform: translate(-50%);
             bottom: 10px;
         }
         #list li{
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 10px;
             float:left;
             background: rgba(0,0,0,0.5);
-            border-radius:4px;
             margin-right: 5px;
             cursor:pointer;
-            text-align: center;
-            line-height: 20px;
             color:#fff;
         }
         #list .bb{
-            background: #ff0036;
+            background: #ccc;
         }
         #prev,#next{
             position:absolute;
@@ -52,7 +58,7 @@
             background: rgba(0,0,0,0.5);
             bottom: 10px;
             cursor:pointer;
-            /*visibility: hidden;*/
+            visibility: hidden;
         }
         #prev{
             left: 10px;
@@ -68,85 +74,78 @@
         <img class="aa" src="../imgs/l1.png" alt="">
         <img src="../imgs/l2.png" alt="">
         <img src="../imgs/l3.png" alt="">
+        <img src="../imgs/l1.png" alt="">
     </div>
     <ul id="list">
-        <li class="bb">1</li>
-        <li>2</li>
-        <li>3</li>
+        <li class="bb"></li>
+        <li></li>
+        <li></li>
     </ul>
     <span id="prev">&lt;</span>
     <span id="next">&gt;</span>
 </div>
 
+<script src="jslib.js"></script>
 <script>
     var oBig=document.getElementById('big-box');
 
-    var oList=document.getElementById('list');
-    var aLi=oList.getElementsByTagName('li');
-
     var oBox=document.getElementById('box');
     var aImg=oBox.getElementsByTagName('img');
+
+    var oList=document.getElementById('list');
+    var aLi=oList.getElementsByTagName('li');
 
     var oNext=document.getElementById('next');
 
     var oPrev=document.getElementById('prev');
 
     var iNow=0;
-
     var timer;
-
-    for(var i=0;i<aLi.length;i++){
-        aLi[i].index=i;
-        aLi[i].onmouseover=function(){
-            // for(var j=0;j<aLi.length;j++){
-            //     aLi[j].className='';
-            //     aImg[j].className='';
-            // };
-            // aLi[this.index].className='bb';
-            // aImg[this.index].className='aa';
-            change(this.index);
-            iNow = this.index;
-        };
-    };
 
     oNext.onclick=function(){
         iNow++;
-        if(iNow==aLi.length){
-            iNow=0;
+        if(iNow==aImg.length){
+            oBox.style.left=0;
+            iNow=1;
         };
         change(iNow);
+    };
+
+    function change(num){
+        animate(oBox,{
+            left:-num*900
+        });
+
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].className='';
+        };
+        aLi[num==aLi.length?0:num].className='bb';
     };
 
     oPrev.onclick=function(){
         iNow--;
         if(iNow==-1){
-            iNow=aLi.length-1;
+            oBox.style.left=-(aImg.length-1)*900+'px';
+            iNow=aImg.length-2;
         };
         change(iNow);
     };
-    function change(num){
-        for(var i=0; i<aLi.length;i++){
-            aLi[i].className = "";
-            aImg[i].className = "";
-        }
-        aLi[num].className = "bb";
-        aImg[num].className = "aa";
-    }
 
-    run();
+    // run();
+    //
+    // oBig.onmouseover=function () {
+    //   clearInterval(timer);
+    // };
+    //
+    // oBig.onmouseout=function () {
+    //     run();
+    // }
+    // function run(){
+    //     timer=setInterval(function(){
+    //         oNext.onclick();
+    //     },1000);
+    // };
 
-    oBig.onmouseover=function () {
-      clearInterval(timer);
-    };
-
-    oBig.onmouseout=function () {
-        run();
-    }
-    function run(){
-        timer=setInterval(function(){
-            oNext.onclick();
-        },1500);
-    };
 </script>
 </body>
 </html>
