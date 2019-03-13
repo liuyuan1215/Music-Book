@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="轮播图">
-      <change afterPath="$PROJECT_DIR$/DOM/轮播图5.html" afterDir="false" />
+    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DOM/轮播图1.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/轮播图1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/轮播图2.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/轮播图2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/轮播图3.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/轮播图3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOM/轮播图5.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/轮播图5.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="轮播图1.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="轮播图1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DOM/轮播图1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="109" column="6" lean-forward="true" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
+            <state relative-caret-position="2970">
+              <caret line="135" selection-start-line="135" selection-end-line="135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="轮播图5.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DOM/轮播图5.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -32,8 +39,8 @@
       <file leaf-file-name="轮播图3.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DOM/轮播图3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="62" column="14" lean-forward="true" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+            <state relative-caret-position="1364">
+              <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -41,17 +48,8 @@
       <file leaf-file-name="轮播图4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DOM/轮播图4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="114" column="26" lean-forward="true" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="轮播图5.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DOM/轮播图5.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="133" column="13" lean-forward="true" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
+            <state relative-caret-position="2904">
+              <caret line="132" selection-start-line="132" selection-end-line="132" />
             </state>
           </provider>
         </entry>
@@ -59,8 +57,8 @@
       <file leaf-file-name="轮播图2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DOM/轮播图2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="153" column="9" lean-forward="true" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
+            <state relative-caret-position="3366">
+              <caret line="153" column="9" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -130,8 +128,8 @@
         <option value="$PROJECT_DIR$/DOM/轮播图.html" />
         <option value="$PROJECT_DIR$/js/js0.html" />
         <option value="$PROJECT_DIR$/DOM/轮播图2.html" />
-        <option value="$PROJECT_DIR$/DOM/轮播图1.html" />
         <option value="$PROJECT_DIR$/DOM/轮播图3.html" />
+        <option value="$PROJECT_DIR$/DOM/轮播图1.html" />
         <option value="$PROJECT_DIR$/DOM/轮播图5.html" />
       </list>
     </option>
@@ -142,7 +140,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-85" />
     <option name="y" value="5" />
     <option name="width" value="1750" />
@@ -175,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fellows31" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -260,14 +258,9 @@
       <workItem from="1552290440142" duration="1168000" />
       <workItem from="1552301380400" duration="1775000" />
       <workItem from="1552310443609" duration="693000" />
-      <workItem from="1552354929737" duration="2430000" />
-    </task>
-    <task id="LOCAL-00056" summary="心形">
-      <created>1551426965988</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1551426965988</updated>
+      <workItem from="1552354929737" duration="5887000" />
+      <workItem from="1552382953757" duration="1696000" />
+      <workItem from="1552397176556" duration="470000" />
     </task>
     <task id="LOCAL-00057" summary="鸡蛋">
       <created>1551427204371</created>
@@ -605,15 +598,21 @@
       <option name="project" value="LOCAL" />
       <updated>1552290922748</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="轮播图">
+      <created>1552357882627</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1552357882629</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269917000" />
+    <option name="totallyTimeSpent" value="275540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13346355" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -674,6 +673,27 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DOM/轮播图4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2508">
+          <caret line="114" column="26" lean-forward="true" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/轮播图2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3366">
+          <caret line="153" column="9" lean-forward="true" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/轮播图5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/js0.html" />
     <entry file="file://$PROJECT_DIR$/js/js0.html" />
     <entry file="file://$PROJECT_DIR$/js/js6.5.html">
@@ -738,13 +758,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DOM/hostory2.html" />
     <entry file="file://$PROJECT_DIR$/DOM/history1.html" />
-    <entry file="file://$PROJECT_DIR$/html+css/表单.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html+css/调查问卷.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -916,38 +929,52 @@
         <state relative-caret-position="-5442" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/轮播图4.html">
+    <entry file="file://$PROJECT_DIR$/html+css/立方体.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="114" column="26" lean-forward="true" selection-start-line="114" selection-start-column="26" selection-end-line="114" selection-end-column="26" />
+        <state relative-caret-position="330">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/轮播图2.html">
+    <entry file="file://$PROJECT_DIR$/html+css/表单.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="153" column="9" lean-forward="true" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/轮播图5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="133" column="13" lean-forward="true" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DOM/轮播图3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="62" column="14" lean-forward="true" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+        <state relative-caret-position="550">
+          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DOM/轮播图1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="109" column="6" lean-forward="true" selection-start-line="109" selection-start-column="6" selection-end-line="109" selection-end-column="6" />
+        <state relative-caret-position="2970">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/轮播图2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3366">
+          <caret line="153" column="9" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/轮播图3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/轮播图4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2904">
+          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DOM/轮播图5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
         </state>
       </provider>
     </entry>

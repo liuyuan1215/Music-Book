@@ -109,6 +109,15 @@
         };
     };
 
+    function change(num){
+        for(var i=0; i<aLi.length;i++){
+            aLi[i].className = "";
+            aImg[i].className = "";
+        }
+        aLi[num].className = "bb";
+        aImg[num].className = "aa";
+    }
+
     oNext.onclick=function(){
         iNow++;
         if(iNow==aLi.length){
@@ -124,14 +133,6 @@
         };
         change(iNow);
     };
-    function change(num){
-        for(var i=0; i<aLi.length;i++){
-            aLi[i].className = "";
-            aImg[i].className = "";
-        }
-        aLi[num].className = "bb";
-        aImg[num].className = "aa";
-    }
 
     run();
 

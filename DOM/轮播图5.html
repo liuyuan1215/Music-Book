@@ -111,6 +111,23 @@
         change(iNow);
     };
 
+    for(var i=0;i<aLi.length;i++){
+        aLi[i].index=i;
+        aLi[i].onmouseover=function(){
+            change1(this.index);
+            iNow = this.index;
+        };
+    };
+
+    function change1(num){
+        for(var i=0; i<aLi.length;i++){
+            aLi[i].className = "";
+            aImg[i].className = "";
+        }
+        aLi[num].className = "bb";
+        aImg[num].className = "aa";
+    }
+
     function change(num){
         animate(oBox,{
             left:-num*900
@@ -131,20 +148,20 @@
         change(iNow);
     };
 
-    // run();
-    //
-    // oBig.onmouseover=function () {
-    //   clearInterval(timer);
-    // };
-    //
-    // oBig.onmouseout=function () {
-    //     run();
-    // }
-    // function run(){
-    //     timer=setInterval(function(){
-    //         oNext.onclick();
-    //     },1000);
-    // };
+    run();
+
+    oBig.onmouseover=function () {
+      clearInterval(timer);
+    };
+
+    oBig.onmouseout=function () {
+        run();
+    }
+    function run(){
+        timer=setInterval(function(){
+            oNext.onclick();
+        },1000);
+    };
 
 </script>
 </body>
