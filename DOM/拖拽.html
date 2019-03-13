@@ -32,10 +32,14 @@
             var disX=e.clientX-oDiv1.offsetLeft;
             var disY=e.clientY-oDiv1.offsetTop;
 
-            oDiv1.onmousemove=function(e){
+            document.onmousemove=function(e){
                 console.log(e.clientX,e.clientY);
                 oDiv1.style.left=e.clientX-disX+'px';
                 oDiv1.style.top=e.clientY-disY+'px';
+            };
+
+            oDiv1.onmouseup=function(){
+                document.onmousemove=null;
             };
         };
     </script>
