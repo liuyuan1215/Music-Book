@@ -94,11 +94,15 @@
                 // 求大图应该走的距离
                 oImg.style.left=-daMax1*xbili1+'px';
 
-
                 var xiaoMax2=oDiv1.offsetHeight-oSmall.offsetHeight;
                 var daMax2=oImg.offsetHeight-oDiv2.offsetHeight;
                 var xbili2=oSmall.offsetTop/xiaoMax2;
                 oImg.style.top=-daMax2*xbili2+'px';
+            };
+
+            oDiv1.onmouseout=function(){
+                oSmall.style.display='none';
+                oDiv2.style.display='none';
             };
 
         };
