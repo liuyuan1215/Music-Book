@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/轮播图1.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/轮播图1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/轮播图5.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/轮播图5.html" afterDir="false" />
-    </list>
+    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -30,7 +26,7 @@
       <file leaf-file-name="轮播图5.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DOM/轮播图5.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
+            <state relative-caret-position="-44">
               <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
             </state>
           </provider>
@@ -140,7 +136,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-85" />
     <option name="y" value="5" />
     <option name="width" value="1750" />
@@ -173,7 +169,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fellows31" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -261,6 +257,7 @@
       <workItem from="1552354929737" duration="5887000" />
       <workItem from="1552382953757" duration="1696000" />
       <workItem from="1552397176556" duration="470000" />
+      <workItem from="1552454876994" duration="159000" />
     </task>
     <task id="LOCAL-00057" summary="鸡蛋">
       <created>1551427204371</created>
@@ -609,7 +606,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="275540000" />
+    <option name="totallyTimeSpent" value="275699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -973,7 +970,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DOM/轮播图5.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
+        <state relative-caret-position="-44">
           <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
         </state>
       </provider>
