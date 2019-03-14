@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .same{
+            width: 200px;
+            height: 50px;
+            background: #000000;
+            color:#fff;
+            font-size: 20px;
+            text-align: center;
+            line-height: 50px;
+        }
+        ul{
+            width: 200px;
+            height: 123px;
+            background: #cccccc;
+            display: none;
+        }
+        li{
+            height: 40px;
+            text-align: center;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="same">一</div>
+<ul>
+    <li class="nei">1</li>
+    <li class="nei">2</li>
+    <li class="nei">3</li>
+</ul>
+<div class="same">二</div>
+<ul>
+    <li class="nei">1</li>
+    <li class="nei">2</li>
+    <li class="nei">3</li>
+</ul>
+
+<script>
+    var aDiv=document.getElementsByTagName('div');
+    var aUl=document.getElementsByTagName('ul');
+
+    for(var i=0;i<aDiv.length;i++){
+        aDiv[i].index=i;
+        aDiv[i].onclick=function(){
+            var oUl=aUl[this.index];
+            if(oUl.style.display==''||oUl.style.display=='none'){
+                oUl.style.display='block';
+            }else if(oUl.style.display=='block'){
+                oUl.style.display='none';
+            };
+        };
+    };
+</script>
+</body>
+</html>
