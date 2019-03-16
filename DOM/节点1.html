@@ -9,7 +9,7 @@
 <body>
     <div id="div1"><p>bbb</p>aaa</div>
 
-    <ul>
+    <ul id="list">
         <li id="li1">001</li>
         <li id="li2">002</li>
         <li id="li3">003</li>
@@ -20,6 +20,7 @@
         var oLi1=document.getElementById('li1');
         var oLi2=document.getElementById('li2');
         var oLi3=document.getElementById('li3');
+        var oUl=document.getElementById('list');
 
         console.log(oDiv1.nodeType);
         console.log(oDiv1.firstChild.nodeType);
@@ -45,6 +46,16 @@
         }
         var oPrev = prev(oLi3);
         console.log(oPrev);
+
+        function first(elem){
+            elem = elem.firstChild;
+            if(elem.nodeType !=1){
+                elem = next(elem);
+            }
+            return elem;
+        }
+        var oFirst=first(oUl);
+        console.log(oFirst);
     </script>
 </body>
 </html>
