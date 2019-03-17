@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id='btn'>点击</button>
+    <ul id="list">
+        <li>0001</li>
+        <li>0002</li>
+        <li>0003</li>
+        <li>0004</li>
+    </ul>
+
+    <script>
+        var oBtn=document.getElementById('btn');
+        var oList=document.getElementById('list');
+
+        oBtn.onclick=function(){
+            var oLi=document.createElement('li');
+            oLi.innerHTML=Math.random();
+            oList.appendChild(oLi);
+        };
+
+        oList.onclick=function(e){
+            e = e || window.event;
+            var target = e.target || e.scrElement;
+            if(target.tagName == 'LI'){
+                console.log(target.innerHTML);
+            }
+        };
+    </script>
+</body>
+</html>
