@@ -17,8 +17,13 @@
         var $div1=$('#div1');
         var div1=document.getElementById('div1');
         console.log($div1);
+
+        // jq对象 <=> 原生js
         console.log($div1[0]);
         console.log($div1.get(0));
+
+        // 原生js <=> jq对象
+        console.log($(div1));
     </script>
 </body>
 </html>
