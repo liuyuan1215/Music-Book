@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/jquery/文本焦点.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DOM/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/DOM/test.html" afterDir="false" />
-    </list>
+    <list default="true" id="3eb75b5e-e648-45c9-8639-cb83165405af" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -39,8 +35,8 @@
       <file leaf-file-name="文本焦点.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jquery/文本焦点.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="440">
+              <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -124,7 +120,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
@@ -154,7 +150,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../31" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
@@ -258,14 +254,7 @@
       <workItem from="1552901117567" duration="362000" />
       <workItem from="1552954267868" duration="599000" />
       <workItem from="1552963880457" duration="1794000" />
-      <workItem from="1552973481342" duration="3956000" />
-    </task>
-    <task id="LOCAL-00063" summary="六角星">
-      <created>1551503541397</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1551503541399</updated>
+      <workItem from="1552973481342" duration="4087000" />
     </task>
     <task id="LOCAL-00064" summary="切割钻石">
       <created>1551503599393</created>
@@ -603,11 +592,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552901155493</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="练习">
+      <created>1552989468524</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1552989468525</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298998000" />
+    <option name="totallyTimeSpent" value="299129000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -976,8 +972,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery/文本焦点.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="440">
+          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
         </state>
       </provider>
     </entry>
