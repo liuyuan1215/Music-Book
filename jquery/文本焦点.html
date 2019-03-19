@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .bg{
+        background: #ccc;
+        outline: none;
+    }
+</style>
+<body>
+<form action="">
+    <fieldset>
+        <legend>标题</legend>
+        <label for="username">名称：</label>
+        <input type="text" id="username" name="username" value="请输入用户名">
+        <br>
+        <label for="password">密码：</label>
+        <input type="password" id="password" value="请输入密码">
+    </fieldset>
+</form>
+<script src="jquery-1.12.4.js"></script>
+<script>
+    $('input').on('focus',function(){
+        $(this).addClass('bg');
+        if(this.value==this.defaultValue)
+        this.value='';
+    }).on('blur',function(){
+        $(this).removeClass('bg');
+        if(this.value=='')
+        this.value=this.defaultValue;
+    });
+
+</script>
+</body>
+</html>

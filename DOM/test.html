@@ -59,7 +59,7 @@
     　　if (document.compatMode == "BackCompat"){
             elementScrollTop=document.body.scrollTop;
     　　} else {
-            elementScrollTop=document.documentElement.scrollTop; 
+            elementScrollTop=document.documentElement.scrollTop;
     　　}
         return actualTop;
     　//　return actualTop-elementScrollTop;
@@ -81,13 +81,13 @@
         }
         return { 'top': top, 'left': left, 'width': width, 'height': height };
     }
-    var nav = document.getElementById('nav');   
+    var nav = document.getElementById('nav');
     var posTop = getElementViewTop(nav);
     window.addEventListener('scroll',function(event){
         var scrollTop = getScroll().top;
         var output = document.getElementById('output');
         // output.innerHTML = posTop +' '+scrollTop+' '+(posTop-scrollTop);
-        if(posTop>=30 && posTop-scrollTop <= 30) 
+        if(posTop>=30 && posTop-scrollTop <= 30)
             nav.className = 'nav fixed';
         else nav.className = 'nav';
     },false);
