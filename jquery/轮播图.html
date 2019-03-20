@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #big-box{
+        width: 900px;
+        position: relative;
+        margin:100px auto;
+    }
+    #box img{
+        width: 900px;
+        display: none;
+    }
+    #box .aa{
+        display: block;
+    }
+    #list{
+        list-style: none;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+    #list li{
+        width: 20px;
+        height: 20px;
+        float:left;
+        background: rgba(0,0,0,0.5);
+        border-radius:4px;
+        margin-right: 5px;
+        cursor:pointer;
+        text-align: center;
+        line-height: 20px;
+        color:#fff;
+    }
+    #list .bb{
+        background: #ff0036;
+    }
+    #prev,#next{
+        position:absolute;
+        width: 20px;
+        height: 20px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 4px;
+        background: rgba(0,0,0,0.5);
+        bottom: 10px;
+        cursor:pointer;
+        /*visibility: hidden;*/
+    }
+    #prev{
+        left: 10px;
+    }
+    #next{
+        left: 40px;
+    }
+        </style>
+</head>
+<body>
+    <div id="big-box">
+        <div id="box">
+            <img class="aa" src="../imgs/l1.png" alt="">
+            <img src="../imgs/l2.png" alt="">
+            <img src="../imgs/l3.png" alt="">
+        </div>
+        <ul id="list">
+            <li class="bb">1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <span id="prev">&lt;</span>
+        <span id="next">&gt;</span>
+    </div>    
+
+    <script src='jquery-1.12.4.js'></script>
+    <script>
+
+        var timer;
+        var iNow=0;
+        var $li=$('#list li');
+        var $img=$('#box img');
+        $('li').on('click',function(){
+            var $index=$(this).index();
+            change($index);
+
+            // $(this).addClass('bb').siblings().removeClass('bb');
+            // $('#box img').eq($index).addClass('aa').siblings().removeClass('aa');
+        });
+
+        $('#next').on('click',function(){
+            iNow++;
+            if(iNow==$li.length){
+                iNow=0;
+            }
+            change(iNow);
+        });
+        $('#prev').on('click',function(){
+            iNow--;
+            if(iNow==-1){
+                iNow=$li.length-1;
+            }
+            change(iNow);
+        });
+
+        function change(num){
+            $li.eq(num).addClass('bb').siblings().removeClass('bb');
+
+            $img.eq(num).addClass('aa').siblings().removeClass('aa');  
+        }
+
+        // setInterval(function(){
+        //     $('#next').trigger('click');
+        // },1000)
+
+        $('#box').on('mouseover',function(){
+            clearInterval(timer);
+        })
+
+        $('#box').on('mouseout',function(){
+            run();
+        })
+
+        function run(){
+            timer=setInterval(function(){
+                $('#next').trigger('click');
+            },1000);
+        }
+
+    </script>
+</body>
+</html>
