@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hidden{
+    display:none;
+}
+#one{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #234567;
+}
+#one #one-1{
+    width: 248px;
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    margin-left: -124px;
+}
+.moveFromTop{
+    animation: moveFromTop 0.6s ease forwards;
+}
+@keyframes moveFromTop{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+#one #one-2{
+    width: 186px;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    margin-left: -93px;
+}
+.moveFromLeft{
+    animation: moveFromLeft 0.6s ease forwards;
+}
+@keyframes moveFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+}
+#container .btn{
+    width: 25px;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    margin-left: -12px;
+}
+.iconMove{
+    animation: iconMove 1s ease infinite forwards;
+}
+@keyframes iconMove{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+#two{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #9d5db1;
+}
+#two #two-1{
+    width: 158px;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    margin-left: -79px;
+}
+.omveFromBottom{
+    animation:moveFromBottom 0.6s ease forwards;
+}
+@keyframes moveFromBottom{
+    0%{
+        transform: translateY(100%);
+    }
+}
+.moveScale{
+    animation: moveScale  0.6s ease forwards;
+}
+@keyframes moveScale{
+    0%{
+        transform: scale(0);
+    }
+}
+.moveCircle{
+    animation: moveCircle 1.2s ease forwards;
+}
+@keyframes moveCircle{
+    0%{
+        transform: translateY(-100%);
+    }
+    30%{
+        transform: translateY(30%);
+    }
+    60%{
+        transform: translateY(-20%);
+    }
+    70%{
+        transform: translateY(-10%);
+    }
+}
+#two #two-2{
+    width: 240px;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    margin-left: -120px;
+}
+#two #two-3{
+    width: 240px;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    margin-left: -120px;
+}
+#two #two-4{
+    width: 248px;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    margin-left: -124px;
+}
+#three{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #eb4d25;
+}
+#three #three-1{
+    width: 166px;
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    margin-left: -86px;
+}
+#three #three-2{
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    margin-left: -125px;
+}
+#three #three-3{
+    width: 172px;
+    position: absolute;
+    left: 50%;
+    top: 28%;
+    margin-left: -55px;
+}
+#three #three-4{
+    width: 248px;
+    position: absolute;
+    left: 50%;
+    top: 43%;
+    margin-left: -124px;
+}
+#four{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #f5b833;
+}
+#four #four-1{
+    width: 162px;
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    margin-left: -84px;
+    z-index: 2;
+}
+#four #four-2{
+    width: 230px;
+    position: absolute;
+    left: 50%;
+    top: 28%;
+    margin-left: -115px;
+}
+#four #four-3{
+    width: 161px;
+    position: absolute;
+    left: 50%;
+    top: 28%;
+    margin-left: -80px;
+}
+#four #four-4{
+    height: auto;
+    width: 271px;
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    margin-left: -135px;
+}
+#four #four-5{
+    width: 169px;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    margin-left: -84px;
+}
+#five{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #234567;
+}
+#five #five-1{
+    width: 280px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-left: -140px;
+}
+#five #five-2{
+    width: 260px;
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    margin-left: -130px;
+}
+#container .check{
+    width: 142px;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    margin-left: -71px;
+}
+#container .dot1{
+    width: 20px;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    margin-left: -10px;
+}
