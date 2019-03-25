@@ -286,3 +286,12 @@
         transform: rotateX(0deg);
     }
 }
+.scaleUp{
+	animation:scaleUp 0.6s ease;
+}
+
+@keyframes scaleUp{
+	0%{
+        transform: scale(0.4);
+    }
+}
