@@ -48,13 +48,13 @@
         var div = document.getElementsByClassName('div')[0]
         var b = document.body
         var dHeight = div.offsetTop
-        function getStyle(obj, attr) {
-            if (obj.currentStyle) {      //IE
-                return obj.currentStyle[attr];
-            } else {
-                return getComputedStyle(obj, "伪类")[attr];     //Firefox
-            }
-        }
+        // function getStyle(obj, attr) {
+        //     if (obj.currentStyle) {      //IE
+        //         return obj.currentStyle[attr];
+        //     } else {
+        //         return getComputedStyle(obj, "伪类")[attr];     //Firefox
+        //     }
+        // }
         b.addEventListener('mousewheel', function () {
             var d = document.documentElement.scrollTop
             if (dHeight - d > 50) {
