@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            overflow-y: scroll;
+            height: 2000px;
+            width: 100%;
+            position: relative;
+        }
+         .wrap{
+            position: absolute;
+         }
+         .fsdf{
+            position: absolute;
+         }
+        .div {
+            width: 600px;
+            height: 50px;
+            border: 1px solid black;
+            position: absolute;
+            top: 500px;
+            left: 500px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="div3">fdsfs</div>
+    <div class="div2">adaf</div>
+    <div class="div1">gfgdfg</div>
+    <div class="wrap">
+        <div class="fsdf">
+            <div class="div"></div>
+        </div>
+    </div>
+
+    <script>
+        var div = document.getElementsByClassName('div')[0]
+        var b = document.body
+        var dHeight = div.offsetTop
+        function getStyle(obj, attr) {
+            if (obj.currentStyle) {      //IE
+                return obj.currentStyle[attr];
+            } else {
+                return getComputedStyle(obj, "伪类")[attr];     //Firefox
+            }
+        }
+        b.addEventListener('mousewheel', function () {
+            var d = document.documentElement.scrollTop
+            if (dHeight - d > 50) {
+                div.style.position = 'relative'
+                div.style.top = 500 + 'px'
+            }
+            else {
+                div.style.position = 'fixed'
+                div.style.top = 0 + 'px'
+            }
+        })
+
+    </script>
+</body>
+
+</html>
