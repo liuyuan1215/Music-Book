@@ -8,10 +8,10 @@
 </head>
 <body>
     <ul id="list">
-        <li class='change'></li>
+        <li class='change  ss'></li>
         <li></li>
         <li></li>
-        <li class='change'></li>
+        <li class='change aa'></li>
     </ul>
 
     <script>
@@ -19,7 +19,12 @@
             var result = [];
             var allEle = document.getElementsByTagName('*');
             for(var i=0;i<allEle.length;i++){
-                if(allEle[i].className == clsName){
+
+                var reg = new RegExp('\\b'+clsName+'\\b');
+                var str = allEle[i].className;
+
+                // if(allEle[i].className == clsName){
+                    if(reg.test(str)){
                     result.push(allEle[i]);
                 }
             }
