@@ -21,6 +21,15 @@
                 console.log(i);
             };
         }
+
+        for(var i=0;i<aLi.length;i++){
+            (function(num){
+                aLi[i].onclick=function(){
+                    console.log(num);
+                }
+            })(i);
+        }
+
     </script>
 </body>
 </html>
