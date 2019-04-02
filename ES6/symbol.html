@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let obj = {
+            name:'hh',
+            age:20
+        }
+        let name = Symbol();
+        let age = Symbol();
+
+        console.log(name);
+        console.log(age);
+
+        let xx = Symbol('y');
+        obj[xx] = 'abcd';
+        obj[Symbol('z')] = 'z1z2';
+        obj.name = 'ltlt';
+        console.log(obj);
+
+        for(key in obj){
+            console.log(obj[key]);
+        }
+
+    </script>
+</body>
+</html>
