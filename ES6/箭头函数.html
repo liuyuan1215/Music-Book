@@ -56,19 +56,28 @@
          父作用域中的this
         */
         
-        var xx = 1;
-        var obj = {
-            name:'lll',
-            age:'222',
-            xx:'2',
-            say:function(){
-                setTimeout(()=>{
-                    console.log(this.xx);
-                },600);
-            }
-        }
+        // var xx = 1;
+        // var obj = {
+        //     name:'lll',
+        //     age:'222',
+        //     xx:'2',
+        //     say:function(){
+        //         setTimeout(()=>{
+        //             console.log(this.xx);
+        //         },600);
+        //     }
+        // }
 
-        obj.say();
+        // obj.say();
+
+
+
+
+        // let a = x => x;
+        let a = (x=1) =>{
+            return x;
+        }
+        console.log(a());
     </script>
 </body>
 </html>
