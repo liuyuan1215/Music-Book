@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // function Person(name,age){
+        //     this.name = name;
+        //     this.age = age;
+        // }
+        // Person.prototype.say = function(){
+        //     console.log(this.name+'say');
+        // }
+        // var p1 = new Person('zs',20);
+        // p1.say();
+
+        // function Coder(name,age){
+        //     Person.call(this,name,age);
+        // }
+        // Coder.prototype = new Person();
+        // Coder.prototype.constructor = Coder;
+
+        // var c1 = new Coder('lisi',18);
+        // c1.say();
+
+        class Person{
+            constructor(name,age){
+                this.name = name;
+                this.age = age;
+            }
+            say(){
+                console.log('hello');
+            }
+            static xx(){
+                console.log('abc');
+            }
+        }
+
+        let p1 = new Person('xx',20);
+        p1.say();
+
+        class Coder extends Person{
+            constructor(name,age){
+                super(name,age);
+                this.shirt = '格子衬衫';
+            }
+            coding(){
+                console.log('coding...');
+            }
+        }
+        let c1 = new Coder('lisi',15);
+
+        console.log(c1);
+        c1.say();
+        c1.coding();
+        Person.xx();
+
+
+    </script>
+</body>
+</html>
