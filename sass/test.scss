@@ -1,4 +1,44 @@
-$color:#f00;
+@import'common';
+$color:#234567;
+$color:#fff !default;
 body{
     background: $color;
+}
+#div1{
+    width: 200px;
+    height: 200px;
+    background: #567890;
+    padding{
+        top: 50px;
+        left: 20px;
+    }
+    a{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        color:#115599;
+        &:hover{
+            color:#551188;
+        }
+    }
+}
+@mixin triangle{
+    width: 0;
+    height: 0;
+    border:10px solid #000;
+    border-color:transparent;
+    border-top-color: #000;
+}
+.aa{
+    @include triangle();
+}
+
+@function add($a,$b){
+    @return $a + $b;
+}
+.bb{
+    width:add(300px,400px);
+    height: 100px;
+    background: #fff;
 }
