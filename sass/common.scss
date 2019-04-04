@@ -2,3 +2,9 @@
     margin: 0;
     padding: 0;
 }
+@mixin border($w:200px,$h:200px){
+    width: $w;
+    height:$h;
+    border:5px solid #ccc;
+    border-radius:10px;
+}
