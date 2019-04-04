@@ -1,4 +1,4 @@
-@import'common';
+@import 'common';
 $color:#234567;
 $color:#fff !default;
 body{
@@ -42,3 +42,60 @@ body{
     height: 100px;
     background: #fff;
 }
+.cc{
+    @include border(100px,50px);
+}
+.dd{
+    @extend .bb;
+    color:#886644;
+}
+%ff{
+    width: 100px;
+    height:100px;
+}
+.gg{
+    @extend %ff;
+}
+.hh{
+    @extend %ff;
+    color:darken(#556677,10);
+    height:floor(3.55);
+}
+.ii{
+    width: add(300px,400px);
+}
+.jj{
+    width: 300px-200;
+    height:(300px/3);
+}
+$m:10;
+@if($m == 10){
+    .kk{
+        width: $m*100px;
+    }
+}
+@for $k from 1 to 5{
+    .item#{$k}{
+        width:20px*$k;
+    }
+}
+@for $l from 1 through 5{
+    .nav#{$l}{
+        width: 20px*$l;
+    }
+}
+
+// $n:5;
+// @while($n>0){
+//     .aa-#{$n}{
+//         width:20px*$n;
+//     }
+//     $n:$n-1;
+// }
+
+// $list:success error warn;
+// @each $xx in $list{
+//     .#{$xx}{
+//         background:url(#{$xx}.jpg);
+//     }
+// }
