@@ -83,6 +83,22 @@
                 aImg[this.index].className='aa';
             };
         };
+
+
+        run();
+
+oBig.onmouseover=function () {
+  clearInterval(timer);
+};
+
+oBig.onmouseout=function () {
+    run();
+}
+function run(){
+    timer=setInterval(function(){
+        oNext.onclick();
+    },1000);
+};
     </script>
 </body>
 </html>
