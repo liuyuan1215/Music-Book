@@ -21,7 +21,7 @@ module.exports = {
                 })
             },
             {
-                test: /\.(jpg|png|gif)/,
+                test: /\.(jpg|png|gif)$/i,
                 use: [{
                     loader: 'url-loader',
                     options: {
@@ -29,6 +29,9 @@ module.exports = {
                         outputPath: '/images'
                     }
                 }]
+            },{
+                test:/\.(html|htm)/i,
+                use:['html-withimg-loader']
             }
         ]
     },
