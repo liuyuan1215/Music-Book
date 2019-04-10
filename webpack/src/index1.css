@@ -1,0 +1,12 @@
+#div1 {
+  width: 200px;
+  height: 200px;
+  background: #567890;
+  color: #fff;
+  border: 10px solid #2ee992;
+}
+
+#div1 padding {
+  top: 50px;
+  left: 20px;
+}

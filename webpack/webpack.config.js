@@ -1,6 +1,8 @@
 const path = require('path');
+const glob = require('glob');
 const HtmlPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const PurifyCSSPlugin = require('purifycss-webpack');
 module.exports = {
     mode: 'development',
     entry: {
@@ -17,7 +19,10 @@ module.exports = {
                 // use:['style-loader','css-loader']
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use: "css-loader"
+                    use: [{
+                        loader: "css-loader",
+                        options: { importLoaders: 1 }
+                    }, 'postcss-loader']
                 })
             },
             {
@@ -29,9 +34,26 @@ module.exports = {
                         outputPath: '/images'
                     }
                 }]
+            }, {
+                test: /\.(html|htm)/i,
+                use: ['html-withimg-loader']
+            }, {
+                // test:/\.scss$/,
+                // use:['style-loader','css-loader','sass-loader']
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    use: ['css-loader', 'sass-loader'],
+                    fallback: 'style-loader'
+                })
             },{
-                test:/\.(html|htm)/i,
-                use:['html-withimg-loader']
+                test:/\.js$/,
+                use:[{
+                    loader:'babel-loader',
+                    options:{
+                        presets:['@babel/preset-env']
+                    }
+                }],
+                exclude:/node_modules/
             }
         ]
     },
@@ -41,6 +63,9 @@ module.exports = {
             hash: true
         }),
         new ExtractTextPlugin("index.css"),
+        new PurifyCSSPlugin({
+            paths: glob.sync(path.join(__dirname, './src/index.html')),
+        })
     ],
     devServer: {
         contentBase: path.resolve(__dirname, 'dist'),

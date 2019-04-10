@@ -1,6 +1,10 @@
-#div1{
-    width: 100px;
-    height: 100px;
-    background: #000 url(./images/1.PNG);
-    color:#fff;
+#div1 {
+  width: 200px;
+  height: 200px;
+  background: #567890;
+  color: #f00;
+  transform: rotate(90deg);
+}
+.a{
+    color:#00f;
 }

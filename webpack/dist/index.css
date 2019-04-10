@@ -1,6 +1,16 @@
-#div1{
-    width: 100px;
-    height: 100px;
-    background: #000 url(/images/0b7b1f70a8f8f47ab50c56e9fad35a71.PNG);
-    color:#fff;
+#div1 {
+  width: 200px;
+  height: 200px;
+  background: #567890;
+  color: #fff;
+  border: 10px solid #2ee992;
+}
+
+#div1 {
+  width: 200px;
+  height: 200px;
+  background: #567890;
+  color: #f00;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
