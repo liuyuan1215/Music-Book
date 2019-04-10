@@ -3,6 +3,8 @@ const glob = require('glob');
 const HtmlPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const PurifyCSSPlugin = require('purifycss-webpack');
+const webpack = require('webpack');
+const entry = require('./webpack_config/entry_webpack.js');
 module.exports = {
     mode: 'development',
     entry: {
@@ -62,6 +64,10 @@ module.exports = {
             template: './src/index.html',
             hash: true
         }),
+        new webpack.ProvidePlugin({
+            $:'jquery'
+        }),
+        new webpack.BannerPlugin('哈哈'),
         new ExtractTextPlugin("index.css"),
         new PurifyCSSPlugin({
             paths: glob.sync(path.join(__dirname, './src/index.html')),
