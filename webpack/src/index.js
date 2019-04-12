@@ -6,3 +6,7 @@ import'./index1.scss';
 import $ from 'jquery';
 
 let a = 10;
+let b = () =>{
+    console.log('123');
+}
+$('.a').html('hahahaha');
