@@ -63,9 +63,9 @@ module.exports = {
             template: './src/index.html',
             hash: true
         }),
-        // new webpack.ProvidePlugin({
-        //     $:'jquery'
-        // }),
+        new webpack.ProvidePlugin({
+            $:'jquery'
+        }),
         new CopyWebpackPlugin([{
             from:'./src/public',
             to:'public'
