@@ -1,2 +1,11 @@
 v-if  如果为 false 不显示在DOM里  不频繁切换用  v-if  多路分支用 v-else 
 v-show  如果为 false 显示在DOM里  频繁切换用  v-show
+conputed 计算属性 相当于定义一个新的属性，而这个属性的值是依赖于其他里面get的值
+computed:{
+    listSort(){
+        return this.list.sort((a,b)=>{
+            return a.age - b.age;
+        });
+    }
+}
+后面方法里的值有改变， listSort里的值随之会改变
