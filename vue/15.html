@@ -47,7 +47,7 @@
         </ul>
         <hr>
         <h3>
-            total:{{total}}
+            total:{{total()}}
         </h3>
     </div>
     <script src='vue.js'></script>
@@ -76,17 +76,20 @@
                         price: 150,
                         isActive: false
                     }
-                ],
-                total: 0
+                ]
             },
             methods: {
                 change(obj) {
                     obj.isActive = !obj.isActive;
-                    if (obj.isActive) {
-                        this.total += obj.price;
-                    } else {
-                        this.total -= obj.price;
-                    }
+                },
+                total() {
+                    let count = 0;
+                    this.proList.forEach(function (obj, index) {
+                        if (obj.isActive) {
+                            count += obj.price;
+                        }
+                    })
+                    return count;
                 }
             }
         })
