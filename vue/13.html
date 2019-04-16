@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .active {
+            background: #f00;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1 class='text-center'>todolist</h1>
+        <p>
+            <form class="form-inline text-center">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="请输入商品名称">
+                </div>
+                <button class="btn btn-default glyphicon glyphicon-search" type="submit">搜索</button>
+            </form>
+        </p>
+        <p>
+            <form class="form-inline text-center">
+                <div class="form-group">
+                    <label for="exampleInputName2">商品名称</label>
+                    <input type="text" v-model='msg' class="form-control" id="exampleInputName2" placeholder="请输入商品名称">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputName2">商品价格</label>
+                    <input type="text" v-model='msg' class="form-control" id="exampleInputEmail2" placeholder="0">
+                </div>
+                <button @click='add()' class="btn btn-default glyphicon glyphicon-plus" type="submit">增加</button>
+            </form>
+        </p>
+        <table class='table table-bordered text-center'>
+            <thead>
+                <td>选择</td>
+                <td>商品名称</td>
+                <td>商品价格</td>
+                <td>删除</td>
+            </thead>
+            <tbody>
+                <tr v-for="(item,index) in showList" :class='{active:item.isA}' @click='change(item)' :key="index">
+                    <td><input type="checkbox"></td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td><button type="button" @click='del(index)'
+                            class="btn btn-warning glyphicon glyphicon-remove btn-xs"></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="btn btn-danger btn-xs">删除选中</button></td>
+                    <td colspan="3">总价是: 0 元</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src='vue.js'></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                list: [
+                    {
+                        name: '衣服',
+                        price: 123
+                    }, {
+                        name: '裤子',
+                        price: 234
+                    }, {
+                        name: '帽子',
+                        price: 99
+                    }, {
+                        name: '鞋',
+                        price: 499
+                    }
+                ],
+                showList: [
+                    {
+                        name: '衣服',
+                        price: 123
+                    }, {
+                        name: '裤子',
+                        price: 234
+                    }, {
+                        name: '帽子',
+                        price: 99
+                    }, {
+                        name: '鞋',
+                        price: 499
+                    }
+                ],
+                msg: ''
+            },
+            methods: {
+                add() {
+                    this.list.push({ val: this.msg, isA: false });
+                    this.msg = '';
+                    this.showList = [...this.list];
+                },
+                del(index) {
+                    this.list.splice(index, 1);
+                    this.showList = [...this.list];
+                },
+                change(item) {
+                    item.isA = !item.isA;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
