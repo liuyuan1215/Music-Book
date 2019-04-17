@@ -53,7 +53,7 @@
                     <td><input type="checkbox" v-model="item.isPink"></td>
                     <td>{{item.name}}</td>
                     <td>{{item.price}}</td>
-                    <td><button type="button" @click="del(index)" class="btn btn-warning glyphicon glyphicon-remove btn-xs"></button></td>
+                    <td><button type="button" class="btn btn-warning glyphicon glyphicon-remove btn-xs"></button></td>
                 </tr>
                 <tr>
                     <td><button type="button" class="btn btn-danger btn-xs">删除选中</button></td>
@@ -71,42 +71,60 @@
                     {
                         name: '衣服',
                         price: 123,
-                        isPink:false
+                        isPink: false
                     }, {
                         name: '裤子',
                         price: 234,
-                        isPink:false
+                        isPink: false
                     }, {
                         name: '帽子',
                         price: 99,
-                        isPink:false
+                        isPink: false
                     }, {
                         name: '鞋',
                         price: 499,
-                        isPink:false
+                        isPink: false
                     }
                 ],
                 proName: '',
                 proPrice: 0,
-                total:0
+                // total:0
             },
             methods: {
                 add() {
                     this.productList.push({
                         name: this.proName,
-                        price: this.proPrice
+                        price: this.proPrice,
+                        isPink: false
                     })
                 },
-                del(index) {
-                    
+                change(item) {
+                    item.isPink = !item.isPink;
+                    // if(item.isPink){
+                    //     this.total+=parseInt(item.price);
+                    // }else{
+                    //     this.total-=parseInt(item.price);
+                    // }
                 },
-                change(item){
-                    item.isPink=!item.isPink;
-                    if(item.isPink){
-                        this.total+=parseInt(item.price);
-                    }else{
-                        this.total-=parseInt(item.price);
-                    }
+                // total() {
+                //     let sum = 0;
+                //     this.productList.forEach(function (item) {
+                //         if (item.isPink) {
+                //             sum += item.price;
+                //         }
+                //     })
+                //     return sum;
+                // }
+            },
+            computed: {
+                total() {
+                    let sum = 0;
+                    this.productList.forEach(function (item) {
+                        if (item.isPink) {
+                            sum += item.price;
+                        }
+                    })
+                    return sum;
                 }
             }
         });
