@@ -8,6 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .pink {
+            background: pink;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,13 +30,15 @@
             <form class="form-inline text-center">
                 <div class="form-group">
                     <label for="exampleInputName2">商品名称</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="请输入商品名称">
+                    <input type="text" class="form-control" v-model="proName" id="exampleInputName2"
+                        placeholder="请输入商品名称">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail2">商品价格</label>
-                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="0">
+                    <label for="exampleInputName2">商品价格</label>
+                    <input type="text" class="form-control" v-model="proPrice" id="exampleInputName2" placeholder="0">
                 </div>
-                <button class="btn btn-default glyphicon glyphicon-plus" type="submit">增加</button>
+                <button type="submit" class="btn btn-default glyphicon glyphicon-plus"
+                    @click.prevent='add()'>增加</button>
             </form>
         </p>
         <table class='table table-bordered text-center'>
@@ -42,8 +49,8 @@
                 <td>删除</td>
             </thead>
             <tbody>
-                <tr v-for="(item,index) in productList" :key="index">
-                    <td><input type="checkbox"></td>
+                <tr v-for="(item,index) in productList" :key="index" @click="change(item)" :class="{pink:item.isPink}">
+                    <td><input type="checkbox" v-model="item.isPink"></td>
                     <td>{{item.name}}</td>
                     <td>{{item.price}}</td>
                     <td><button type="button" class="btn btn-warning glyphicon glyphicon-remove btn-xs"></button></td>
@@ -63,18 +70,35 @@
                 productList: [
                     {
                         name: '衣服',
-                        price: 123
+                        price: 123,
+                        isPink:false
                     }, {
                         name: '裤子',
-                        price: 234
+                        price: 234,
+                        isPink:false
                     }, {
                         name: '帽子',
-                        price: 99
+                        price: 99,
+                        isPink:false
                     }, {
                         name: '鞋',
-                        price: 499
+                        price: 499,
+                        isPink:false
                     }
-                ]
+                ],
+                proName: '',
+                proPrice: 0
+            },
+            methods: {
+                add() {
+                    this.productList.push({
+                        name: this.proName,
+                        price: this.proPrice
+                    })
+                },
+                change(item){
+                    item.isPink=!item.isPink;
+                }
             }
         });
     </script>
