@@ -53,11 +53,11 @@
                     <td><input type="checkbox" v-model="item.isPink"></td>
                     <td>{{item.name}}</td>
                     <td>{{item.price}}</td>
-                    <td><button type="button" class="btn btn-warning glyphicon glyphicon-remove btn-xs"></button></td>
+                    <td><button type="button" @click="del(index)" class="btn btn-warning glyphicon glyphicon-remove btn-xs"></button></td>
                 </tr>
                 <tr>
                     <td><button type="button" class="btn btn-danger btn-xs">删除选中</button></td>
-                    <td colspan="3">总价是: 0 元</td>
+                    <td colspan="3">总价是: {{total}} 元</td>
                 </tr>
             </tbody>
         </table>
@@ -87,7 +87,8 @@
                     }
                 ],
                 proName: '',
-                proPrice: 0
+                proPrice: 0,
+                total:0
             },
             methods: {
                 add() {
@@ -96,8 +97,16 @@
                         price: this.proPrice
                     })
                 },
+                del(index) {
+                    
+                },
                 change(item){
                     item.isPink=!item.isPink;
+                    if(item.isPink){
+                        this.total+=parseInt(item.price);
+                    }else{
+                        this.total-=parseInt(item.price);
+                    }
                 }
             }
         });
