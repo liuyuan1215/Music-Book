@@ -21,9 +21,9 @@
         <p>
             <form class="form-inline text-center">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="请输入商品名称">
+                    <input type="text" class="form-control" id="exampleInputName2" v-model="searchName" placeholder="请输入商品名称">
                 </div>
-                <button class="btn btn-default glyphicon glyphicon-search" type="submit">搜索</button>
+                <button class="btn btn-default glyphicon glyphicon-search" @click.prevent="filProduct()" type="submit">搜索</button>
             </form>
         </p>
         <p>
@@ -107,7 +107,8 @@
                     }
                 ],
                 proName: '',
-                proPrice: 0
+                proPrice: 0,
+                searchName:''
             },
             methods: {
                 add() {
@@ -116,7 +117,7 @@
                         price: this.proPrice,
                         isPink: false
                     });
-                    this.showList=[...this.productList];
+                    this.showList = [...this.productList];
                 },
                 change(item) {
                     item.isPink = !item.isPink;
@@ -129,7 +130,13 @@
                 },
                 del(index) {
                     this.productList.splice(index, 1);
-                    this.showList=[...this.productList];
+                    this.showList = [...this.productList];
+                },
+                filProduct(){
+                    let searchList = this.productList.filter((obj,index) => {
+                        return obj.name.includes( this.searchName )
+                    });
+                    this.showList = [...searchList];
                 }
             },
             computed: {
