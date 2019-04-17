@@ -53,10 +53,10 @@
                     <td><input type="checkbox" v-model="item.isPink"></td>
                     <td>{{item.name}}</td>
                     <td>{{item.price}}</td>
-                    <td><button type="button" class="btn btn-warning glyphicon glyphicon-remove btn-xs"></button></td>
+                    <td><button @click.stop='del(index)' type="button" class="btn btn-warning glyphicon glyphicon-remove btn-xs"></button></td>
                 </tr>
                 <tr>
-                    <td><button type="button" class="btn btn-danger btn-xs">删除选中</button></td>
+                    <td><button type="button" class="btn btn-danger btn-xs" @click="delChecked()">删除选中</button></td>
                     <td colspan="3">总价是: {{total}} 元</td>
                 </tr>
             </tbody>
@@ -115,11 +115,20 @@
                 //     })
                 //     return sum;
                 // }
+                delChecked() {
+                    let arr = this.productList.filter(function (item) {
+                        return !item.isPink;
+                    });
+                    this.productList = arr;
+                },
+                del(index){
+                    this.productList.splice(index,1);
+                }
             },
             computed: {
                 total() {
                     let sum = 0;
-                    this.productList.forEach(function (item) {
+                    this.productList.forEach(function (item, index) {
                         if (item.isPink) {
                             sum += item.price;
                         }
