@@ -51,11 +51,11 @@
                 <td>删除</td>
             </thead>
             <tbody>
-                <tr v-for="(item,index) in showList" :key="index" @click="change(item)" :class="{pink:item.isPink}">
+                <tr v-for="(item,index) in showList" :key="item.id" @click="change(item.id)" :class="{pink:item.isPink}">
                     <td><input type="checkbox" v-model="item.isPink"></td>
                     <td>{{item.name}}</td>
                     <td>{{item.price}}</td>
-                    <td><button @click.stop='del(index)' type="button"
+                    <td><button @click.stop='del(item.id)' type="button"
                             class="btn btn-warning glyphicon glyphicon-remove btn-xs"></button></td>
                 </tr>
                 <tr>
@@ -74,38 +74,46 @@
                     {
                         name: '衣服',
                         price: 123,
-                        isPink: false
+                        isPink: false,
+                        id:1
                     }, {
                         name: '裤子',
                         price: 234,
-                        isPink: false
+                        isPink: false,
+                        id:2
                     }, {
                         name: '帽子',
                         price: 99,
-                        isPink: false
+                        isPink: false,
+                        id:3
                     }, {
                         name: '鞋',
                         price: 499,
-                        isPink: false
+                        isPink: false,
+                        id:4
                     }
                 ],
                 showList: [
                     {
                         name: '衣服',
                         price: 123,
-                        isPink: false
+                        isPink: false,
+                        id:1
                     }, {
                         name: '裤子',
                         price: 234,
-                        isPink: false
+                        isPink: false,
+                        id:2
                     }, {
                         name: '帽子',
                         price: 99,
-                        isPink: false
+                        isPink: false,
+                        id:3
                     }, {
                         name: '鞋',
                         price: 499,
-                        isPink: false
+                        isPink: false,
+                        id:4
                     }
                 ],
                 proName: '',
@@ -117,28 +125,43 @@
                     this.productList.push({
                         name: this.proName,
                         price: Number.parseFloat(this.proPrice),
-                        isPink: false
+                        isPink: false,
+                        id:Symbol()
                     });
                     this.showList = [...this.productList];
+                    this.proName='';
+                    this.proPrice=0;
                 },
-                change(item) {
-                    item.isPink = !item.isPink;
+                change(id) {
+                    let changeList = this.productList.map(function(obj,index){
+                        if(obj.id == id){
+                            obj.isPink = !obj.isPink;
+                        }
+                        return obj;
+                    })
+                    this.productList = [...changeList];
+                    this.showList = [...changeList];
                 },
                 delChecked() {
-                    let arr = this.showList.filter(function (item) {
-                        return !item.isPink;
+                    let arr = this.showList.filter(function (obj,index) {
+                        return !obj.isPink;
                     });
-                    this.showList = arr;
+                    this.productList = [...arr];
+                    this.showList = [...arr];
                 },
-                del(index) {
-                    this.productList.splice(index, 1);
-                    this.showList = [...this.productList];
+                del(id) {
+                    let delList = this.productList.filter((obj,index)=>{
+                        return obj.id!=id;
+                    });
+                    this.productList = [...delList];
+                    this.showList = [...delList];
                 },
                 filProduct() {
                     let searchList = this.productList.filter((obj, index) => {
-                        return obj.name.includes(this.searchName)
+                        return obj.name.includes(this.searchName);
                     });
                     this.showList = [...searchList];
+                    this.searchName='';
                 }
             },
             computed: {
