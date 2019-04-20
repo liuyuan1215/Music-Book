@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         .active {
-            color: piink;
+            color: pink;
         }
     </style>
 </head>
@@ -31,33 +31,23 @@
             data: {
                 list: [
                     {
-                        val: 'aa',
+                        val: 'aaa',
                         isA: false
                     },
                     {
-                        val: 'bb',
-                        isA: false
-                    },
-                    {
-                        val: 'cc',
+                        val: 'bbb',
                         isA: false
                     }
                 ],
-                showList: [
-                    {
-                        val: 'aa',
-                        isA: false
-                    },
-                    {
-                        val: 'bb',
-                        isA: false
-                    },
-                    {
-                        val: 'cc',
-                        isA: false
-                    }
-                ],
-                msg: ''
+                showList: [{
+                    val: 'aaa',
+                    isA: false
+                },
+                {
+                    val: 'bbb',
+                    isA: false
+                }],
+                msg: '',
             },
             methods: {
                 add() {
@@ -79,7 +69,7 @@
                     this.showList = arr;
                 }
             }
-        });
+        })
     </script>
 </body>
 
