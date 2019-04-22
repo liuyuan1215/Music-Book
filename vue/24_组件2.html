@@ -10,32 +10,43 @@
 
 <body>
     <div id="app">
-        <count></count>
-        <count></count>
+        <demo name='hahahahaha' age='10'>
+            <h3 slot='slot1'>内容solt上</h3>
+            <div slot='slot2'>
+                <p>123456789</p>
+                <span>000000000</span>
+            </div>
+        </demo>
+        <demo name='1111111' age='20'></demo>
     </div>
+    <template id='temp'>
+        <div>
+            <slot name='slot1'></slot>
+            <h2>{{name}}---{{age}}</h2>
+            <div>
+                <slot name='slot2'></slot>
+            </div>
+        </div>
+    </template>
     <script src='vue.js'></script>
     <script>
-        let vm = new Vue({
+        new Vue({
             el: '#app',
             data: {
-
+                msg: 'haha'
             },
             components: {
-                'count': {
-                    template: "<button @click='fn()'>{{count}}</button>",
+                'demo': {
+                    template: '#temp',
+                    props: ['name', 'age'],
                     data: function () {
                         return {
-                            count: 0
-                        }
-                    },
-                    methods: {
-                        fn() {
-                            this.count++;
+                            xx: 'hehe'
                         }
                     }
                 }
             }
-        });
+        })
     </script>
 </body>
 
