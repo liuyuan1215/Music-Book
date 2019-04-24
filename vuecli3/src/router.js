@@ -25,11 +25,11 @@ export default new Router({
       component: A,
       children: [
         {
-          path: '/vuecli3/src/views/Test1.vue',
+          path: '/Test1',
           component: Test1
         },
         {
-          path: '/vuecli3/src/views/Test2.vue',
+          path: '/Test2',
           component: Test2
         }
       ]
