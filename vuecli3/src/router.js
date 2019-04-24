@@ -7,6 +7,7 @@ import C from './views/C.vue'
 import Test1 from './views/Test1.vue'
 import Test2 from './views/Test2.vue'
 import Err from './views/Error.vue'
+import Count from './views/Count.vue'
 
 Vue.use(Router)
 
@@ -53,6 +54,10 @@ export default new Router({
       path:'/',
       component:Home,
       alias:'/xxx'
+    },
+    {
+      path:'/count',
+      component:Count
     },
     {
       path:'*',

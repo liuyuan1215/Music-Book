@@ -41,7 +41,7 @@
   }
   .fade-enter-active{
     /* transition:opacity 2s ease 1s; */
-    transition:transform 1s ease 0s;
+    transition:transform 1s;
   }
   .fate-enter-to{
     /* opacity:1; */
@@ -49,14 +49,14 @@
   }
   .fade-leave{
     /* opacity:1; */
-    transform:translateX(100%);
+    transform:translateX(0);
   }
   .fade-leave-active{
     /* transition:opacity 2s ease 1s; */
-    transition:transform 1s ease 0s;
+    transition:transform 1s;
   }
   .fate-leave-to{
     /* opacity:0; */
-    transform:translateX(0);
+    transform:translateX(100%);
   }
 </style>
