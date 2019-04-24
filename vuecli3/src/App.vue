@@ -9,10 +9,35 @@
       <router-link to="/b/1122">重定向</router-link> |
       <router-link to="/xxx">别名</router-link> 
     </div>
-    <router-view/>
+    <transition name='fade'>
+      <router-view/>
+    </transition>
   </div>
 </template>
 
 <style>
-
+  .fade-enter{
+    /* opacity:0; */
+    transform:translateX(-100%);
+  }
+  .fade-enter-active{
+    /* transition:opacity 2s ease 1s; */
+    transition:transform 1s ease 0s;
+  }
+  .fate-enter-to{
+    /* opacity:1; */
+    transform:translateX(0);
+  }
+  .fade-leave{
+    /* opacity:1; */
+    transform:translateX(100%);
+  }
+  .fade-leave-active{
+    /* transition:opacity 2s ease 1s; */
+    transition:transform 1s ease 0s;
+  }
+  .fate-leave-to{
+    /* opacity:0; */
+    transform:translateX(0);
+  }
 </style>
