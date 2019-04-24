@@ -2,8 +2,8 @@
     <div>
         <h1>title1</h1>
         <div>
-            <router-link to='/test1'>1111页面</router-link>
-            <router-link to='/test2'>2222页面</router-link>
+            <router-link to='/Test1'>页面1</router-link> |
+            <router-link to='/Test2'>页面2</router-link>
         </div>
         <router-view></router-view>
     </div>

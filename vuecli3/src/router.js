@@ -33,13 +33,24 @@ export default new Router({
       ]
     },
     {
-      path: '/b',
-      name:'b',
-      component: B
+      // path: '/b',
+      // name:'b',
+      // component: B
+      path:'/b/:id',
+      redirect:'/c/:id'
     },
     {
       path: '/c/:id',
       component: C
+    },
+    {
+      path:'/home',
+      redirect:'/'
+    },
+    {
+      path:'/',
+      component:Home,
+      alias:'/xxx'
     }
   ]
 })
