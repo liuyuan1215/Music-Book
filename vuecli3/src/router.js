@@ -56,7 +56,12 @@ export default new Router({
     },
     {
       path:'*',
-      component:Err
+      component:Err,
+      beforeEnter:(to,from,next)=>{
+        console.log(to);
+        console.log(from);
+        next();
+      }
     }
   ]
 })

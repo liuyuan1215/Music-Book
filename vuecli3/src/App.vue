@@ -12,8 +12,27 @@
     <transition name='fade'>
       <router-view/>
     </transition>
+    <button @click = 'goPrev()'>&lt;</button>
+    <button @click = 'goNext()'>&gt;</button>
+    <button @click = 'goHome()'>Home</button>
   </div>
 </template>
+
+<script>
+    export default {
+        methods:{
+          goPrev(){
+            this.$router.go(-1);
+          },
+           goNext(){
+            this.$router.go(1);
+          },
+          goHome(){
+            this.$router.push('/');
+          }
+        }
+    }
+</script>
 
 <style>
   .fade-enter{
