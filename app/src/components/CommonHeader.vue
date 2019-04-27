@@ -1,15 +1,15 @@
 <template>
-    <div class='header'>
+    <div class='header' :style='{background:selectMenu.bg}'>
         <div>
             <span class='header-btn'>首页</span>
-            <span class='header-title'>电影</span>
+            <span class='header-title'>{{selectMenu.name}}</span>
         </div>
     </div>
 </template>
 
 <script>
     export default {
-
+        props: ['selectMenu']
     }
 </script>
 
@@ -21,6 +21,7 @@
         line-height: 1rem;
         color: #fff;
         position: fixed;
+        top:0;
     }
     .header-btn{
         position: absolute;
