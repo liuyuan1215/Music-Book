@@ -18,22 +18,22 @@ export default {
         {
           name: "电影",
           path: "/movie",
-          bg: "#00a862"
+          bg: "#35aab2"
         },
         {
           name: "音乐",
           path: "/music",
-          bg: "#456789"
+          bg: "#077c84"
         },
         {
           name: "书籍",
           path: "/book",
-          bg: "#778898"
+          bg: "#429ea1"
         },
         {
           name: "图片",
           path: "/photo",
-          bg: "pink"
+          bg: "#1e8991"
         }
       ],
       selectMenu: {
