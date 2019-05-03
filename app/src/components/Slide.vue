@@ -17,15 +17,16 @@
 export default {
   data() {
     return {
-      imgs: [
-        "https://img3.doubanio.com/view/subject/l/public/s24476315.jpg",
-        "https://img3.doubanio.com/view/subject/l/public/s29895502.jpg",
-        "https://img3.doubanio.com/view/subject/l/public/s28543782.jpg",
-        "https://img1.doubanio.com/view/subject/l/public/s29543659.jpg"
-      ],
+    //   imgs: [
+    //     "https://img3.doubanio.com/view/subject/l/public/s24476315.jpg",
+    //     "https://img3.doubanio.com/view/subject/l/public/s29895502.jpg",
+    //     "https://img3.doubanio.com/view/subject/l/public/s28543782.jpg",
+    //     "https://img1.doubanio.com/view/subject/l/public/s29543659.jpg"
+    //   ],
       iNow: 0
     };
   },
+  props:['imgs'],
   created() {
     setInterval(() => {
       this.iNow++;
@@ -46,11 +47,11 @@ export default {
 }
 .slide img{
   width: 100%;
-  height: 7rem;
+  height: 8rem;
 }
 .slide-wraper{
     position: relative;
-    height: 7rem;
+    height: 8rem;
     overflow: hidden;
 }
 .btns{
