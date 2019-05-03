@@ -30,7 +30,7 @@ export default new Router({
     },
     {
       path:"/musiclist",
-      component:Photo
+      component:MusicList
     }
   ]
 })

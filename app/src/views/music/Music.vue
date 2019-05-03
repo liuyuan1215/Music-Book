@@ -21,7 +21,7 @@ export default {
   },
   methods:{
       goList(){
-          this.$router.push('')
+          this.$router.push('/musiclist')
       }
   }
 };
