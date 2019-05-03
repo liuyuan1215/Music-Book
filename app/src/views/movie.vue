@@ -16,6 +16,8 @@
         </div>
       </li>
     </ul>
+    <img class="loading" v-show="isShow" src="@/assets/imgs/loading.gif" alt>
+    <div v-show="isBottom">已经到底了</div>
   </div>
 </template>
 
@@ -24,26 +26,34 @@ import Axios from "axios";
 export default {
   data() {
     return {
-      movieList: []
+      movieList: [],
+      isShow: false,
+      isBottom:false
     };
   },
   created() {
     this.getMovie();
     window.scroll = () => {
-        if(document.documentElement.scrollTop + document.documentElement.clientHeight == document.documentElement.scrollHeight){
-            this.getMovie();
-        }
+      if (document.documentElement.scrollTop + document.documentElement.clientHeight == document.documentElement.scrollHeight) {
+        this.getMovie();
+      }
     };
   },
   methods: {
     getMovie() {
+      this.isShow = true;
       // Axios.get("https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/top250?start=0&count=10")
       Axios.get(
-        "https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/in_theaters?city=哈尔滨&start="+this.movieList.length+"&count=10"
+        // "https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/in_theaters?city=北京&start="+this.movieList.length+"&count=10"
+        "https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/top250?start="+this.movieList.length+"&count=10"
       )
-        .then(result => {
-          console.log(result);
-          this.movieList = [...this.movieList,...result.data.subjects];
+        .then((result) => {
+          // console.log(result);
+          this.movieList = [...this.movieList, ...result.data.subjects];
+          this.isShow = false;
+          if(this.movieList.length == result.data.total){
+            this.isBottom = true;
+          }
         })
         .catch();
     }
@@ -52,20 +62,28 @@ export default {
 </script>
 
 <style scoped>
-.container {
+  .container {
     padding: 0.2rem;
-}
-li {
+  }
+  li {
     display: flex;
     border-bottom: 1px solid #000;
-}
-li img {
+  }
+  li img {
     margin: auto;
     width: 90px;
     height: 123px;
-}
-.info {
+  }
+  .info {
     flex-grow: 1;
     margin-left: 0.2rem;
-}
+  }
+  .loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.5rem;
+    height: 0.5rem;
+  }
 </style>
