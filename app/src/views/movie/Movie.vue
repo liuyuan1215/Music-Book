@@ -34,7 +34,7 @@ export default {
   created() {
     this.getMovie();
     window.scroll = () => {
-      if (document.documentElement.scrollTop + document.documentElement.clientHeight == document.documentElement.scrollHeight) {
+      if (document.documentElement.scrollTop + document.documentElement.clientHeight == document.documentElement.scrollHeight && !this.isBottom) {
         this.getMovie();
       }
     };
