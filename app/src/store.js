@@ -5,10 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-
+    photos:[]
   },
   mutations: {
-
+    addPhoto(state,photo){
+      state.photos=[...photo];
+    }
   },
   actions: {
 
