@@ -1,12 +1,9 @@
 <template>
   <div id="app">
     <div id="left-nav">
-
+      <div id="music"></div>
+      <div id="star"></div>
     </div>
-    <div id="right">
-
-    </div>
-    <common-footer></common-footer>
     <router-view/>
   </div>
 </template>
@@ -19,16 +16,25 @@ export default {
 </script>
 
 <style>
-#app{
-  display: flex;
-}
   #left-nav{
-    width: 200px;
-    height:3rem;
-    background: #eee;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #161716;
     flex:200px;
   }
-  #right{
-    flex:1;
+  #music{
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    margin: 20px 20px auto 20px ;
+  }
+  #star{
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    margin: 20px 20px auto 20px ;
   }
 </style>
