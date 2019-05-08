@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            是否需要其他商品
+            <input type="checkbox" v-model='isCheck' @click='fn()'>
+            <ul v-show='isCheck'>
+                <li v-for='obj in payList'>
+                    {{obj.name}}({{obj.price}})
+                    <input type="checkbox" v-model='orderList' :value='obj'>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>订单费用信息</p>
+            <ul>
+                <li v-for='obj in orderList'>
+                    {{obj.name}}({{obj.price}})
+                </li>
+            </ul>
+        </div>
+        <div>
+            总金额：{{total()}}
+        </div>
+    </div>
+    <script src='vue.js'></script>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                isCheck:false,
+                payList:[
+                    {
+                        name:'丑橘',
+                        price:5
+                    },
+                    {
+                        name:'火龙果',
+                        price:15
+                    },
+                    {
+                        name:'芒果',
+                        price:20
+                    }
+                ],
+                orderList:[
+                    {
+                        name:'果篮',
+                        price:50
+                    }
+                ]
+            },
+            methods:{
+                total(){
+                    let count = 0;
+                    this.orderList.forEach(function(obj){
+                        count+=obj.price;
+                    })
+                    return count;
+                },
+                fn(){
+                    this.orderList.splice(1);
+                }
+            }
+        })
+    </script>
+</body>
+</html>
