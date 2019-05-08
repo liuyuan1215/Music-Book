@@ -6,12 +6,12 @@
         <div class="info">
           <h4>{{obj.title}}</h4>
           <p>
-            <span v-for="(actor,index) in obj.casts" :key="index">{{actor.name}}</span>
+            <span v-for="(actor,index) in obj.casts" :key="index">{{actor.name}}/</span>
           </p>
           <p>{{obj.collect_count}}已观看</p>
           <p>年份: {{obj.year}}</p>
           <p>
-            <span v-for="(type,index) in obj.genres" :key="index">{{type}}</span>
+            <span v-for="(type,index) in obj.genres" :key="index">{{type}}/</span>
           </p>
         </div>
       </li>
@@ -34,6 +34,7 @@ export default {
   created() {
     this.getMovie();
     window.scroll = () => {
+      console.log(document.documentElement.scrollTop,document.documentElement.clientHeigh,document.documentElement.scrollHeight);
       if (document.documentElement.scrollTop + document.documentElement.clientHeight == document.documentElement.scrollHeight && !this.isBottom) {
         this.getMovie();
       }
@@ -44,8 +45,9 @@ export default {
       this.isShow = true;
       // Axios.get("https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/top250?start=0&count=10")
       Axios.get(
-        // "https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/in_theaters?city=哈尔滨&start="+this.movieList.length+"&count=10"
+        //"https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/in_theaters?city=哈尔滨&start="+this.movieList.length+"&count=10"
         "https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/top250?start="+this.movieList.length+"&count=10"
+        //'/data/movie0.json'
       )
         .then((result) => {
           // console.log(result);
