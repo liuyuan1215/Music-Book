@@ -131,14 +131,14 @@
                     this.showList = [...this.productList];
                 },
                 change(id) {
-                    this.productList.forEach(function (obj, index) {
+                    this.showList.forEach(function (obj, index) {
                         if (obj.id == id) {
                             obj.isPink = !obj.isPink;
                         }
                     });
                 },
                 delChecked() {
-                    let arr = this.showList.filter(function (obj, index) {
+                    let arr = this.productList.filter(function (obj, index) {
                         return !obj.isPink;
                     });
                     this.productList = [...arr];
