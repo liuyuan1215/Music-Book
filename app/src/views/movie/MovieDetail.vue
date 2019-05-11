@@ -1,18 +1,23 @@
 <template>
     <div>
-        {{movieDetail.images.small}}
-        {{$router.params.movieId}}
+        {{$route.params.id}}
+        {{movie.title}}
+        <img :src="movie.images.medium"/>
     </div>
 </template>
 
 <script>
     import Axios from 'axios'
     export default {
+        data() {
+            return {
+                movie:{}
+            }
+        },
         created(){
-            // Axios.get(`https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/subject/${this.$route.params.movieId}`)
-            Axios.get(`/data/movie0.json/${this.$route.params.movieId}`)
+            Axios.get('https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/subject/'+this.$route.params.id)
             .then((result)=>{
-                this.movieDetail = result.data;
+                this.movie = result.data;
             })
             .catch(()=>{
 

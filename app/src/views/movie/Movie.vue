@@ -33,8 +33,7 @@ export default {
   },
   created() {
     this.getMovie();
-    window.scroll = () => {
-      console.log(document.documentElement.scrollTop,document.documentElement.clientHeigh,document.documentElement.scrollHeight);
+    window.onscroll = () => {
       if (document.documentElement.scrollTop + document.documentElement.clientHeight == document.documentElement.scrollHeight && !this.isBottom) {
         this.getMovie();
       }
@@ -45,9 +44,9 @@ export default {
       this.isShow = true;
       // Axios.get("https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/top250?start=0&count=10")
       Axios.get(
-        //"https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/in_theaters?city=哈尔滨&start="+this.movieList.length+"&count=10"
-        "https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/top250?start="+this.movieList.length+"&count=10"
-        //'/data/movie0.json'
+        "https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/in_theaters?city=哈尔滨&start="+this.movieList.length+"&count=10"
+        //"https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/top250?start="+this.movieList.length+"&count=10"
+        //"/data/movie0.json"
       )
         .then((result) => {
           // console.log(result);
