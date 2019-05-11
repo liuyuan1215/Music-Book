@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import Aplayer from "vue-aplayer";
 import Axios from 'axios';
+import Aplayer from "vue-aplayer";
 export default {
     data(){
         return{
@@ -23,7 +23,7 @@ export default {
     Aplayer
   },
   created() {
-      Axios.get('')
+      Axios.get('/data/musicdata.json')
       .then((result)=>{
           result.data.musicData.forEach(obj =>{
               let obj1 ={

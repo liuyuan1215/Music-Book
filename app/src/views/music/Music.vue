@@ -13,7 +13,7 @@ export default {
       }
   },
   created() {
-    Axios.get("")
+    Axios.get("/data/musiclist.json")
       .then((result) => {
           this.music = result.data.albums;
       })

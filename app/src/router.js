@@ -40,7 +40,7 @@ export default new Router({
       component:MusicList
     },
     {
-      path:"/moviedetail/:movieId",
+      path:"/moviedetail/:id",
       component:MovieDetail
     },
     {
