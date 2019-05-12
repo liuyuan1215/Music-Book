@@ -1,6 +1,6 @@
 <template>
-    <div class='photo'>
-        <img v-for='(photoSrc,index) in $store.state.photos' :key='index' :src="photoSrc.src" @click="goDetail(index)" alt="">
+    <div>
+        <img v-for='(obj,index) in $store.state.photoData' :key='index' :src="obj.src" @click="goDetail(index)" alt=""/>
     </div>
 </template>
 
@@ -9,11 +9,11 @@
     export default {
         data() {
             return {
-                //photo:[]
+                
             }
         },
         created(){
-            axios.get('')
+            Axios.get('/data/photodata.json')
             .then((result)=>{
                 //this.photo=[...result.data.photoData]; 
                 this.$store.commit('addPhoto',result.data.photoData);
@@ -28,7 +28,7 @@
 </script>
 
 <style scoped>
-    .photo img{
+    img{
         width: 50%;
     }
 </style>

@@ -1,15 +1,14 @@
 <template>
     <div>
         <!-- {{$route.params.index}} -->
-        <!-- {{photos[$route.params.index]}} -->
         <router-link to="/photo">
-            <v-touch v-on:swipeleft='next()' class='bg' :style="{backgroundImage:'url('+photos[iNow].src+')'}"></v-touch>
+            <v-touch v-on:swipeleft='next()' class='bg' :style="{backgroundImage:'url('+url+')'}"></v-touch>
         </router-link>   
     </div>
 </template>
 
 <script>
-    import {mapState} from 'vuex';
+    //import {mapState} from 'vuex';
     import Vue from 'vue';
     import VueTouch from 'vue-touch';
     Vue.use(VueTouch,{name:'v-touch'});
@@ -20,14 +19,17 @@
             }
         },
         computed: {
-            ...mapState(['photos'])
+            url(){
+                // http://localhost:8080/img/photo/1.jpg
+                return this.$store.state.photoData[this.iNow].src
+            }
         },
         methods:{
             next(){
                 this.iNow++;
-                // if(iNow==$route.params.index.length){
-                //     iNow=0;
-                // }
+                if(this.iNow==this.$store.state.photoData.length){
+                    this.iNow=0;
+                }
             }
         }
     }
