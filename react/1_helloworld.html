@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+    <script src='react.development.js'></script>
+    <script src='react-dom.development.js'></script>
+    <script src='browser.min.js'></script>
+    <script type="text/babel">
+        // ReactDOM.render(
+        //     <h3>2019</h3>,
+        //     document.getElementById('app')
+        // );
+
+        let x='05';
+        ReactDOM.render(
+            <div>
+                <h4>2019 {x}</h4>
+                <p>星期日</p>
+            </div>,
+            document.getElementById('app')
+        );
+    </script>
+</body>
+</html>
