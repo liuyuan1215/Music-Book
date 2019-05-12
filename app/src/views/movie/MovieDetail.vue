@@ -1,8 +1,9 @@
 <template>
     <div>
-        {{$route.params.id}}
+        <!-- {{$route.params.id}} -->
         {{movie.title}}
-        <img :src="movie.images.medium"/>
+        <img v-if='isShow' :src="movie.images.small"/>
+        
     </div>
 </template>
 
@@ -11,13 +12,15 @@
     export default {
         data() {
             return {
-                movie:{}
+                movie:{},
+                isShow:false
             }
         },
         created(){
             Axios.get('https://bird.ioliu.cn/v1?url=https://api.douban.com/v2/movie/subject/'+this.$route.params.id)
             .then((result)=>{
                 this.movie = result.data;
+                this.isShow = true;
             })
             .catch(()=>{
 
@@ -26,6 +29,6 @@
     }
 </script>
 
-<style lscoped>
+<style scoped>
 
 </style>
