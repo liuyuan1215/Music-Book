@@ -3,7 +3,7 @@
     <ul class="slide">
       <transition-group name="fade">
         <li v-for="(value,index) in imgs" :key="index" v-show="index==iNow">
-          <img :src="value" alt>
+          <img :src="value"/>
         </li>
       </transition-group>
     </ul>
