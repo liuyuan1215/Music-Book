@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div id="more">
-                <button>更多</button>
+                <button @click='goMore'>更多</button>
             </div>
         </div>
 
@@ -32,7 +32,10 @@
         },
         methods:{
             goDetail(index){
-                this.$router.push('/photodetail/'+index);
+                this.$router.push('/threedetail/'+index);
+            },
+            goMore(){
+                this.$router.push('/threemore')
             }
         }
     }

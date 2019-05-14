@@ -21,7 +21,7 @@ export default {
           color: "#fff"
         },
         {
-          name: "菜单2",
+          name: "音乐",
           path: "/two",
           color: "#fff"
         },

@@ -1,7 +1,7 @@
 <template>
     <div>
         <router-link to="/three">
-             <v-touch v-on:swipeleft='next()' class='bg' :style="{backgroundImage:'url('+url+')'}"></v-touch>
+             <v-touch v-on:swipeleft='next()' v-on:swiperight='prev()' class='bg' :style="{backgroundImage:'url('+url+')'}"></v-touch>
         </router-link>
     </div>
 </template>
@@ -26,6 +26,12 @@
                 this.iNow++;
                 if(this.iNow==this.$store.state.photoData.length){
                     this.iNow=0;
+                }
+            },
+            prev(){
+                this.iNow--;
+                if(this.iNow==-1){
+                    this.iNow=this.$store.state.photoData.length-1;
                 }
             }
         }

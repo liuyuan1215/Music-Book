@@ -1,6 +1,7 @@
 <template>
     <div class='header' :style='{color:selectMenu.color}'>
         <div>
+            <div id='prev' @click = 'goPrev()'>&lt;</div>
             <p class='header-title'>{{selectMenu.name}}</p>
         </div>
     </div>
@@ -8,7 +9,12 @@
 
 <script>
     export default {
-        props:['selectMenu']
+        props:['selectMenu'],
+        methods: {
+            goPrev(){
+            this.$router.go(-1);
+          }
+        }
     }
 </script>
 
@@ -28,5 +34,11 @@
         left:50%;
         top:50%;
         transform: translate(-50%,-50%);
+    }
+    #prev{
+        width: 30px;
+        height: 100%;
+        font-size: 25px;
+        text-align: center;
     }
 </style>
