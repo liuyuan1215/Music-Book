@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import One from '@/views/One.vue'
 import Two from '@/views/Two.vue'
 import Three from '@/views/Three.vue'
+import ThreeDetail from '@/views/ThreeDetail.vue'
 
 Vue.use(Router)
 
@@ -20,6 +21,10 @@ export default new Router({
     },
     {
       path:'/three',
+      component:Three
+    },
+    {
+      path:'/three/:index',
       component:Three
     }
   ]

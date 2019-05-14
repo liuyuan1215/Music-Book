@@ -1,0 +1,46 @@
+{
+  "photoData": [
+    {
+      "src": "http://localhost:8080/img/1.png"
+    },
+    {
+      "src": "http://localhost:8080/img/2.png"
+    },
+    {
+      "src": "http://localhost:8080/img/3.png"
+    },
+    {
+      "src": "http://localhost:8080/img/4.png"
+    },
+    {
+      "src": "http://localhost:8080/img/5.png"
+    },
+    {
+      "src": "http://localhost:8080/img/6.png"
+    },
+    {
+      "src": "http://localhost:8080/img/7.png"
+    },
+    {
+      "src": "http://localhost:8080/img/8.png"
+    },
+    {
+      "src": "http://localhost:8080/img/9.png"
+    },
+    {
+      "src": "http://localhost:8080/img/10.png"
+    },
+    {
+      "src": "http://localhost:8080/img/11.png"
+    },
+    {
+      "src": "http://localhost:8080/img/12.png"
+    },
+    {
+      "src": "http://localhost:8080/img/13.png"
+    },
+    {
+      "src": "http://localhost:8080/img/14.png"
+    }
+  ]
+}
