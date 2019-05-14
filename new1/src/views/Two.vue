@@ -1,9 +1,16 @@
 <template>
     <div>
         <div id='div1'>
+            <h4 class='recommended'>推荐歌曲</h4>
             <aplayer id='music' :music='list[0]' :list='list' v-if='isShow' showLrc/>
         </div>
-        
+        <div id="div2">
+            <h4 class='recommended'>搜索更多</h4>
+            <div id='div3'>
+                <input id='search' type="text" placeholder='大家都在搜 好妹妹乐队'>
+                <button type='button' id='btn'>搜索</button>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -46,9 +53,31 @@
 </script>
 
 <style>
-    #div1{
-        position: fixed;
-        top: 1rem;
+    .recommended{
+        text-align: center;
+        color:#1c8a92;
+        font-weight: bolder;
+    }
+    #div3{
+        height: 30px;
+        position: relative;
+        width:100%;
+    }
+    #search{
+        height: 32px;
         width: 100%;
+        border-top:1px solid #ccc;
+        border-left:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        outline: none;
+        text-indent: 5px;
+    }
+    #btn{
+        height: 34px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border:1px solid #ccc;
+        outline: none;
     }
 </style>
