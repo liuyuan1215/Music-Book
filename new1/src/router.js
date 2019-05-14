@@ -24,8 +24,8 @@ export default new Router({
       component:Three
     },
     {
-      path:'/three/:index',
-      component:Three
+      path:'/threedetail/:index',
+      component:ThreeDetail
     }
   ]
 })
