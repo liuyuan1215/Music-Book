@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <common-header :selectMenu="selectMenu"></common-header>
-    <div id="conent">
+    <div id="content">
       <router-view/>
     </div>
     <common-footer :menu="menu" :selectMenu="selectMenu" @change="fn"></common-footer>

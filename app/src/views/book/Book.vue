@@ -4,7 +4,7 @@
       <swipe-item class="slide1"></swipe-item>
       <swipe-item class="slide2"></swipe-item>
       <swipe-item class="slide3"></swipe-item>
-    </swipe>-->
+    </swipe> -->
     <slide :imgs='imgs'></slide>
   </div>
 </template>
