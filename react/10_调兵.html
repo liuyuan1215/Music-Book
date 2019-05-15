@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+
+    </div>
+
+    <script src='react.development.js'></script>
+    <script src='react-dom.development.js'></script>
+    <script src='browser.min.js'></script>
+    <script type='text/babel'>
+        class Total extends React.Component{
+            constructor(params){
+                super(params);
+                this.addHandle = this.addHandle.bind(this);
+                this.state = {
+                    total:160,
+                    numA:80,
+                    numB:70
+                }
+            }
+            change(){
+                consoloe.log('1');
+            }
+            render(){
+                return(
+                    <div>
+                        <p>剩余{this.state.total}兵</p>
+                        <Child name='A' num={this.state.numA} change={this.change}></Child>
+                        <Child name='B' num={this.state.numB}></Child>
+                    </div>
+                )
+            }
+        }
+        class Child extends React.Component{
+            constructor(params){
+                super(params);
+                this.addSoldier = this.addSoldier.bind(this);
+            }
+            addSoldier(){
+                this.props.change();
+            }
+            render(){
+                return (
+                    <div>
+                        <p>将军{this.props.name}有士兵：{this.props.num}</p>
+                        <input type="number" ref={input=>this.myInput=input}></input>
+                        <button onClick={this.addSoldier}>调兵</button>
+                    </div>
+                )
+            }
+        }
+
+        ReactDOM.render(
+            <Total></Total>,
+            document.getElementById('app')
+        );   
+    </script>
+</body>
+
+</html>
