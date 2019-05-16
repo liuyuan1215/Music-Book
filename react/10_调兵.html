@@ -17,45 +17,51 @@
     <script src='react-dom.development.js'></script>
     <script src='browser.min.js'></script>
     <script type='text/babel'>
-        class Total extends React.Component{
-            constructor(params){
+        class Total extends React.Component {
+            constructor(params) {
                 super(params);
-                this.addHandle = this.addHandle.bind(this);
                 this.state = {
-                    total:160,
-                    numA:80,
-                    numB:70
+                    total:120,
+                    numA:100,
+                    numB:80
+                }
+                this.change = this.change.bind(this);
+            }
+            change(name,val){
+                val = parseInt(val);
+                if(this.state.total>=val){
+                    this.setState({
+                        total:this.state.total-val,
+                        ['num'+name]:this.state['num'+name]+val,
+                    })
+                }else{
+                    alert('士兵数量不足');
                 }
             }
-            change(){
-                consoloe.log('1');
-            }
-            render(){
-                return(
-                    <div>
-                        <p>剩余士兵数量：{this.state.total}</p>
-                        <Child name='A' num={this.state.numA} change={this.change}></Child>
-                        <Child name='B' num={this.state.numB}></Child>
-                    </div>
-                )
-            }
-        }
-        class Child extends React.Component{
-            constructor(params){
-                super(params);
-                this.addSoldier = this.addSoldier.bind(this);
-            }
-            addSoldier(){
-                this.props.change();
-            }
-            render(){
+            render() {
                 return (
                     <div>
-                        <p>将军{this.props.name}有士兵：{this.props.num}</p>
-                        <input type="number" ref={input=>this.myInput=input}></input>
-                        <button onClick={this.addSoldier}>调兵</button>
+                        <h1>剩余士兵数量 { this.state.total }</h1>
+                        <Gen name="A" num={ this.state.numA } change={this.change}></Gen>
+                        <Gen name="B" num={ this.state.numB } change={this.change}></Gen>
+                    </div> 
+                );
+            }
+        }
+        class Gen extends React.Component {
+
+            render() {
+                return (
+                    <div>
+                        <div>将军{this.props.name}有士兵：{this.props.num}</div>
+                        <input type="number" ref={ input=> {this.myInput = input} }/>
+                        <button onClick={()=>{
+                            this.props.change(this.props.name,this.myInput.value);
+                            this.myInput.value="";
+                            }
+                        }>调兵</button>
                     </div>
-                )
+                );
             }
         }
 
