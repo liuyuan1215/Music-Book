@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <common-header :selectMenu="selectMenu"></common-header>
-    <div id="content">
+    <div id="content" v-show='isShow'>
       <router-view/>
     </div>
     <common-footer :menu="menu" :selectMenu="selectMenu" @change="fn"></common-footer>
@@ -14,6 +14,7 @@ import CommonHeader from "@/components/CommonHeader.vue";
 export default {
   data() {
     return {
+      isShow:false,
       menu: [
         {
           name: "首页",
@@ -33,7 +34,7 @@ export default {
       ],
       selectMenu: {
         name: "首页",
-        path: "one",
+        path: "/one",
         color: "#fff"
       }
     };
@@ -48,6 +49,7 @@ export default {
     }
   },
   created() {
+    this.isShow = true;
     this.menu.forEach((obj, index) => {
       if (obj.path == this.$route.path) {
         this.selectMenu = obj;
