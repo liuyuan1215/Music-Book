@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .input2{
+            color:#fff;
+        }
+    </style>
 </head>
 <body>
     <div id="app"></div>
@@ -30,10 +35,13 @@
                 })
             }
             render(){
+                let style={
+                    background:'#204060'
+                }
                 return(
                     <div>
-                        用户名: <input type='text' ref={input => this.myInput = input}/> 
-                        密码：<input type='password' onChange={this.change}/>
+                        用户名: <input style={style} type='text' ref={input => this.myInput = input}/> 
+                        密码：<input style={{background:'#00a862'}} className='input2' type='password' onChange={this.change}/>
                         <button onClick={this.show}>click</button>   
                     </div>
                 )
