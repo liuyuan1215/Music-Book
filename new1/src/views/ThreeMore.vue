@@ -12,15 +12,15 @@
                 <p>所在地：黑龙江</p>
             </div>
         </div>
-        <div id='c' @click='goOne'>查看首页</div>
+        <div id='c' @click='goHome'>查看首页</div>
     </div>
 </template>
 
 <script>
     export default {
         methods: {
-            goOne(){
-                this.$router.push('/one')
+            goHome(){
+                this.$router.push('/')
             }
         },
     }

@@ -17,7 +17,7 @@ export default {
       menu: [
         {
           name: "首页",
-          path: "/one",
+          path: "/",
           color: "#fff"
         },
         {
@@ -33,7 +33,7 @@ export default {
       ],
       selectMenu: {
         name: "首页",
-        path: "/one",
+        path: "/",
         color: "#fff"
       }
     };
