@@ -3,6 +3,7 @@ import {BrowserRouter as Router,Link,Route,Switch,Redirect} from 'react-router-d
 import A from './components/A'
 import B from './components/B'
 import C from './components/C'
+import F from './components/F'
 import Children from './components/Children'
 import Home from './components/Home'
 import './App.css';
@@ -17,7 +18,7 @@ function App() {
         <Link to='/c/c1'>c页面</Link>
         <Link to='/d'>d页面</Link>
         <Link to='/children'>child</Link>
-        <Link to='/e'>e页面</Link>
+        <Link to='/e'>重定向</Link>
         {/* <Route exact path='/' component={Home}></Route>
         <Route path='/a' component={A}></Route>
         <Route path='/b' component={B}></Route> */}
@@ -44,6 +45,7 @@ function App() {
           <Route path='/e' render={()=>{
             return <Redirect to='/'></Redirect>
           }}></Route>
+          <F></F>
       </Router>
     </div>
   );
