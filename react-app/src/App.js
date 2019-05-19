@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router,Link,Route,Switch} from 'react-router-dom';
+import {BrowserRouter as Router,Link,Route,Switch,Redirect} from 'react-router-dom';
 import A from './components/A'
 import B from './components/B'
 import C from './components/C'
@@ -16,7 +16,8 @@ function App() {
         <Link to='/b'>b页面</Link>
         <Link to='/c/c1'>c页面</Link>
         <Link to='/d'>d页面</Link>
-        <Link to='children'>child</Link>
+        <Link to='/children'>child</Link>
+        <Link to='/e'>e页面</Link>
         {/* <Route exact path='/' component={Home}></Route>
         <Route path='/a' component={A}></Route>
         <Route path='/b' component={B}></Route> */}
@@ -36,9 +37,12 @@ function App() {
             return <h1>44444</h1>
           }}></Route>
           <Route path='/children' children={(props)=>{
-            let str = props.match?'CHILDREN':'children';
+            let str = props.match?'hahaha':'xixixi';
             console.log(str);
             return <Children str={str}></Children>
+          }}></Route>
+          <Route path='/e' render={()=>{
+            return <Redirect to='/'></Redirect>
           }}></Route>
       </Router>
     </div>
