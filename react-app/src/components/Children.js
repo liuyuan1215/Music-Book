@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 
-export default class A extends Component {
+export default class Children extends Component {
   render() {
-    console.log(this.props.match.params.id);
     return (
       <div>
-        11111
+        {this.props.str}
       </div>
     )
   }
 }
-
