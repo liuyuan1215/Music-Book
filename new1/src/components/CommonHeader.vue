@@ -1,20 +1,28 @@
-<template>
+'<template>
     <div class='header' :style='{color:selectMenu.color}'>
         <div>
-            <div id='prev' @click = 'goPrev()'>&lt;</div>
-            <p class='header-title'>{{selectMenu.name}}</p>
+            <div id='prev' @click = 'goPrev($event)' v-if='isShow'>&lt;</div>
+            <p class='header-title'>{{selectMenu.name}}</p>    
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        props:['selectMenu'],
+        props:['selectMenu','menu','isShow'],
         methods: {
-            goPrev(){
+            goPrev(e){
             this.$router.go(-1);
+            //console.log(e.currentTarget.nextElementSibling.innerHTML);
+            this.selectMenu.name=selectMenu.name;
           }
-        }
+        },
+        // computed:{
+        //     path(){
+        //         console.log(this.$router.history.current.path == '/')
+        //         return this.$router.history.current.path == '/' ? false:true;
+        //     }
+        // }
     }
 </script>
 

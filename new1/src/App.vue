@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <common-header :selectMenu="selectMenu"></common-header>
+    <common-header :selectMenu="selectMenu" :isShow='show'></common-header>
     <div id="content">
       <router-view/>
     </div>
@@ -14,6 +14,7 @@ import CommonHeader from "@/components/CommonHeader.vue";
 export default {
   data() {
     return {
+      show:true,
       menu: [
         {
           name: "首页",
@@ -45,9 +46,22 @@ export default {
   methods: {
     fn(index) {
       this.selectMenu = this.menu[index];
+      console.log(this.$router.history.current.path);
+      console.log(this.show);
+      if(this.$router.history.current.path == '/'){
+        this.show=false;
+      }else{
+        this.show=true;
+      }    
     }
   },
   created() {
+    console.log(this.$router.history.current.path);
+    if(this.$router.history.current.path == '/'){
+        this.show=false;
+      }else{
+        this.show=true;
+      }
     this.menu.forEach((obj, index) => {
       if (obj.path == this.$route.path) {
         this.selectMenu = obj;

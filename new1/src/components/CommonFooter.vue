@@ -34,7 +34,7 @@ export default {
   color: #000;
   outline: none;
 }
-.footer-list a.router-link-active {
+.footer-list a.router-link-exact-active {
   color: #fff;
   outline: none;
 }
