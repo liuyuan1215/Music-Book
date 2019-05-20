@@ -1,5 +1,12 @@
 import React from 'react';
-import {BrowserRouter as Router,Link,Route,Switch,Redirect} from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Link,Route,
+  // Switch,
+  Redirect,
+  Prompt,
+  NavLink
+} from 'react-router-dom';
 import A from './components/A'
 import B from './components/B'
 import C from './components/C'
@@ -12,13 +19,13 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Link to='/'>首页</Link>
-        <Link to='/a/a1'>a页面</Link>
-        <Link to='/b'>b页面</Link>
-        <Link to='/c/c1'>c页面</Link>
-        <Link to='/d'>d页面</Link>
-        <Link to='/children'>child</Link>
-        <Link to='/e'>重定向</Link>
+        <NavLink exact activeClassName="selected" to='/'>首页</NavLink>
+        <NavLink activeClassName="selected" to='/a/a1'>a页面</NavLink>
+        <NavLink activeStyle={{color:'#000'}} to='/b'>b页面</NavLink>
+        <NavLink to='/c/c1'>c页面</NavLink>
+        <NavLink to='/d'>d页面</NavLink>
+        <NavLink to='/children'>child</NavLink>
+        <NavLink to='/e'>重定向</NavLink>
         {/* <Route exact path='/' component={Home}></Route>
         <Route path='/a' component={A}></Route>
         <Route path='/b' component={B}></Route> */}
