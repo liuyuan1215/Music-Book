@@ -1,7 +1,7 @@
 '<template>
     <div class='header' :style='{color:selectMenu.color}'>
         <div>
-            <div id='prev' @click = 'goPrev($event)' v-if='isShow'>&lt;</div>
+            <div id='prev' @click = 'goPrev($event)' v-if='isShow' v-show='path'>&lt;</div>
             <p class='header-title'>{{selectMenu.name}}</p>    
         </div>
     </div>
@@ -17,12 +17,12 @@
             this.selectMenu.name=selectMenu.name;
           }
         },
-        // computed:{
-        //     path(){
-        //         console.log(this.$router.history.current.path == '/')
-        //         return this.$router.history.current.path == '/' ? false:true;
-        //     }
-        // }
+        computed:{
+            path(){
+                console.log(this.$router.history.current.path == '/')
+                return this.$router.history.current.path == '/' ? false:true;
+            }
+        }
     }
 </script>
 

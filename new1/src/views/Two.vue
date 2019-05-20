@@ -60,24 +60,16 @@
     }
     #div3{
         height: 30px;
-        position: relative;
         width:100%;
+        display: flex;
     }
     #search{
-        height: 32px;
-        width: 100%;
-        border-top:1px solid #ccc;
-        border-left:1px solid #ccc;
-        border-bottom:1px solid #ccc;
         outline: none;
         text-indent: 5px;
+        flex:1;
     }
     #btn{
-        height: 34px;
-        position: absolute;
-        right: 0;
-        top: 0;
-        border:1px solid #ccc;
         outline: none;
+        width: 1rem;
     }
 </style>
