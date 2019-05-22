@@ -15,10 +15,22 @@ import F from './components/F'
 import Children from './components/Children'
 import Home from './components/Home'
 import './App.css';
+import store from './store';
+import {add,reduce} from './action';
+import { connect } from 'react-redux';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
+      <div>{props.num}</div>
+      <button onClick={()=>{
+        console.log('我要修改num值');
+        store.dispatch(add(3));
+      }}>add</button>
+      <button onClick={()=>{
+        console.log('我要修改num值');
+        store.dispatch(reduce());
+      }}>reduce</button>
       <Router>
         <NavLink exact activeClassName="selected" to='/'>首页</NavLink>
         <NavLink activeClassName="selected" to='/a/a1'>a页面</NavLink>
@@ -58,5 +70,10 @@ function App() {
     </div>
   );
 }
+let mapStateToProps = (state) =>{
+  return {
+    num:state.num
+  }
+}
 
-export default App;
+export default connect(mapStateToProps)(App);
