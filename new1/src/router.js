@@ -18,7 +18,7 @@ export default new Router({
       component:One
     },
     {
-      path:'/:id',
+      path:'//:id',
       component:OneDetail
     },
     {
