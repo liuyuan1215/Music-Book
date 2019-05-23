@@ -56,8 +56,7 @@ export default {
       }    
     },
     aa(){
-      console.log(111)
-                    this.selectMenu.name='首页';
+      this.selectMenu.name='首页';
 
     }
   },
