@@ -4,7 +4,7 @@
             <div id="b">
                 <h4>基本信息</h4>
                 <p>昵称：name</p>
-                <p>简介：我在未来等你</p>
+                <p>简介：别做那只迷途的候鸟</p>
                 <p>注册时间：20xx-xx-xx</p>
                 <p>等级：Lv xx</p>
                 <p>生日：19xx-xx-xx</p>
@@ -12,15 +12,15 @@
                 <p>所在地：黑龙江</p>
             </div>
         </div>
-        <div id='c' @click='goHome'>查看首页</div>
+        <div id='c' @click = 'goPrev()'>查看我的主页</div>
     </div>
 </template>
 
 <script>
     export default {
         methods: {
-            goHome(){
-                this.$router.push('/')
+            goPrev(){
+                this.$router.go(-1);
             }
         },
     }

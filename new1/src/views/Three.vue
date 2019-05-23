@@ -7,7 +7,7 @@
             <div id='information'>
                 <div>
                     <h4 id='name'>name</h4>
-                    <p id='introduction'>简介：我在未来等你</p>
+                    <p id='introduction'>简介：别做那只迷途的候鸟</p>
                 </div>
             </div>
             <div id="more">
