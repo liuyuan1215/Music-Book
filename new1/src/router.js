@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import One from '@/views/One.vue'
+import OneDetail from '@/views/OneDetail.vue'
 import Two from '@/views/Two.vue'
 import Three from '@/views/Three.vue'
 import ThreeDetail from '@/views/ThreeDetail.vue'
@@ -15,6 +16,10 @@ export default new Router({
     {
       path:'/',
       component:One
+    },
+    {
+      path:'/:id',
+      component:OneDetail
     },
     {
       path:'/two',
