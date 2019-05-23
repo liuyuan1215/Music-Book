@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <common-header :selectMenu="selectMenu" :isShow='show'></common-header>
+    <common-header :selectMenu="selectMenu" :isShow='show' @aa ="aa" ></common-header>
     <div id="content">
       <router-view/>
     </div>
@@ -45,7 +45,8 @@ export default {
   },
   methods: {
     fn(index) {
-      this.selectMenu = this.menu[index];
+      console.log(index)
+      this.selectMenu = {...this.menu[index]};
       console.log(this.$router.history.current.path);
       console.log(this.show);
       if(this.$router.history.current.path == '/'){
@@ -53,6 +54,11 @@ export default {
       }else{
         this.show=true;
       }    
+    },
+    aa(){
+      console.log(111)
+                    this.selectMenu.name='首页';
+
     }
   },
   created() {

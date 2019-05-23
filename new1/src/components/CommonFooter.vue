@@ -28,11 +28,11 @@ export default {
 }
 .footer-list li {
   flex: 1;
-  text-align: center;
 }
 .footer-list a {
   color: #000;
   outline: none;
+  margin: auto;
 }
 .footer-list a.router-link-exact-active {
   color: #fff;
