@@ -1,7 +1,8 @@
 '<template>
     <div class='header' :style='{color:selectMenu.color}'>
         <div>
-            <div id='prev' @click = 'goHome()' v-if='isShow'>&lt;</div>
+            <!-- <div id='prev' @click = 'goHome()' v-if='isShow'>&lt;</div> -->
+            <div id='home' @click = 'goHome()' v-if='isShow'><i class="iconfont icon-home"></i></div>
             <p class='header-title'>{{selectMenu.name}}</p>    
         </div>
     </div>
@@ -38,10 +39,12 @@
         top:50%;
         transform: translate(-50%,-50%);
     }
-    #prev{
+    #home{
         width: 30px;
-        height: 100%;
-        font-size: 25px;
+        height: 1rem;
+        font-size: 30px;
         text-align: center;
+        color:#f9f9f9;
+        line-height: 1rem;
     }
 </style>
