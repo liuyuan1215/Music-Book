@@ -2,7 +2,7 @@
     <div>
         <!-- {{$route.params.id}} -->
         {{movie.title}}
-        <img v-if='isShow' :src="movie.images.small"/>
+        <!-- <img v-if='isShow' :src="movie.images.small"/> -->
         
     </div>
 </template>
@@ -21,6 +21,7 @@
             .then((result)=>{
                 this.movie = result.data;
                 this.isShow = true;
+                console.log(result);
             })
             .catch(()=>{
 

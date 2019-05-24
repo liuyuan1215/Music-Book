@@ -12,7 +12,7 @@
         <div class="info">
           <h4>{{obj.title}}</h4>
           <p>作者：{{obj.author}}</p>
-          <p>{{obj.publishing_house}}</p>
+          <p>出版社：{{obj.publishing_house}}</p>
           <p>年份：{{obj.year}}</p>
           <!-- <p>页数：{{obj.pages}}页</p> -->
           <p>评分：{{obj.average}}分</p>
@@ -48,6 +48,7 @@ export default {
     getBook() {
       Axios.get("/data/book.json")
         .then((result) => {
+          console.log(result);
           this.bookList = [...this.bookList, ...result.data.subjects];
           if (this.bookList.length == result.data.total) {
             this.isBottom = true;
@@ -56,7 +57,7 @@ export default {
         .catch();
     },
     goDetail(id){
-      this.$router.push('/bookdetail/'+id);
+      this.$router.push('/onedetail/'+id);
     }
   },
   components: {

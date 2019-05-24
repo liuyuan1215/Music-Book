@@ -1,12 +1,6 @@
 <template>
   <div>
-    1
-    <br>1
-    <br>1
-    <br>
-    1
-    {{book.title}}
-    <img v-if="isShow" :src="book.images.small">
+    <h4>未完待续···</h4>
   </div>
 </template>
 
@@ -15,20 +9,23 @@ import Axios from "axios";
 export default {
   data() {
     return {
-      movie: {},
+      book: {},
       isShow: false
     };
   },
-  created() {
-    Axios.get("/data/book.json"+this.$route.params.id)
-      .then((result) => {
-        this.book = result.data;
-        this.isShow = true;
-      })
-      .catch(() => {});
-  }
+  // created() {
+  //   Axios.get("/data/bookdetail.json/"+this.$route.params.id)
+  //     .then((result) => {
+  //       this.book = result.data;
+  //       this.isShow = true;
+  //     })
+  //     .catch(() => {});
+  // }
 };
 </script>
 
 <style>
+h4{
+  color:#204060;
+}
 </style>
