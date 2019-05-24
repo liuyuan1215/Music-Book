@@ -9,7 +9,7 @@
 <body>
     <div id="app">
         <div>
-            是否需要额外付费设施
+            是否需要其他书籍
             <input type="checkbox" v-model='isCheck' @click='fn()'>
             <ul v-show='isCheck'>
                 <li v-for='obj in payList'>
@@ -21,35 +21,35 @@
         <div>
             <p>订单费用信息</p>
             <ul>
-                <li v-for='obj in orderList'>{{obj.name}}({{obj.price}})</li>
+                <li v-for='obj in orderList'>{{obj.name}}{{obj.price}}</li>
             </ul>
         </div>
-        <div>总金额:{{total()}}</div>
+        <div>总金额：{{total()}}</div>
     </div>
     <script src='vue.js'></script>
     <script>
-        var vm = new Vue({
+        new Vue({
             el:'#app',
             data:{
                 isCheck:false,
                 payList:[
                     {
-                        name:'沙发',
-                        price:100
+                        name:'我在未来等你',
+                        price:42
                     },
                     {
-                        name:'wifi',
-                        price:50
+                        name:'想着光亮那方',
+                        price:35
                     },
                     {
-                        name:'电脑',
-                        price:200
+                        name:'谁的青春不迷茫',
+                        price:39
                     }
                 ],
                 orderList:[
                     {
-                        name:'群力花园豪华型',
-                        price:400
+                        name:'别做那只迷途的候鸟',
+                        price:39
                     }
                 ]
             },
