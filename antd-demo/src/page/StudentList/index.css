@@ -1,0 +1,12 @@
+.middle{
+    width: 100%;
+    height: 70vh;
+    background: #eeeeee;
+}
+list-table{
+    background: #ffffff;
+    height: 70vh;
+    margin: auto;
+    text-align: center;
+    /* line-height: 66vh; */
+} 
