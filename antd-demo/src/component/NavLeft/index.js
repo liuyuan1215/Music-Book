@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Menu, Icon } from 'antd';
 import menuList from './../../config/menuconfig'
 import './index.css';
+import { Link } from 'react-router-dom';
 const { SubMenu } = Menu;
 
 
@@ -17,8 +18,10 @@ export default class index extends Component {
             }
             return (
                 <Menu.Item key={elem.path}>
-                    {elem.icon ? <Icon type={elem.icon}></Icon> : null}
-                    {elem.title}
+                    <Link to={elem.path}>
+                        {elem.icon ? <Icon type={elem.icon}></Icon> : null}
+                        {elem.title}
+                    </Link>
                 </Menu.Item>
             )
         })
@@ -33,7 +36,7 @@ export default class index extends Component {
         return (
             <div>
                 <div className="logobox">
-                    <img src="/imgs/logo.png" />
+                    <img src="/imgs/logo.png" alt=''/>
                 </div>
                 <Menu theme="dark" mode="inline" defaultOpenKeys={['/admin/student']}>
                     {this.state.list}
