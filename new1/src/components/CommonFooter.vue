@@ -28,8 +28,9 @@ export default {
 }
 .footer-list li {
   flex: 1;
+  text-align: center;
 }
-.footer-list a {
+.footer-list li a {
   color: #000;
   outline: none;
   margin: auto;
