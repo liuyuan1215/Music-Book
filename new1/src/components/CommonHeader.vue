@@ -31,6 +31,7 @@
         color: #fff;
         position: fixed;
         top:0;
+        z-index:999;
     }
     .header-title{
         font-size: 0.4rem;
