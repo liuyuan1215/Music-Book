@@ -7,15 +7,18 @@
       <swipe-item class="slide4"></swipe-item>
     </swipe>
     <ul class="book">
-      <li v-for="(obj,index) in bookList" :key="index" @click='goDetail(obj.id)'>
-        <img :src="obj.images.small" alt>
+      <li class='li-book' v-for="(obj,index) in bookList" :key="index" @click="goDetail(obj.id)">
+        <div id='img'>
+          <img :src="obj.images.small" alt>
+        </div>        
         <div class="info">
-          <h4>{{obj.title}}</h4>
+          <!-- <h4>{{obj.title}}</h4> -->
+          <p>{{obj.title}}</p>
           <p>作者：{{obj.author}}</p>
-          <p>出版社：{{obj.publishing_house}}</p>
-          <p>年份：{{obj.year}}</p>
+          <!-- <p>出版社：{{obj.publishing_house}}</p> -->
+          <!-- <p>年份：{{obj.year}}</p> -->
           <!-- <p>页数：{{obj.pages}}页</p> -->
-          <p>评分：{{obj.average}}分</p>
+          <!-- <p>评分：{{obj.average}}分</p> -->
           <!-- <p>{{obj.collect_count}}已评价</p> -->
           <!-- <p>ISBN：{{obj.id}}</p> -->
         </div>
@@ -47,7 +50,7 @@ export default {
   methods: {
     getBook() {
       Axios.get("/data/book.json")
-        .then((result) => {
+        .then(result => {
           console.log(result);
           this.bookList = [...this.bookList, ...result.data.subjects];
           if (this.bookList.length == result.data.total) {
@@ -56,8 +59,8 @@ export default {
         })
         .catch();
     },
-    goDetail(id){
-      this.$router.push('/onedetail/'+id);
+    goDetail(id) {
+      this.$router.push("/onedetail/" + id);
     }
   },
   components: {
@@ -91,7 +94,7 @@ export default {
   background: url(../components/img/lun4.png) no-repeat;
   background-size: 100%;
 }
-.book {
+/* .book {
     padding: 0.2rem;
   }
   li {
@@ -106,5 +109,34 @@ export default {
   .info {
     flex-grow: 1;
     margin-left: 0.2rem;
-  }
+  } */
+
+.book {
+  text-align: center;
+  background: #f8f8f8;
+}
+.li-book {
+  width: 44%;
+  display: inline-block;
+  margin: 0.1rem;
+  border-radius: 4px;
+  background: #fff;
+}
+.li-book #img{
+  width: 2.5rem;
+  height: 3.2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.li-book #img img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.li-book p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 </style>
