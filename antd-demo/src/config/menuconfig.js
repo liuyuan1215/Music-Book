@@ -33,7 +33,7 @@ const menuList = [
                 path:'/admin/teacher/list'
             },
             {
-                title:"教师成绩",
+                title:"教师考核",
                 path:'/admin/teacher/list2'
             }
         ]
