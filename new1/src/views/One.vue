@@ -49,10 +49,12 @@ export default {
   },
   methods: {
     getBook() {
-      Axios.get("/data/book.json")
+      // Axios.get("/data/book.json")
+      Axios.get("http://localhost:8080/data/book.json")
         .then(result => {
           console.log(result);
           this.bookList = [...this.bookList, ...result.data.subjects];
+          console.log(this.bookList);
           if (this.bookList.length == result.data.total) {
             this.isBottom = true;
           }
