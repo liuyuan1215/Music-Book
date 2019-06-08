@@ -1,7 +1,6 @@
 <template>
   <div>
-    {{$route.params.id}}
-    {{book[0].title}}
+    ISBN: {{$route.params.id}}
   </div>
 </template>
 
@@ -14,12 +13,13 @@ export default {
     };
   },
   created() {
-    Axios.get("http://localhost:8080/data/bookdetail.json/")
+    Axios.get("https://bird.ioliu.cn/v1?url=http://localhost:8080/data/bookdetail.json/"+this.$route.params.id)
       .then((result) => {
         // this.book = {...result.data.subjects};
         // console.log(this.book);
-        this.book = result.data.subjects;
+        this.book = result.data;
         console.log(this.book);
+        console.log(result);
       })
       .catch(() => {});
   }
@@ -27,4 +27,7 @@ export default {
 </script>
 
 <style>
+div{
+  text-align: center;
+}
 </style>
