@@ -7,18 +7,20 @@
       <swipe-item class="slide4"></swipe-item>
     </swipe>
     <ul class="book">
-      <li class='li-book' v-for="(obj,index) in bookList" :key="index" @click="goDetail(obj.id)">
-        <div id='img'>
+      <li class="li-book" v-for="(obj,index) in bookList" :key="index" @click="goDetail(obj.id)">
+        <div id="img">
           <img :src="obj.images.small" alt>
-        </div>        
+        </div>
         <div class="info">
           <!-- <h4>{{obj.title}}</h4> -->
           <p>{{obj.title}}</p>
-          <p>作者：{{obj.author}}</p>
           <!-- <p>出版社：{{obj.publishing_house}}</p> -->
-          <!-- <p>年份：{{obj.year}}</p> -->
+          <div id='fenbu'>
+            <p class='f1'>{{obj.year}}年</p>
+            <p class='f2'>评分：{{obj.average}}分</p>
+          </div>
+          <p>作者：{{obj.author}}</p>
           <!-- <p>页数：{{obj.pages}}页</p> -->
-          <!-- <p>评分：{{obj.average}}分</p> -->
           <!-- <p>{{obj.collect_count}}已评价</p> -->
           <!-- <p>ISBN：{{obj.id}}</p> -->
         </div>
@@ -96,23 +98,6 @@ export default {
   background: url(../components/img/lun4.png) no-repeat;
   background-size: 100%;
 }
-/* .book {
-    padding: 0.2rem;
-  }
-  li {
-    display: flex;
-    border-bottom: 1px solid #a9a9a9;
-  }
-  li img {
-    margin: auto;
-    width: 90px;
-    height: 123px;
-  }
-  .info {
-    flex-grow: 1;
-    margin-left: 0.2rem;
-  } */
-
 .book {
   text-align: center;
   background: #f8f8f8;
@@ -124,7 +109,7 @@ export default {
   border-radius: 4px;
   background: #fff;
 }
-.li-book #img{
+.li-book #img {
   width: 2.5rem;
   height: 3.2rem;
   margin-left: auto;
@@ -140,5 +125,14 @@ export default {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+#fenbu{
+  display:flex;
+}
+#fenbu .f1{
+  flex:1;
+}
+#fenbu .f2{
+  flex:1;
 }
 </style>
