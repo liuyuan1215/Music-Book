@@ -41,7 +41,7 @@ export default {
       Axios.all([
         Axios.get("/data/musicdata.json"),
         Axios.get(
-          "https://bird.ioliu.cn/v1?url=http://www.coupleworldlove.online:3000/search?keywords= 海阔天空"
+          "https://bird.ioliu.cn/v1?url=http://www.coupleworldlove.online:3000/search?keywords=`'${this.write}'`"
         )
       ]).then(
         Axios.spread((result, search) => {
