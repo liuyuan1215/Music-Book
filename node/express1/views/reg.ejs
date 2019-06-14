@@ -1,14 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
 </head>
+
 <body>
 	<form action="/reg" method="post">
 		用户名:<input type="text" name="uname"><br />
 		密码:<input type="password" name="pass"><br />
 		<input type="submit" name="sub" value="注册">
 	</form>
+
+	<script src='javascript/iquery.min.js'></script>
+	<script>
+		$('u1').blur(function () {
+			var val = $(this).val();
+			$.post('/checkname', 'value=' + val, function (data) {
+				if (data == 'success') {
+					$('#u1').after("<span id='s1'>用户名重名</span>")
+				}
+				if (data == 'error') {
+					$('#s1').remove();
+				}
+			}, 'text');
+		});
+	</script>
 </body>
+
 </html>
