@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <p><%= sess.pass%></p>
+  <hr>
+
+  <% posts.forEach(function(post,index){%>
+  <h1><%= post.title %></h1>
+  <p><%= post.content %></p>
+  <% })%>
+
+</body>
+
 </html>
