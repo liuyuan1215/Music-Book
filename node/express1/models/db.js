@@ -8,12 +8,8 @@ var pool = mysql.createPool({
 });
 
 exports.query = function (sql, params, callback) {
-    pool.getConnection(function (err, connection) {
-        if (err) throw err;
-        connection.query(sql, params, function (error, results, fields) {
-            connection.release();
-            if (error) throw error;
-            callback(error, results);
-        });
+    pool.query(sql,params,function(errors,results,fields){
+        if(error) throw error;
+        callback(error,results);
     });
 }
