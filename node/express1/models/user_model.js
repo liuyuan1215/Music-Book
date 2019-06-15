@@ -6,7 +6,7 @@ exports.insert_data=function(name,pass,callback){
 }
 
 exports.checkName=function(name,callback){
-	var sql='select * from user where unmae=?';
+	var sql='select * from user where uname=?';
 	db.query(sql,[name],callback);
 }
 
