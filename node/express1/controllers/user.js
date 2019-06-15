@@ -105,15 +105,17 @@ exports.do_reg = function (req, res, next) {
 	});*/
 
 	User_model.checkName(name, function (err, data) {
+		//console.log(data);
 		if (data.length > 0) {
-			res.redirest('/reg');
+			//res.send("用户名重名");
+			res.redirect("/reg");
 		} else {
 			User_model.insert_data(name, pass, function (err, data) {
 				//console.log(data);
 				if (data.affectedRows > 0) {
-					res.redirect('/login');
+					res.redirect("/login");
 				}
-			})
+			});
 		}
 	})
 }
