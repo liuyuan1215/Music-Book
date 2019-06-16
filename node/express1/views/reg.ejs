@@ -14,9 +14,9 @@
 		<input type="submit" name="sub" value="注册">
 	</form>
 
-	<script src='javascript/iquery.min.js'></script>
+	<script src='javascripts/jquery.min.js'></script>
 	<script>
-		$('u1').blur(function () {
+		$('#u1').blur(function () {
 			var val = $(this).val();
 			$.post('/checkname', 'value=' + val, function (data) {
 				if (data == 'success') {
