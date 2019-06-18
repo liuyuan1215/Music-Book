@@ -11,7 +11,7 @@ exports.zz = function (req, res, next) {
 	console.log(qur);
 }
 
-exports.chexkajax = function (req, res, next) {
+exports.checkajax = function (req, res, next) {
 	var name = req.body.value;
 	// res.send('success');
 	User_model.checkName(name, function (err, data) {
