@@ -31,4 +31,6 @@ router.get('/unlogin',User.unlogin);
 router.get('/add',Blog.add);
 router.post('/add',Blog.do_add);
 
+router.get('/blogCatalogs',Blog.Catalog);
+
 module.exports = router;
