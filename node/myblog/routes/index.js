@@ -32,5 +32,13 @@ router.get('/add',Blog.add);
 router.post('/add',Blog.do_add);
 
 router.get('/blogCatalogs',Blog.Catalog);
+router.post('/addBlogCatalog',Blog.addBlogCatalog);
+
+router.get('/update',Blog.update);
+router.post('/update',Blog.do_update);
+
+router.get('/del',Blog.del);
+
+router.get("/viewPost",Blog.all);
 
 module.exports = router;
