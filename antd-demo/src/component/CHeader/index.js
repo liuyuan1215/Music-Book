@@ -26,7 +26,7 @@ export default class CHeader extends Component {
                 <Row className='header-top'>
                     <div id='right'>
                         <span>欢迎，xxx</span>
-                        <a href="#">退出</a>
+                        <a href="">退出</a>
                     </div>
                 </Row>
                 <Row className='header-date'>
