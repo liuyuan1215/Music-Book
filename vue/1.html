@@ -1,11 +1,76 @@
-v-if  如果为 false 不显示在DOM里  不频繁切换用  v-if  多路分支用 v-else 
-v-show  如果为 false 显示在DOM里  频繁切换用  v-show
-conputed 计算属性 相当于定义一个新的属性，而这个属性的值是依赖于其他里面get的值  计算属性可以缓存
-computed:{
-    listSort(){
-        return this.list.sort((a,b)=>{
-            return a.age - b.age;
-        });
-    }
-}
-后面方法里的值有改变， listSort里的值随之会改变
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active {
+            color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model='msg' @keyup='filter'>
+        <button @click='add()'>add</button>
+        <ul>
+            <li v-for='(obj,index) in showList' :class='{active:obj.isA}' @click='change(obj)'>
+                {{obj.val}}
+                <button @click='del(index)'>del</button>
+            </li>
+        </ul>
+    </div>
+    <script src='vue.js'></script>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                list: [
+                    {
+                        val: 'aaa',
+                        isA: false
+                    },
+                    {
+                        val: 'bbb',
+                        isA: false
+                    }
+                ],
+                showList: [{
+                    val: 'aaa',
+                    isA: false
+                },
+                {
+                    val: 'bbb',
+                    isA: false
+                }],
+                msg: '',
+            },
+            methods: {
+                add() {
+                    this.list.push({ val: this.msg, isA: false });
+                    this.msg = '';
+                    this.showList = [...this.list];
+                },
+                del(index) {
+                    this.list.splice(index, 1);
+                    this.showList = [...this.list];
+                },
+                change(obj) {
+                    obj.isA = !obj.isA;
+                },
+                filter() {
+                    var arr = this.list.filter((obj, index) => {
+                        return obj.val.includes(this.msg);
+                    })
+                    this.showList = arr;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
