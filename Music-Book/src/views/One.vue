@@ -12,17 +12,15 @@
           <img :src="obj.images.small" alt>
         </div>
         <div class="info">
-          <!-- <h4>{{obj.title}}</h4> -->
           <p>{{obj.title}}</p>
           <!-- <p>出版社：{{obj.publishing_house}}</p> -->
-          <div id='fenbu'>
+          <!-- <div id='fenbu'>
             <p class='f1'>{{obj.year}}年</p>
             <p class='f2'>评分：{{obj.average}}分</p>
-          </div>
+          </div> -->
           <p>作者：{{obj.author}}</p>
           <!-- <p>页数：{{obj.pages}}页</p> -->
           <!-- <p>{{obj.collect_count}}已评价</p> -->
-          <!-- <p>ISBN：{{obj.id}}</p> -->
         </div>
       </li>
     </ul>
@@ -43,11 +41,6 @@ export default {
   },
   created() {
     this.getBook();
-    // window.onscroll = () => {
-    //   if (document.documentElement.scrollTop + document.documentElement.clientHeight == document.documentElement.scrollHeight && !this.isBottom) {
-    //     this.getBook();
-    //   }
-    // };
   },
   methods: {
     getBook() {
@@ -131,8 +124,10 @@ export default {
 }
 #fenbu .f1{
   flex:1;
+  text-align: left;
 }
 #fenbu .f2{
   flex:1;
+  text-align: left;
 }
 </style>
