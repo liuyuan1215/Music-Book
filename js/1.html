@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var oStringObject = new String("hello world");
+        console.log(oStringObject instanceof String);   // 输出 "true"
+
+        // 判断 foo 是否是 Foo 类的实例
+        function Foo() { }
+        var foo = new Foo();
+        console.log(foo instanceof Foo)//true
+
+        // 判断 foo 是否是 Foo 类的实例 , 并且是否是其父类型的实例
+        function Aoo() { }
+        function Foo() { }
+        Foo.prototype = new Aoo();//JavaScript 原型继承
+
+        var foo = new Foo();
+        console.log(foo instanceof Foo)//true 
+        console.log(foo instanceof Aoo)//true
+
+        console.log(123 instanceof Number);//false
+
+
+        console.log(Object instanceof Object);//true 
+        console.log(Function instanceof Function);//true 
+        console.log(Number instanceof Number);//false 
+        console.log(String instanceof String);//false 
+
+        console.log(Function instanceof Object);//true 
+
+        console.log(Foo instanceof Function);//true 
+        console.log(Foo instanceof Foo);//false
+    </script>
+</body>
+
+</html>
