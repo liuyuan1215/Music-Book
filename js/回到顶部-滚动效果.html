@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript">
+        function myScroll() {
+            var x = document.body.scrollTop || document.documentElement.scrollTop;
+            var timer = setInterval(function () {
+                x = x - 100;
+                if (x < 100) {
+                    x = 0;
+                    window.scrollTo(x, x);
+                    clearInterval(timer);
+                }
+                window.scrollTo(x, x);
+            }, 50);
+        } 
+    </script>
+    <title></title>
+</head>
+
+<body id="bd">
+    <div>
+        <div style="height:1000px;">head</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div>22334545</div>
+        <div style="height:1000px">
+            <div style="position:fixed;right:10px;bottom:50px;width:20px;height:90px;background-color:red;cursor:hand;"
+                onclick="myScroll()">返回顶端</div>
+        </div>
+</body>
+
+</html>
