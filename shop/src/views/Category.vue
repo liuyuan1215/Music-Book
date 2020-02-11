@@ -1,5 +1,5 @@
 <template>
-  <div>首页11</div>
+  <div>分类11</div>
 </template>
 
 <script>
