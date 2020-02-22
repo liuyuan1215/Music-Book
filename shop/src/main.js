@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 // import Vant from 'vant'
-import { Button, Icon, NavBar, Tabbar, TabbarItem, Swipe, SwipeItem, Lazyload } from 'vant';
+import { Button, Icon, NavBar, Tabbar, TabbarItem, Swipe, SwipeItem, Lazyload, Tabs, Tab, CellGroup, Field, Toast } from 'vant';
 
 import '@/assets/css/reset.css'
 import '@/assets/js/rem.js'
@@ -22,6 +22,11 @@ Vue.use(Button);
 Vue.use(Swipe);
 Vue.use(SwipeItem);
 Vue.use(Lazyload);
+Vue.use(Tab);
+Vue.use(Tabs);
+Vue.use(CellGroup);
+Vue.use(Field);
+Vue.use(Toast);
 
 new Vue({
   router,
