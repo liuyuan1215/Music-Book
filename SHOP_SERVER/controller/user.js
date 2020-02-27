@@ -1,4 +1,4 @@
-const Router  = require('koa-router');
+const Router = require('koa-router');
 let router = new Router();
 const mongoose = require('mongoose');
 

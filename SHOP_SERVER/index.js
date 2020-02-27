@@ -15,23 +15,27 @@ app.use(bodyParser());
 //加载路由
 const Router = require('koa-router');
 let user = require('./controller/user.js');
+let product = require('./controller/product.js');
+let type = require('./controller/type.js');
 
 let router = new Router();
-router.use('./user', user.routes());
+router.use('/user', user.routes());
+router.use('/product', product.routes());
+router.use('/type', type.routes());
 
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-const {connect, initSchemas} = require('./init.js');
+const { connect, initSchemas } = require('./init.js');
 (async () => {
     await connect();
     initSchemas();
 })();
 
 app.use(async (ctx) => {
-    ctx.body = 'hello 001';
+    ctx.body = 'hello 111';
 })
 
-app.listen(3000, ()=>{
+app.listen(3000, () => {
     console.log('start shop server');
 });

@@ -49,9 +49,7 @@ export default {
         }
       }).then(res=>{
         console.log(res);
-        console.log(res.data);
         if (res.data.code == 200) {
-          console.log(res.data);
           this.$toast.success("注册成功");
           this.registUsername = this.registPassword = '';
         }else{
@@ -61,7 +59,7 @@ export default {
         console.log(err);
         this.$toast.fail('注册失败2');
       });
-    }
+    },
   }
 }
 </script>
