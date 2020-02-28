@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <keep-alive>
+      <router-view v-if="$route.meta.keepAlive"></router-view>
+    </keep-alive>
+    <router-view v-if="!$route.meta.keepAlive"></router-view>
+
+    <router-view name="footer-bar"></router-view>
+
+    <!-- <router-view></router-view>
     <van-tabbar v-model="active">
       <van-tabbar-item icon='home-o' to="/">首页</van-tabbar-item>
       <van-tabbar-item icon='records' to="/category">分类</van-tabbar-item>
       <van-tabbar-item icon='cart' to="/cart">购物车</van-tabbar-item>
       <van-tabbar-item icon='contact' to="/profile">我的</van-tabbar-item>
-    </van-tabbar>
+    </van-tabbar> -->
     
     <!-- <ul class="footer-bar">
       <li class="footer-bar-item">
@@ -27,27 +34,27 @@
 
 <script>
 export default {
-  data(){
-    return{
-      active:0
-    }
-  }
+  // data(){
+  //   return{
+  //     active:0
+  //   }
+  // }
 }
 </script>
 
 <style lang="scss">
-.footer-bar {
-  display: flex;
-  background: #eeeeee;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 1rem;
-  &-item {
-    flex: 1;
-    text-align: center;
-    line-height: 1rem;
-  }
-}
+// .footer-bar {
+//   display: flex;
+//   background: #eeeeee;
+//   position: fixed;
+//   bottom: 0;
+//   width: 100%;
+//   height: 1rem;
+//   &-item {
+//     flex: 1;
+//     text-align: center;
+//     line-height: 1rem;
+//   }
+// }
 
 </style>
