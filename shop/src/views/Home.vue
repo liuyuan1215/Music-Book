@@ -6,24 +6,34 @@
       <van-icon name="cart" slot="right"></van-icon>
     </van-nav-bar>
 
+    <van-notice-bar
+      class="van-notice-bar"
+      color="#1989fa"
+      background="#ecf9ff"
+      text="通知内容通知内容通知内容"
+      left-icon="volume-o"
+    />
+
     <!-- 轮播图 -->
     <div class="carousel">
       <van-swipe :autoplay="3000">
         <van-swipe-item class="carousel-item" v-for="(item,index) in carouselItem" :key="index">
-          <img v-lazy="item.imgSrc" alt="">
+          <img v-lazy="item.imgSrc" alt />
         </van-swipe-item>
       </van-swipe>
     </div>
 
     <!-- 热门商品 -->
     <div class="hot">
-      <p class="hot-title">热门商品</p>
+      <p class="hot-title">
+        <van-icon name="fire" />热门商品
+      </p>
       <swiper class="hot-swiper" :options="swiperOption">
         <swiper-slide v-for="(item,index) in hotProducts" :key="index">
-          <div class="hot-swiper-content">
-            <img :src="item.img" alt="">
-            <div>{{ item.name }}</div>
-            <div>￥{{ item.price }}</div>
+          <div class="hot-swiper-content" @click="goDetail(item._id)">
+            <img :src="item.img" alt />
+            <div class="hot-swiper-content-name">{{ item.name }}</div>
+            <div class="hot-swiper-content-price">￥{{ item.price }}</div>
           </div>
         </swiper-slide>
       </swiper>
@@ -31,16 +41,22 @@
 
     <!-- 推荐商品 -->
     <div class="variety">
-      <p>推荐商品</p>
+      <p class="variety-title">
+        <van-icon name="like" />推荐商品
+      </p>
       <ul>
-        <li class="variety-item" v-for="(item,index) in varietyItem" :key="index">
-          <img :src="item.img" alt="">
-          <p>{{ item.name }}</p>
-          <p>￥{{ item.price }}</p>
+        <li
+          class="variety-item"
+          @click="goDetail(item._id)"
+          v-for="(item,index) in varietyItem"
+          :key="index"
+        >
+          <img :src="item.img" alt />
+          <p class="variety-item-name">{{ item.name }}</p>
+          <p class="variety-item-price">￥{{ item.price }}</p>
         </li>
       </ul>
     </div>
-
   </div>
 </template>
 
@@ -52,191 +68,37 @@ import url from "@/service.config.js";
 export default {
   data() {
     return {
+      hotProducts: [],
+      varietyItem: [],
+      start: 0,
+      limit: 20,
       carouselItem: [
         // 轮播图
         {
-          name:'img1',
-          imgSrc:'https://img.yzcdn.cn/vant/apple-1.jpg'
+          name: "img1",
+          imgSrc: "http://img60.ddimg.cn/2020/2/27/2020022717070815512.jpg"
         },
         {
-          name:'img2',
-          imgSrc:'https://img.yzcdn.cn/vant/apple-1.jpg'
+          name: "img2",
+          imgSrc: "http://img61.ddimg.cn/2020/2/27/2020022716560470563.jpg"
         },
         {
-          name:'img3',
-          imgSrc:'https://img.yzcdn.cn/vant/apple-1.jpg'
+          name: "img3",
+          imgSrc: "http://img63.ddimg.cn/2020/2/27/2020022717062099358.jpg"
+        },
+        {
+          name: "img4",
+          imgSrc: "http://img62.ddimg.cn/2020/2/27/2020022716595189414.jpg"
+        },
+        {
+          name: "img5",
+          imgSrc: "http://img62.ddimg.cn/2020/2/26/2020022617140263714.jpg"
         }
       ],
-      hotProducts: [
-        // 热门商品
-        // {
-        //   name: "   汽油动力手推割杆机 养殖场专用青储割晒机",
-        //   img:
-        //     "http://img47.nongjx.com/2/20180628/636657846366213316507_198_170_5.jpg",
-        //   price: "3260",
-        //   company: "  曲阜市润众机械制造有限",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   手扶带牧草收割机 青储高杆作物割晒机价格",
-        //   img:
-        //     "http://img47.nongjx.com/2/20180628/636657846396789904965_198_170_5.jpg",
-        //   price: "3260",
-        //   company: "  曲阜市润众机械制造有限",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   不缠秧的花生果子收割机 手扶马铃薯收获机",
-        //   img:
-        //     "http://img48.nongjx.com/2/20180628/636657836692623289517_198_170_5.jpg",
-        //   price: "2800",
-        //   company: "  曲阜市润众机械制造有限",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   高港区手扶车带动土豆收获机收山芋机器",
-        //   img:
-        //     "http://img49.nongjx.com/2/20180511/636616318740584319169_198_170_5.jpg",
-        //   price: "1900",
-        //   company: "  山东曲阜宏燊工贸有限公",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   拖拉机带多功能割晒机 玉米高粱杆子收割机",
-        //   img:
-        //     "http://img50.nongjx.com/2/20180628/636657846333452686281_198_170_5.jpg",
-        //   price: "3260",
-        //   company: "  曲阜市润众机械制造有限",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   厂家直销大型花生收获机 地下薯类挖收机",
-        //   img:
-        //     "http://img48.nongjx.com/2/20180628/636657834205779466463_198_170_5.jpg",
-        //   price: "2800",
-        //   company: "  曲阜市润众机械制造有限",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   地瓜土豆杀秧机",
-        //   img:
-        //     "http://img49.nongjx.com/2/20180906/636718188965915110193_198_170_5.jpg",
-        //   price: "2380",
-        //   company: "  曲阜市汇林机械有限公司",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   地瓜杀秧机",
-        //   img:
-        //     "http://img49.nongjx.com/2/20180906/636718188987287247797_198_170_5.jpg",
-        //   price: "2380",
-        //   company: "  曲阜市汇林机械有限公司",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   自走式大型花生去秧机 花生除秧自动装袋机",
-        //   img:
-        //     "http://img48.nongjx.com/2/20180715/636672620827383254579_198_170_5.jpg",
-        //   price: "2582",
-        //   company: "  曲阜金源机械设备有限公",
-        //   city: "济宁市"
-        // },
-        // {
-        //   name: "   高效省人工花生摘果机 全新多功能去秧机",
-        //   img:
-        //     "http://img48.nongjx.com/2/20180715/636672620827383254579_198_170_5.jpg",
-        //   price: "2581",
-        //   company: "  曲阜金源机械设备有限公",
-        //   city: "济宁市"
-        // }
-      ],
       swiperOption: {
-        slidesPerView:3
-      },
-      varietyItem: [
-        // 推荐商品
-        // {
-        //   name: "   汽油动力手推割杆机 养殖场专用青储割晒机",
-        //   img:
-        //     "http://img47.nongjx.com/2/20180628/636657846366213316507_198_170_5.jpg",
-        //   price: "3260",
-        //   company: "  曲阜市润众机械制造有限",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   手扶带牧草收割机 青储高杆作物割晒机价格",
-        //   img:
-        //     "http://img47.nongjx.com/2/20180628/636657846396789904965_198_170_5.jpg",
-        //   price: "3260",
-        //   company: "  曲阜市润众机械制造有限",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   不缠秧的花生果子收割机 手扶马铃薯收获机",
-        //   img:
-        //     "http://img48.nongjx.com/2/20180628/636657836692623289517_198_170_5.jpg",
-        //   price: "2800",
-        //   company: "  曲阜市润众机械制造有限",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   高港区手扶车带动土豆收获机收山芋机器",
-        //   img:
-        //     "http://img49.nongjx.com/2/20180511/636616318740584319169_198_170_5.jpg",
-        //   price: "1900",
-        //   company: "  山东曲阜宏燊工贸有限公",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   拖拉机带多功能割晒机 玉米高粱杆子收割机",
-        //   img:
-        //     "http://img50.nongjx.com/2/20180628/636657846333452686281_198_170_5.jpg",
-        //   price: "3260",
-        //   company: "  曲阜市润众机械制造有限",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   厂家直销大型花生收获机 地下薯类挖收机",
-        //   img:
-        //     "http://img48.nongjx.com/2/20180628/636657834205779466463_198_170_5.jpg",
-        //   price: "2800",
-        //   company: "  曲阜市润众机械制造有限",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   地瓜土豆杀秧机",
-        //   img:
-        //     "http://img49.nongjx.com/2/20180906/636718188965915110193_198_170_5.jpg",
-        //   price: "2380",
-        //   company: "  曲阜市汇林机械有限公司",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   地瓜杀秧机",
-        //   img:
-        //     "http://img49.nongjx.com/2/20180906/636718188987287247797_198_170_5.jpg",
-        //   price: "2380",
-        //   company: "  曲阜市汇林机械有限公司",
-        //   city: "曲阜市"
-        // },
-        // {
-        //   name: "   自走式大型花生去秧机 花生除秧自动装袋机",
-        //   img:
-        //     "http://img48.nongjx.com/2/20180715/636672620827383254579_198_170_5.jpg",
-        //   price: "2582",
-        //   company: "  曲阜金源机械设备有限公",
-        //   city: "济宁市"
-        // },
-        // {
-        //   name: "   高效省人工花生摘果机 全新多功能去秧机",
-        //   img:
-        //     "http://img48.nongjx.com/2/20180715/636672620827383254579_198_170_5.jpg",
-        //   price: "2581",
-        //   company: "  曲阜金源机械设备有限公",
-        //   city: "济宁市"
-        // },
-      ]
-    }
+        slidesPerView: 3
+      }
+    };
   },
   components: {
     swiper,
@@ -247,79 +109,172 @@ export default {
     // let url2 = 'http://www.liuliu.com/getUser';
     // let url3 = 'http://www.liuliu.com/regexp';
     // let url4 = 'http://www.liuliu.com/list';
-    let url5 = url.getVarietyItem;
-    axios.get(url5).then( res => {
-      // console.log(res);
-      this.varietyItem = res.data;
-    });
-    axios.get(url5).then( res => {
-      this.hotProducts = res.data;
+    // let url5 = url.getVarietyItem;
+    // axios.get(url5).then(res => {
+    //   // console.log(res);
+    //   this.varietyItem = res.data;
+    // });
+    // axios.get(url5).then(res => {
+    //   this.hotProducts = res.data;
+    // });
+    //请求推荐商品数据
+    axios({
+      url: url.getProductList,
+      method: "get",
+      params: {
+        start: this.varietyItem.length,
+        limit: this.limit
+      }
     })
+      .then(res => {
+        console.log(res);
+        this.varietyItem = res.data;
+      })
+      .catch(err => {
+        console.log(err);
+      });
+    //请求热门商品数据
+    axios({
+      url: url.getProductList,
+      method: "get",
+      params: {
+        start: this.hotProducts.length,
+        limit: this.limit
+      }
+    })
+      .then(res => {
+        console.log(res);
+        this.hotProducts = res.data;
+      })
+      .catch(err => {
+        console.log(err);
+      });
   },
-}
+  methods: {
+    goDetail(id) {
+      this.$router.push(`/detail/${id}`);
+    }
+  }
+};
 </script>
 
 <style lang="scss">
-  .container {
-    background-color: #eee;
+.van-nav-bar__title {
+  color: #3750b2;
+  font-weight: bolder;
+}
+.container {
+  // background-color: #eee;
+  background: #f7f8fa;
+}
+.nav-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999 !important;
+}
+.van-notice-bar {
+  margin-top: 46px;
+  height: 30px;
+}
+// 轮播图
+.carousel {
+  margin: 10px 10px 0.2rem 10px;
+  height: 3rem;
+  .van-swipe {
+    border-radius: 10px;
   }
-  .nav-title {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999 !important;
-  }
-  // 轮播图
-  .carousel {
-    margin-top: 1rem;
-    height: 3rem;
-    &-item {
-      img {
-        width: 100%;
-        height: 3rem;
-      }
-    }
-  }
-  // 热门商品
-  .hot {
-    margin-top: 0.2rem;
-    background-color: #fff;
-    &-title {
-      width: 100%;
-      height: 0.5rem;
-      padding-left: 0.2rem;
-      line-height: 0.5rem;
-      box-sizing: border-box;
-    }
-    &-swiper {
-      &-content {
-        width: 2rem;
-        text-align: center;
-        img {
-          width: 2rem;
-          height: 2rem;
-        }
-      }
-    }
-  }
-  // 推荐商品
-  .variety {
-    margin-top: 0.2rem;
-    background: #ffffff;
-    text-align: center;
-    margin-bottom: 1rem;
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    &-item {
-      flex-basis: 45%;
-    }
+  &-item {
     img {
-      width: 2rem;
-      height: 2rem;
+      width: 100%;
+      height: 3rem;
     }
   }
+}
+// 热门商品
+.hot {
+  margin-top: 0.2rem;
+  background-color: #fff;
+  border-radius: 7px;
+  &-title {
+    color: #3750b2;
+    font-weight: 800;
+    width: 100%;
+    height: 0.5rem;
+    padding-left: 0.2rem;
+    line-height: 0.5rem;
+    box-sizing: border-box;
+  }
+  &-swiper {
+    margin: auto 10px;
+    &-content {
+      border-radius: 7px;
+      width: 1.9rem;
+      text-align: center;
+      &-name {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &-price {
+        margin-left: 5px;
+        color: #3750b2;
+        float: left;
+        font-weight: 500 !important;
+      }
+      img {
+        border-radius: 5px;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}
+// 推荐商品
+.variety {
+  margin-top: 0.2rem;
+  // background: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+  &-title {
+    color: #3750b2;
+    font-weight: 800;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &-item {
+    background: #ffffff;
+    flex-basis: 45%;
+    border-radius: 7px;
+    margin: 5px;
+    &-name {
+      margin: 10px 10px auto 10px;
+      text-align: left;
+      font-size: 14px !important;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &-price {
+      margin-left: 10px;
+      color: #3750b2;
+      float: left;
+      font-weight: 600 !important;
+    }
+  }
+  img {
+    // width: 2rem;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+  }
+}
 </style>
