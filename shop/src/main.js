@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 // import Vant from 'vant'
-import { Button, Icon, NavBar, Tabbar, TabbarItem, Swipe, SwipeItem, Lazyload, Tabs, Tab, CellGroup, Field, Toast } from 'vant';
+import { Button, Icon, NavBar, Tabbar, TabbarItem, Swipe, SwipeItem, Lazyload, Tabs, Tab, CellGroup, Field, Toast, Col, Row, List, PullRefresh, GoodsAction, GoodsActionButton, GoodsActionIcon, NoticeBar, Card, SubmitBar, Sku } from 'vant';
 
 import '@/assets/css/reset.css'
 import '@/assets/js/rem.js'
@@ -27,6 +27,17 @@ Vue.use(Tabs);
 Vue.use(CellGroup);
 Vue.use(Field);
 Vue.use(Toast);
+Vue.use(Col);
+Vue.use(Row);
+Vue.use(List);
+Vue.use(PullRefresh);
+Vue.use(GoodsAction);
+Vue.use(GoodsActionButton);
+Vue.use(GoodsActionIcon);
+Vue.use(NoticeBar);
+Vue.use(Card);
+Vue.use(SubmitBar);
+Vue.use(Sku);
 
 new Vue({
   router,
