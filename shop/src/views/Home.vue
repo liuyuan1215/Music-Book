@@ -2,7 +2,7 @@
   <div class="container">
     <!-- 头部 -->
     <van-nav-bar title="首页" class="nav-title">
-      <van-icon name="search" slot="left"></van-icon>
+      <van-icon name="search" @click="search" slot="left"></van-icon>
       <van-icon @click="$router.push('/profile')" slot="right">{{JSON.stringify(userInfo) === '{}' ? '未登录' : userInfo.userName}}</van-icon>
     </van-nav-bar>
 
@@ -157,6 +157,9 @@ export default {
   methods: {
     goDetail(id) {
       this.$router.push(`/detail/${id}`);
+    },
+    search() {
+      this.$router.push(`/search`);
     }
   }
 };

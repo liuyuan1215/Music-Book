@@ -42,7 +42,7 @@ router.get('/getDetail', async (ctx) => {
 
 router.get('/getProductList',async (ctx) => {
     const Product = mongoose.model('Product');
-    await Product.find({}).exec().then(res=>{
+    await Product.find({}).skip(parseInt(ctx.query.start)).limit(parseInt(ctx.query.limit)).exec().then(res=>{
         ctx.body = res;
     })
 });
