@@ -12,6 +12,7 @@ import Ajax from '../views/Ajax.vue'
 import Detail from '../views/Detail.vue'
 import FooterBar from '../components/FooterBar.vue'
 import Error from '../views/Error.vue'
+let Search = ()=> import('../views/Search.vue');
 
 Vue.use(VueRouter)
 
@@ -74,6 +75,10 @@ const routes = [
   {
     path: '*',
     component: Error
+  },
+  {
+    path: '/search',
+    component: Search
   }
 ]
 

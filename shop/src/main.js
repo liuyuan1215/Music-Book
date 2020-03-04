@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 // import Vant from 'vant'
-import { Button, Icon, NavBar, Tabbar, TabbarItem, Swipe, SwipeItem, Lazyload, Tabs, Tab, CellGroup, Field, Toast, Col, Row, List, PullRefresh, GoodsAction, GoodsActionButton, GoodsActionIcon, NoticeBar, Card, SubmitBar, Sku } from 'vant';
+import { Button, Icon, NavBar, Tabbar, TabbarItem, Swipe, SwipeItem, Lazyload, Tabs, Tab, CellGroup, Field, Toast, Col, Row, List, PullRefresh, GoodsAction, GoodsActionButton, GoodsActionIcon, NoticeBar, Card, SubmitBar, Sku, Search } from 'vant';
 
 import '@/assets/css/reset.css'
 import '@/assets/js/rem.js'
@@ -38,6 +38,7 @@ Vue.use(NoticeBar);
 Vue.use(Card);
 Vue.use(SubmitBar);
 Vue.use(Sku);
+Vue.use(Search);
 
 new Vue({
   router,
