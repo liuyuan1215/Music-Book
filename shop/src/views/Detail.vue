@@ -75,7 +75,16 @@ export default {
     onClickIcon() {
       this.$router.push(`/cart`);
     },
-    onClickButton() {},
+    onClickButton() {
+      if (JSON.stringify(this.userInfo) === "{}") {
+        this.$toast.fail("请先登录");
+        setTimeout(() => {
+          this.$router.push("/profile");
+        }, 1000);
+      } else {
+        this.$toast.success("购买成功");
+      }
+    },
     addCart() {
       // 检查用户是否登录  前端vuex保存登录状态
       // 如果后端保存登录状态 koa-session  redis
