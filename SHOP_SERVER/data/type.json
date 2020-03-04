@@ -1,0 +1,33 @@
+[
+    {
+        "typeId": 1,
+        "typeName": "小说" 
+    },{
+        "typeId": 2,
+        "typeName": "文学" 
+    },{
+        "typeId": 3,
+        "typeName": "青春文学" 
+    },{
+        "typeId": 4,
+        "typeName": "动漫/幽默" 
+    },{
+        "typeId": 5,
+        "typeName": "成功/励志" 
+    },{
+        "typeId": 6,
+        "typeName": "传记" 
+    },{
+        "typeId": 7,
+        "typeName": "艺术" 
+    },{
+        "typeId": 8,
+        "typeName": "童书" 
+    },{
+        "typeId": 9,
+        "typeName": "考试" 
+    },{
+        "typeId": 10,
+        "typeName": "外语" 
+    }
+]
