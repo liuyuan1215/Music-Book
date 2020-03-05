@@ -1,39 +1,44 @@
 <template>
-  <div>
-    <van-tabs>
-      <van-tab title="登录">
-        <van-cell-group>
-          <van-field label="用户名" required clearable placeholder="请输入用户名" v-model="loginUsername"></van-field>
-          <van-field
-            label="密码"
-            type="password"
-            required
-            clearable
-            placeholder="请输入密码"
-            v-model="loginPassword"
-          ></van-field>
-        </van-cell-group>
-        <div>
-          <van-button @click="loginHandler" type="primary" size="large">登录</van-button>
-        </div>
-      </van-tab>
-      <van-tab title="注册">
-        <van-cell-group>
-          <van-field label="用户名" required clearable placeholder="请输入用户名" v-model="registUsername"></van-field>
-          <van-field
-            label="密码"
-            type="password"
-            required
-            clearable
-            placeholder="请输入密码"
-            v-model="registPassword"
-          ></van-field>
-        </van-cell-group>
-        <div>
-          <van-button @click="registHandler" type="primary" size="large">注册</van-button>
-        </div>
-      </van-tab>
-    </van-tabs>
+  <div class="con-pro">
+    <div class="last">
+      <van-icon size="25" color="#484848" name="arrow-left" @click="goLast" />
+    </div>
+    <div class="add-margin-top">
+      <van-tabs>
+        <van-tab title="登录">
+          <van-cell-group>
+            <van-field label="用户名" required clearable placeholder="请输入用户名" v-model="loginUsername"></van-field>
+            <van-field
+              label="密码"
+              type="password"
+              required
+              clearable
+              placeholder="请输入密码"
+              v-model="loginPassword"
+            ></van-field>
+          </van-cell-group>
+          <div>
+            <van-button @click="loginHandler" type="primary" size="large">登录</van-button>
+          </div>
+        </van-tab>
+        <van-tab title="注册">
+          <van-cell-group>
+            <van-field label="用户名" required clearable placeholder="请输入用户名" v-model="registUsername"></van-field>
+            <van-field
+              label="密码"
+              type="password"
+              required
+              clearable
+              placeholder="请输入密码"
+              v-model="registPassword"
+            ></van-field>
+          </van-cell-group>
+          <div>
+            <van-button @click="registHandler" type="primary" size="large">注册</van-button>
+          </div>
+        </van-tab>
+      </van-tabs>
+    </div>
   </div>
 </template>
 
@@ -92,7 +97,7 @@ export default {
           console.log(res);
           if (res.data.code == 200) {
             // 模拟
-            new Promise((resolve) => {
+            new Promise(resolve => {
               setTimeout(() => {
                 resolve();
                 // reject();
@@ -108,7 +113,7 @@ export default {
                 this.$toast.fail("保存登录状态失败");
                 console.log(err);
               });
-          }else {
+          } else {
             this.$toast.fail("登录失败1");
           }
         })
@@ -117,10 +122,28 @@ export default {
           // this.$toast.fail("登录失败");
           Toast("登录失败2");
         });
+    },
+    goLast() {
+      this.$router.go(-1);
     }
   }
 };
 </script>
 
 <style lang="scss">
+.con-pro{
+  height: 100vh;
+  background: #fff;
+}
+.last {
+  position: fixed;
+  // top: 10px;
+  // left: 5px;
+  padding-left: 5px;
+  padding-top: 10px;
+  z-index: 100;
+}
+.add-margin-top {
+  padding-top: 30px;
+}
 </style>

@@ -8,6 +8,7 @@ let Home = ()=> import('../views/Home.vue');
 let Category = ()=> import('../views/Category.vue');
 let Cart = ()=> import('../views/Cart.vue');
 let Profile = ()=> import('../views/Profile.vue');
+let Mine = ()=> import('../views/Mine.vue');
 import Ajax from '../views/Ajax.vue'
 import Detail from '../views/Detail.vue'
 import FooterBar from '../components/FooterBar.vue'
@@ -54,13 +55,22 @@ const routes = [
     }
   },
   {
-    path: '/profile',
-    name: 'profile',
-    // component: () => import('../views/Profile.vue')
+    path: '/mine',
+    name: 'mine',
     components: {
-      default: Profile,
+      default: Mine,
       'footer-bar': FooterBar
     }
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: Profile
+    // component: () => import('../views/Profile.vue')
+    // components: {
+    //   default: Profile,
+    //   'footer-bar': FooterBar
+    // }
   },
   {
     path: '/ajax',
