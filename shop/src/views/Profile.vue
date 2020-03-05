@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import { Toast } from "vant";
 import axios from "axios";
 import url from "@/service.config.js";
 import { mapActions } from "vuex";
@@ -107,11 +108,14 @@ export default {
                 this.$toast.fail("保存登录状态失败");
                 console.log(err);
               });
+          }else {
+            this.$toast.fail("登录失败1");
           }
         })
         .catch(err => {
           console.log(err);
-          this.$toast.fail("登录失败");
+          // this.$toast.fail("登录失败");
+          Toast("登录失败2");
         });
     }
   }
