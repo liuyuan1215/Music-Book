@@ -58,4 +58,29 @@ router.post('/loginUser', async (ctx) => {
     })
 });
 
+router.post('/exitUser', async (ctx) => {
+    let body = ctx.request.body;
+    let userId = body.userId;
+    const User = mongoose.model('User');
+    try {
+        let user = await User.findOne({ _id: userId });
+        if (user === null) {
+            ctx.response.body = {
+                code: 0,
+                data: null,
+                message: '用户不存在'
+            };
+            return;
+        }
+        isSignin = false;
+        ctx.response.body = {
+            code: 200,
+            data: user,
+            message: '退出登录成功'
+        };
+    } catch (err) {
+        console.log(err);
+    }
+})
+
 module.exports = router;

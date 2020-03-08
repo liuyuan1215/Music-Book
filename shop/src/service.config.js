@@ -6,6 +6,7 @@ const URL = {
     getHotProduct: MOCKURL + 'getHotProduct',
     registUser: SERVERURL + 'user/registUser',
     loginUser: SERVERURL + 'user/loginUser',
+    exitUser: SERVERURL + 'user/exitUser',
     getTypes: SERVERURL + 'type/getTypes',
     getProductsByType: SERVERURL + 'product/getProductsByType',
     getDetail: SERVERURL + 'product/getDetail',
