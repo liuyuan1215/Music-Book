@@ -591,3 +591,11 @@ audio:not([controls]) {
 }
 
 /*# sourceMappingURL=neat.css.map */
+
+/* 收藏样式 */
+.star .van-goods-action-icon__icon {
+  width: 1em !important;
+  margin: 0 auto 5px !important;
+  color: #ff5000 !important;
+  font-size: 18px !important;
+}

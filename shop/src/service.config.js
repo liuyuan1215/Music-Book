@@ -12,6 +12,10 @@ const URL = {
     addCart: SERVERURL + 'cart/addCart',
     getCart: SERVERURL + 'cart/getCart',
     delCart: SERVERURL + 'cart/delCart',
+    addStar: SERVERURL + 'star/addStar',
+    getStar: SERVERURL + 'star/getStar',
+    delStar: SERVERURL + 'star/delStar',
+    delAllStar: SERVERURL + 'star/delAllStar',
     getProductList: SERVERURL + 'product/getProductList',
 };
 

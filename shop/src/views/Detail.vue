@@ -36,6 +36,7 @@
     <div class="toolbar">
       <van-goods-action>
         <van-goods-action-icon icon="chat-o" text="客服" />
+        <van-goods-action-icon icon="star" :text="text" @click="star" :class="{star:isStar}" />
         <van-goods-action-icon icon="cart-o" text="购物车" @click="onClickIcon" />
         <van-goods-action-button type="warning" text="加入购物车" @click="addCart" />
         <van-goods-action-button type="danger" text="立即购买" @click="onClickButton" />
@@ -51,7 +52,8 @@ import { mapState } from "vuex";
 export default {
   data() {
     return {
-      detail: {}
+      detail: {},
+      isStar: false,
     };
   },
   created() {
@@ -69,11 +71,46 @@ export default {
       .catch(() => {});
   },
   computed: {
-    ...mapState(["userInfo"])
+    ...mapState(["userInfo"]),
+    text() {
+      return this.isStar ? "已收藏" : "收藏";
+    }
   },
   methods: {
     onClickIcon() {
       this.$router.push(`/cart`);
+    },
+    star() {
+      // this.isStar = !this.isStar;
+      this.text = "已收藏";
+      // 检查用户是否登录  前端vuex保存登录状态
+      // 如果后端保存登录状态 koa-session  redis
+      if (JSON.stringify(this.userInfo) === "{}") {
+        this.$toast.fail("请先登录");
+        setTimeout(() => {
+          this.$router.push("/profile");
+        }, 1000);
+      } else {
+        // 插入收藏夹
+        axios({
+          url: url.addStar,
+          method: "post",
+          data: {
+            productId: this.detail._id,
+            userId: this.userInfo._id
+          }
+        })
+          .then(res => {
+            console.log(res);
+            this.isStar = !this.isStar;
+            if (res.data.code == 200) {
+              this.$toast.success(res.data.message);
+            }
+          })
+          .catch(err => {
+            console.log(err);
+          });
+      }
     },
     onClickButton() {
       if (JSON.stringify(this.userInfo) === "{}") {
@@ -172,5 +209,8 @@ export default {
     margin-bottom: 10px;
     color: #5b5454;
   }
+}
+.star {
+  color: #ff5000;
 }
 </style>

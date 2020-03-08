@@ -9,6 +9,7 @@ let Category = ()=> import('../views/Category.vue');
 let Cart = ()=> import('../views/Cart.vue');
 let Profile = ()=> import('../views/Profile.vue');
 let Mine = ()=> import('../views/Mine.vue');
+let Star = ()=> import('../views/Star.vue');
 import Ajax from '../views/Ajax.vue'
 import Detail from '../views/Detail.vue'
 import FooterBar from '../components/FooterBar.vue'
@@ -59,6 +60,14 @@ const routes = [
     name: 'mine',
     components: {
       default: Mine,
+      'footer-bar': FooterBar
+    }
+  },
+  {
+    path: '/star',
+    name: 'star',
+    components: {
+      default: Star,
       'footer-bar': FooterBar
     }
   },

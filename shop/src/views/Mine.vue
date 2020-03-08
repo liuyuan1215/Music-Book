@@ -7,6 +7,9 @@
     <div
       class="login-style"
     >{{JSON.stringify(userInfo) === '{}' ? '未登录' : "用户名："+userInfo.userName}}</div>
+    <div class="favorites" @click="$router.push('/star')">
+      <van-icon name="star-o" />&nbsp;收藏夹
+    </div>
   </div>
 </template>
 
@@ -43,6 +46,15 @@ export default {
 .login-style {
   font-weight: bold;
   padding-top: 56px;
+  padding-left: 10px;
+  color: #3750b2;
+  height: 1rem;
+  line-height: 1rem;
+  background: #e6f5ff;
+}
+.favorites {
+  font-weight: bold;
+  padding-top: 10px;
   padding-left: 10px;
   color: #3750b2;
 }
