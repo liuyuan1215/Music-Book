@@ -8,7 +8,10 @@
       class="login-style"
     >{{JSON.stringify(userInfo) === '{}' ? '未登录' : "用户名："+userInfo.userName}}</div>
     <div class="favorites" @click="$router.push('/star')">
-      <van-icon name="star-o" />&nbsp;收藏夹
+      <van-icon name="star" />&nbsp;收藏夹
+    </div>
+    <div class="address" @click="$router.push('/address')">
+      <van-icon name="location" />&nbsp;我收货的地址
     </div>
     <div class="exit" @click="exit">退出登录</div>
   </div>
@@ -94,7 +97,7 @@ export default {
   line-height: 1rem;
   background: #e6f5ff;
 }
-.favorites {
+.favorites,.address {
   background: #fff;
   height: 40px;
   line-height: 40px;
