@@ -18,6 +18,12 @@ const URL = {
     delStar: SERVERURL + 'star/delStar',
     delAllStar: SERVERURL + 'star/delAllStar',
     getProductList: SERVERURL + 'product/getProductList',
+    submitOrder: SERVERURL + 'product/submitOrder',
+    getOrder: SERVERURL + 'product/getOrder',
+    delOrder: SERVERURL + 'product/delOrder',
+    addAddress: SERVERURL + 'address/addAddress',
+    getAddress: SERVERURL + 'address/getAddress',
+    delAddress: SERVERURL + 'address/delAddress',
 };
 
 export default URL;

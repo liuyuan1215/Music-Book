@@ -19,6 +19,8 @@ let product = require('./controller/product.js');
 let type = require('./controller/type.js');
 let cart = require('./controller/cart');
 let star = require('./controller/star');
+let order = require('./controller/order');
+let address = require('./controller/address');
 
 let router = new Router();
 router.use('/user', user.routes());
@@ -26,6 +28,8 @@ router.use('/product', product.routes());
 router.use('/type', type.routes());
 router.use('/cart',cart.routes());
 router.use('/star',star.routes());
+router.use('/order',order.routes());
+router.use('/address',address.routes());
 
 app.use(router.routes());
 app.use(router.allowedMethods());
