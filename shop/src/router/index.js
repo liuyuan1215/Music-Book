@@ -10,6 +10,8 @@ let Cart = ()=> import('../views/Cart.vue');
 let Profile = ()=> import('../views/Profile.vue');
 let Mine = ()=> import('../views/Mine.vue');
 let Star = ()=> import('../views/Star.vue');
+let Address = ()=> import('../views/Address.vue');
+let AddressEdit = ()=> import('../views/AddressEdit.vue');
 import Ajax from '../views/Ajax.vue'
 import Detail from '../views/Detail.vue'
 import FooterBar from '../components/FooterBar.vue'
@@ -61,6 +63,9 @@ const routes = [
     components: {
       default: Mine,
       'footer-bar': FooterBar
+    },
+    meta: {
+      keepAlive: true
     }
   },
   {
@@ -70,6 +75,16 @@ const routes = [
       default: Star,
       'footer-bar': FooterBar
     }
+  },
+  {
+    path: '/address',
+    name: 'address',
+    component: Address
+  },
+  {
+    path: '/addressedit',
+    name: 'addressedit',
+    component: AddressEdit
   },
   {
     path: '/profile',
