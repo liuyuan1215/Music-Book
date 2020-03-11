@@ -6,7 +6,7 @@
     <div class="top-nav" :num="num">收藏夹（{{num}}）</div>
     <div class="card">
       <van-card
-        v-for="(item, index) in pruductList"
+        v-for="(item, index) in productList"
         :key="index"
         :price="item.price"
         :desc="item.company"
@@ -32,13 +32,13 @@ import url from "@/service.config.js";
 export default {
   data() {
     return {
-      pruductList: []
+      productList: []
     };
   },
   computed: {
     ...mapState(["userInfo"]),
     num() {
-      return this.pruductList.length;
+      return this.productList.length;
     }
   },
   created() {
@@ -59,7 +59,7 @@ export default {
         .then(res => {
           console.log(res);
           for (let item of res.data) {
-            this.pruductList.push(item.productId);
+            this.productList.push(item.productId);
           }
         })
         .catch(err => {
@@ -78,7 +78,7 @@ export default {
       })
         .then(res => {
           console.log(res);
-          this.pruductList = [];
+          this.productList = [];
           this.$toast.success("已全部清空");
         })
         .catch(err => {
@@ -95,7 +95,7 @@ export default {
       })
         .then(res => {
           console.log(res);
-          this.pruductList.splice(index, 1);
+          this.productList.splice(index, 1);
         })
         .catch(err => {
           console.log(err);

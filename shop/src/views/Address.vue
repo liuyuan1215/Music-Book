@@ -6,8 +6,16 @@
     </div>
     <div class="card-address">
       <div class="card-address-item" v-for="(item, index) in list" :key="index">
-        <p class="card-address-item-one">{{item.name+" "+item.tel}}</p>
-        <p class="card-address-item-two">{{item.value+" "+item.address}}</p>
+        <div class="card-address-item-input">
+          <input type="radio" name="sex" />
+        </div>
+        <div class="card-address-item-text">
+          <p class="card-address-item-text-one">{{item.name+" "+item.tel}}</p>
+          <p class="card-address-item-text-two">{{item.value+" "+item.address}}</p>
+        </div>
+        <div @click="delAddress(item._id, index)" class="card-address-item-delete">
+          <van-icon class="van-icon" size="16" name="delete" />
+        </div>
       </div>
     </div>
     <div class="card-address-add">
@@ -58,7 +66,7 @@ export default {
     goLast() {
       this.$router.push("/mine");
     },
-    delAddress() {
+    delAddress(id, index) {
       axios({
         url: url.delAddress,
         method: "post",
@@ -68,6 +76,7 @@ export default {
       })
         .then(res => {
           console.log(res);
+          this.list.splice(index, 1);
         })
         .catch(err => {
           console.log(err);
@@ -76,7 +85,6 @@ export default {
     onAdd() {
       this.$router.push("/addressedit");
     },
-    onEdit() {}
   }
 };
 </script>
@@ -87,6 +95,7 @@ body {
 }
 .cart-container {
   height: 100vh;
+  overflow: scroll;
   background: #f7f8fa;
 }
 .top-nav {
@@ -117,13 +126,39 @@ body {
     border-radius: 8px;
     padding: 12px;
     margin: 10px;
-    &-one {
-      color: #323233;
-      font-size: 16px;
+    display: flex;
+    &-input {
+      flex: 1;
+      position: relative;
+      text-align: center;
     }
-    &-two {
-      color: #323233;
-      font-size: 13px;
+    input {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+    &-text {
+      flex: 12;
+      &-one {
+        color: #323233;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &-two {
+        color: #323233;
+        font-size: 13px;
+      }
+    }
+    &-delete {
+      flex: 1;
+      position: relative;
+      text-align: center;
+      .van-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
     }
   }
 }

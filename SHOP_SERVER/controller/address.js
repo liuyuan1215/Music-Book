@@ -26,4 +26,22 @@ router.get('/getAddress', async (ctx) => {
     });
 });
 
+router.post('/delAddress', async (ctx) => {
+    const Address = mongoose.model('Address');
+    let body = ctx.request.body;
+    let addressId = body.addressId;
+    await Address.findOneAndDelete({ 'ObjectId': addressId }).then(() => {
+        ctx.body = {
+            code: 200,
+            message: '删除成功'
+        };
+    }).catch(err => {
+        console.log(err)
+        ctx.body = {
+            code: 500,
+            message: err
+        };
+    });
+})
+
 module.exports = router;

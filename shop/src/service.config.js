@@ -20,7 +20,6 @@ const URL = {
     getProductList: SERVERURL + 'product/getProductList',
     submitOrder: SERVERURL + 'product/submitOrder',
     getOrder: SERVERURL + 'product/getOrder',
-    delOrder: SERVERURL + 'product/delOrder',
     addAddress: SERVERURL + 'address/addAddress',
     getAddress: SERVERURL + 'address/getAddress',
     delAddress: SERVERURL + 'address/delAddress',
