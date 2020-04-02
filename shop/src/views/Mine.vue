@@ -13,6 +13,9 @@
     <div class="address" @click="$router.push('/address')">
       <van-icon name="location" />&nbsp;我收货的地址
     </div>
+    <div class="order" @click="$router.push('/order')">
+      <van-icon name="send-gift" />&nbsp;我的订单
+    </div>
     <div class="exit" @click="exit">退出登录</div>
   </div>
 </template>
@@ -97,7 +100,9 @@ export default {
   line-height: 1rem;
   background: #e6f5ff;
 }
-.favorites,.address {
+.favorites,
+.address,
+.order {
   background: #fff;
   height: 40px;
   line-height: 40px;
