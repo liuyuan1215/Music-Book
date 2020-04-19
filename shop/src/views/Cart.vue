@@ -11,7 +11,7 @@
     />
     <div class="card">
       <van-card
-        v-for="(item, index) in pruductList"
+        v-for="(item, index) in productList"
         :key="index"
         :price="item.price"
         :desc="item.company"
@@ -24,7 +24,7 @@
         </div>
       </van-card>
     </div>
-    <van-submit-bar class="submit-bar" :price="totalPrice" button-text="提交订单" @submit="onSubmit" />
+    <van-submit-bar class="submit-bar" :price="totalPrice" button-text="去结算" @submit="onSubmit" />
   </div>
 </template>
 
@@ -35,14 +35,14 @@ import url from "@/service.config.js";
 export default {
   data() {
     return {
-      pruductList: []
+      productList: []
     };
   },
   computed: {
     ...mapState(["userInfo"]),
     totalPrice() {
       return (
-        this.pruductList.reduce((sum, elem) => {
+        this.productList.reduce((sum, elem) => {
           sum += elem.price;
           return sum;
         }, 0) *
@@ -51,7 +51,7 @@ export default {
       );
     },
     num() {
-      return this.pruductList.length;
+      return this.productList.length;
     }
   },
   created() {
@@ -70,9 +70,9 @@ export default {
         }
       })
         .then(res => {
-          console.log(res)
+          console.log(res);
           for (let item of res.data) {
-            this.pruductList.push(item.productId);
+            this.productList.push(item.productId);
           }
         })
         .catch(err => {
@@ -82,8 +82,25 @@ export default {
   },
   methods: {
     onSubmit() {
-      this.$toast.success("提交订单成功");
-      this.pruductList = [];
+      axios({
+        url: url.submitOrder,
+        method: "post",
+        data: {
+          productList: this.productList,
+          userId: this.userInfo._id
+        }
+      })
+        .then(res => {
+          console.log(res,res.data.code);
+          if (res.data.code == 200) {
+            // this.$toast.success("提交订单成功");
+            // this.productList = [];
+            this.$router.push("/orderdetail");
+          }
+        })
+        .catch(err => {
+          console.log(err);
+        });
     },
     delCart(id, index) {
       axios({
@@ -95,7 +112,7 @@ export default {
       })
         .then(res => {
           console.log(res);
-          this.pruductList.splice(index, 1);
+          this.productList.splice(index, 1);
         })
         .catch(err => {
           console.log(err);
