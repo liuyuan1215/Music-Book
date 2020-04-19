@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 router.post('/addAddress', async (ctx) => {
     const Address = mongoose.model('Address');
     const newAddress = new Address(ctx.request.body);
+    console.log('address');
     await newAddress.save().then(() => {
         ctx.body = {
             code: 200,
