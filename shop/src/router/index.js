@@ -11,6 +11,8 @@ let Profile = ()=> import('../views/Profile.vue');
 let Mine = ()=> import('../views/Mine.vue');
 let Star = ()=> import('../views/Star.vue');
 let Address = ()=> import('../views/Address.vue');
+let Order = ()=> import('../views/Order.vue');
+let Orderdetail = ()=> import('../views/Orderdetail.vue');
 let AddressEdit = ()=> import('../views/AddressEdit.vue');
 import Ajax from '../views/Ajax.vue'
 import Detail from '../views/Detail.vue'
@@ -85,6 +87,16 @@ const routes = [
     path: '/addressedit',
     name: 'addressedit',
     component: AddressEdit
+  },
+  {
+    path: '/order',
+    name: 'order',
+    component: Order
+  },
+  {
+    path: '/orderdetail',
+    name: 'orderdetail',
+    component: Orderdetail
   },
   {
     path: '/profile',
