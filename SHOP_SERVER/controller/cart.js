@@ -47,5 +47,22 @@ router.post('/delCart', async (ctx) => {
     });
 })
 
+router.post('/delAllproductList', async (ctx) => {
+    const Cart = mongoose.model('Cart');
+    let body = ctx.request.body;
+    let userId = body.userId;
+    await Cart.deleteMany({ 'userId': userId }).then(() => {
+        ctx.body = {
+            code: 200,
+            message: '提交成功'
+        };
+    }).catch(err => {
+        console.log(err)
+        ctx.body = {
+            code: 500,
+            message: err
+        };
+    });
+})
 
 module.exports = router;
