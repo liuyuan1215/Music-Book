@@ -6,9 +6,9 @@
     </div>
     <div class="card-address">
       <div class="card-address-item" v-for="(item, index) in list" :key="index">
-        <div class="card-address-item-input">
+        <!-- <div class="card-address-item-input">
           <input type="radio" name="sex" />
-        </div>
+        </div> -->
         <div class="card-address-item-text">
           <p class="card-address-item-text-one">{{item.name+" "+item.tel}}</p>
           <p class="card-address-item-text-two">{{item.value+" "+item.address}}</p>

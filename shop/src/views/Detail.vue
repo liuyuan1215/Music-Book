@@ -119,7 +119,7 @@ export default {
           this.$router.push("/profile");
         }, 1000);
       } else {
-        this.$toast.success("购买成功");
+        this.$router.push("/orderdetail");
       }
     },
     addCart() {
