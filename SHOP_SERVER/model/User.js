@@ -5,7 +5,13 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
     userId: Schema.Types.ObjectId,
     userName: { unique: true, type: String },
-    password: String,
+    // password: String,
+    password: {
+        type: String,    //字段类型为String类型
+        max: 16,        //设置最大为100
+        min: 6,          //设置最小为0
+        required: true   //生成这个字段的时候是必须的
+    },
     createDate: { type: Date, default: Date.now() }
 });
 
