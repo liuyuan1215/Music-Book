@@ -6,6 +6,7 @@ const orderSchema = new Schema({
     ID: ObjectId,
     statu: String,
     totalPrice: Number,
+    message: String,
     list: [{
         name: String,
         tel: Number,
