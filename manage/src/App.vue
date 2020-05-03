@@ -17,9 +17,7 @@
   width: 100vw;
   height: 10vh;
   line-height: 10vh;
-  background: #3750b2;
-  color: #fff;
-  font-size: 30px;
+  background: #6375eb;
 }
 #left{
   height: 90vh;

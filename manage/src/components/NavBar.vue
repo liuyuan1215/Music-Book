@@ -1,5 +1,5 @@
 <template>
-  <van-tabbar v-model="active" active-color="#3750b2" class="leftnav" @change="change">
+  <van-tabbar v-model="active" active-color="#6375eb" class="leftnav" @change="change">
     <van-tabbar-item icon="home-o" to="/">首页</van-tabbar-item>
     <van-tabbar-item to="/user">用户管理</van-tabbar-item>
     <van-tabbar-item to="/book">商品管理</van-tabbar-item>
