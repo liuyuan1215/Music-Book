@@ -22,6 +22,7 @@ let star = require('./controller/star');
 let order = require('./controller/order');
 let address = require('./controller/address');
 let successorder = require('./controller/successorder');
+let manageuser = require('./controller/manageuser');
 
 let router = new Router();
 router.use('/user', user.routes());
@@ -32,6 +33,7 @@ router.use('/star', star.routes());
 router.use('/order', order.routes());
 router.use('/address', address.routes());
 router.use('/successorder', successorder.routes());
+router.use('/manageuser', manageuser.routes());
 
 app.use(router.routes());
 app.use(router.allowedMethods());

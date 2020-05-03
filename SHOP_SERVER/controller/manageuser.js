@@ -2,9 +2,9 @@ const Router = require('koa-router');
 let router = new Router();
 const mongoose = require('mongoose');
 
-router.post('/registUser', async (ctx) => {
+router.post('/registManageUser', async (ctx) => {
     // 获取model
-    const User = mongoose.model('User');
+    const User = mongoose.model('Manageuser');
     // 接收post请求封装成user对象
     let newUser = new User(ctx.request.body);
     // 使用save保存用户信息
@@ -21,13 +21,13 @@ router.post('/registUser', async (ctx) => {
     });
 });
 
-router.post('/loginUser', async (ctx) => {
+router.post('/loginManageUser', async (ctx) => {
     // 接收前端发送的数据
     let loginUser = ctx.request.body;
     let userName = loginUser.userName;
     let password = loginUser.password;
     // 引入model
-    const User = mongoose.model('User');
+    const User = mongoose.model('Manageuser');
     // 查询用户名是否存在 存在再去比较密码
     await User.findOne({ userName: userName }).exec().then(async (result) => {
         if (result) {
@@ -58,10 +58,10 @@ router.post('/loginUser', async (ctx) => {
     })
 });
 
-router.post('/exitUser', async (ctx) => {
+router.post('/exitManageUser', async (ctx) => {
     let body = ctx.request.body;
     let userId = body.userId;
-    const User = mongoose.model('User');
+    const User = mongoose.model('Manageuser');
     try {
         let user = await User.findOne({ _id: userId });
         if (user === null) {
@@ -82,12 +82,5 @@ router.post('/exitUser', async (ctx) => {
         console.log(err);
     }
 })
-
-router.get('/getRegistUser', async (ctx) => {
-    const Order = mongoose.model('User');
-    await Order.find({}).exec().then(res => {
-        ctx.body = res;
-    });
-});
 
 module.exports = router;
