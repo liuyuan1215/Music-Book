@@ -34,11 +34,11 @@ router.get('/getSuccessOrders', async (ctx) => {
     });
 });
 
-router.post('/updateMessage', async (ctx) => {
+router.post('/updateStatu', async (ctx) => {
     const Order = mongoose.model('Successorder');
     let body = ctx.request.body;
     let orderId = body.orderId;
-    await Order.updateOne({ 'ObjectId': orderId }, { $set: { statu: '已处理' } }).then(() => {
+    await Order.updateOne({ '_id': orderId }, { $set: { statu: '已处理' } }).then(() => {
         ctx.body = {
             code: 200,
             message: '处理成功'
