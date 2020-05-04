@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 let Home = () => import('../views/Home.vue');
-let User = ()=> import('../views/User.vue');
-let Book = ()=> import('../views/Book.vue');
-let Order = ()=> import('../views/Order.vue');
+let User = () => import('../views/User.vue');
+let Book = () => import('../views/Book.vue');
+let AddBook = () => import('../views/Addbook.vue');
+let BookList = () => import('../views/Booklist.vue');
+let Order = () => import('../views/Order.vue');
+let Login = () => import('../views/Login.vue');
 import NavBar from '../components/NavBar.vue'
 import TopBar from '../components/TopBar.vue'
 
@@ -42,6 +45,13 @@ const routes = [
       'nav-bar': NavBar,
       'top-bar': TopBar
     },
+    children: [{
+      path: '/addbook',
+      component: AddBook
+    }, {
+      path: '/booklist',
+      component: BookList
+    }],
     meta: {
       keepAlive: true
     }
@@ -57,6 +67,11 @@ const routes = [
     meta: {
       keepAlive: true
     }
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login
   },
 ]
 

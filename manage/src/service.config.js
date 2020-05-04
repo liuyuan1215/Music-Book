@@ -1,28 +1,18 @@
 const SERVERURL = 'http://localhost:3000/';
 
 const URL = {
-    registUser: SERVERURL + 'user/registUser',
-    loginUser: SERVERURL + 'user/loginUser',
-    exitUser: SERVERURL + 'user/exitUser',
+    getRegistUser: SERVERURL + 'user/getRegistUser',
+    registManageUser: SERVERURL + 'manageuser/registManageUser',
+    loginManageUser: SERVERURL + 'manageuser/loginManageUser',
+    exitManageUser: SERVERURL + 'manageuser/exitManageUser',
     getTypes: SERVERURL + 'type/getTypes',
     getProductsByType: SERVERURL + 'product/getProductsByType',
-    getDetail: SERVERURL + 'product/getDetail',
-    addCart: SERVERURL + 'cart/addCart',
-    getCart: SERVERURL + 'cart/getCart',
-    delCart: SERVERURL + 'cart/delCart',
-    addStar: SERVERURL + 'star/addStar',
-    getStar: SERVERURL + 'star/getStar',
-    delStar: SERVERURL + 'star/delStar',
-    delAllStar: SERVERURL + 'star/delAllStar',
-    getProductList: SERVERURL + 'product/getProductList',
-    submitOrder: SERVERURL + 'order/submitOrder',
+    getProductLists: SERVERURL + 'product/getProductLists',
+    delProduct: SERVERURL + 'product/delProduct',
+    addProduct: SERVERURL + 'product/addProduct',
     getOrder: SERVERURL + 'order/getOrder',
-    successOrder: SERVERURL + 'successorder/successOrder',
-    getSuccessOrder: SERVERURL + 'successorder/getSuccessOrder',
-    delAllproductList: SERVERURL + 'cart/delAllproductList',
-    addAddress: SERVERURL + 'address/addAddress',
-    getAddress: SERVERURL + 'address/getAddress',
-    delAddress: SERVERURL + 'address/delAddress',
+    updateStatu: SERVERURL + 'successorder/updateStatu',
+    getSuccessOrders: SERVERURL + 'successorder/getSuccessOrders',
 };
 
 export default URL;
