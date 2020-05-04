@@ -47,4 +47,49 @@ router.get('/getProductList',async (ctx) => {
     })
 });
 
+router.get('/getProductLists', async (ctx) => {
+    const Product = mongoose.model('Product');
+    await Product.find({}).exec().then(res => {
+        ctx.body = res;
+    });
+});
+
+router.post('/delProduct', async (ctx) => {
+    const Product = mongoose.model('Product');
+    let body = ctx.request.body;
+    let productId = body.productId;
+    // console.log(productId);
+    await Product.findOneAndDelete({ 'ObjectId': productId }).then(() => {
+        // console.log('11122');
+        ctx.body = {
+            code: 200,
+            message: '删除成功'
+        };
+    }).catch(err => {
+        console.log(err)
+        ctx.body = {
+            code: 500,
+            message: err
+        };
+    });
+})
+
+router.post('/addProduct', async (ctx) => {
+    const Product = mongoose.model('Product');
+    const newProduct = new Product(ctx.request.body);
+    console.log('343434');
+    await newProduct.save().then(() => {
+        ctx.body = {
+            code: 200,
+            message: '保存成功'
+        };
+    }).catch(err => {
+        console.log(err);
+        ctx.body = {
+            code: 500,
+            message: err
+        };
+    });
+});
+
 module.exports = router;
