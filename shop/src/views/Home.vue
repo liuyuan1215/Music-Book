@@ -3,7 +3,10 @@
     <!-- 头部 -->
     <van-nav-bar title="首页" class="nav-title">
       <van-icon name="search" @click="search" slot="left"></van-icon>
-      <van-icon @click="$router.push('/profile')" slot="right">{{JSON.stringify(userInfo) === '{}' ? '未登录' : userInfo.userName}}</van-icon>
+      <van-icon
+        @click="$router.push('/profile')"
+        slot="right"
+      >{{JSON.stringify(userInfo) === '{}' ? '未登录' : userInfo.userName}}</van-icon>
     </van-nav-bar>
 
     <van-notice-bar
@@ -71,8 +74,9 @@ export default {
     return {
       hotProducts: [],
       varietyItem: [],
-      start: 0,
+      start1: 0,
       limit: 20,
+      start2: 23,
       carouselItem: [
         // 轮播图
         {
@@ -120,10 +124,11 @@ export default {
     // });
     //请求推荐商品数据
     axios({
-      url: url.getProductList,
+      url: url.getProductList2,
       method: "get",
       params: {
-        start: this.varietyItem.length,
+        // start2: this.varietyItem.length,
+        start2: this.start2,
         limit: this.limit
       }
     })
@@ -136,10 +141,10 @@ export default {
       });
     //请求热门商品数据
     axios({
-      url: url.getProductList,
+      url: url.getProductList1,
       method: "get",
       params: {
-        start: this.hotProducts.length,
+        start1: this.hotProducts.length,
         limit: this.limit
       }
     })
