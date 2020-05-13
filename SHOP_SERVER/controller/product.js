@@ -40,9 +40,16 @@ router.get('/getDetail', async (ctx) => {
     })
 });
 
-router.get('/getProductList',async (ctx) => {
+router.get('/getProductList1',async (ctx) => {
     const Product = mongoose.model('Product');
-    await Product.find({}).skip(parseInt(ctx.query.start)).limit(parseInt(ctx.query.limit)).exec().then(res=>{
+    await Product.find({}).skip(parseInt(ctx.query.start1)).limit(parseInt(ctx.query.limit)).exec().then(res=>{
+        ctx.body = res;
+    })
+});
+
+router.get('/getProductList2',async (ctx) => {
+    const Product = mongoose.model('Product');
+    await Product.find({}).skip(parseInt(ctx.query.start2)).limit(parseInt(ctx.query.limit)).exec().then(res=>{
         ctx.body = res;
     })
 });

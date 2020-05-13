@@ -12,6 +12,7 @@ let Mine = ()=> import('../views/Mine.vue');
 let Star = ()=> import('../views/Star.vue');
 let Address = ()=> import('../views/Address.vue');
 let Order = ()=> import('../views/Order.vue');
+let Pay = ()=> import('../views/Pay.vue');
 let Orderdetail = ()=> import('../views/Orderdetail.vue');
 let AddressEdit = ()=> import('../views/AddressEdit.vue');
 import Ajax from '../views/Ajax.vue'
@@ -92,6 +93,11 @@ const routes = [
     path: '/order',
     name: 'order',
     component: Order
+  },
+  {
+    path: '/pay',
+    name: 'pay',
+    component: Pay
   },
   {
     path: '/orderdetail',
