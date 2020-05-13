@@ -13,6 +13,9 @@
     <div class="address" @click="$router.push('/address')">
       <van-icon name="location" />&nbsp;我收货的地址
     </div>
+    <div class="pay" @click="$router.push('/pay')">
+      <van-icon name="gold-coin" />&nbsp;扫码支付
+    </div>
     <div class="order" @click="$router.push('/order')">
       <van-icon name="send-gift" />&nbsp;我的订单
     </div>
@@ -102,6 +105,7 @@ export default {
 }
 .favorites,
 .address,
+.pay,
 .order {
   background: #fff;
   height: 40px;

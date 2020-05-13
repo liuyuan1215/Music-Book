@@ -4,7 +4,7 @@
       <van-icon size="25" color="#484848" name="arrow-left" @click="goLast" />
     </div>
     <div class="add-margin-top">
-      <van-tabs>
+      <van-tabs color="#3750b2">
         <van-tab title="登录">
           <van-cell-group>
             <van-field label="用户名" required clearable placeholder="请输入用户名" v-model="loginUsername"></van-field>
@@ -18,7 +18,7 @@
             ></van-field>
           </van-cell-group>
           <div>
-            <van-button @click="loginHandler" type="primary" size="large">登录</van-button>
+            <van-button @click="loginHandler" color="#3750b2" round block type="info">登录</van-button>
           </div>
         </van-tab>
         <van-tab title="注册">
@@ -34,7 +34,7 @@
             ></van-field>
           </van-cell-group>
           <div>
-            <van-button @click="registHandler" type="primary" size="large">注册</van-button>
+            <van-button @click="registHandler" color="#3750b2" round block type="info">注册</van-button>
           </div>
         </van-tab>
       </van-tabs>
