@@ -9,7 +9,7 @@
       text="通知内容通知内容通知内容"
       left-icon="volume-o"
     />
-    <div class="card">
+    <div class="cart-card">
       <van-card
         v-for="(item, index) in productList"
         :key="index"
@@ -24,7 +24,7 @@
         </div>
       </van-card>
     </div>
-    <van-submit-bar class="submit-bar" :price="totalPrice" button-text="去结算" @submit="onSubmit" />
+    <van-submit-bar class="cart-submit-bar" :price="totalPrice" button-text="去结算" @submit="onSubmit" />
   </div>
 </template>
 
@@ -150,10 +150,10 @@ body {
   color: #3750b2;
   font-weight: bolder;
 }
-.submit-bar {
+.cart-submit-bar {
   margin-bottom: 50px;
 }
-.card {
+.cart-card {
   // background: #f7f8fa;
   // padding-bottom: 2rem;
   margin-bottom: 2rem;

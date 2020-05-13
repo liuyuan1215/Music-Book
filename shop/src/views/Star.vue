@@ -1,10 +1,10 @@
 <template>
-  <div class="cart-container">
+  <div class="star-container">
     <div class="last-star">
       <van-icon size="25" color="#484848" name="arrow-left" @click="goLast" />
     </div>
     <div class="top-nav" :num="num">收藏夹（{{num}}）</div>
-    <div class="card">
+    <div class="star-card">
       <van-card
         v-for="(item, index) in productList"
         :key="index"
@@ -19,7 +19,7 @@
         </div>
       </van-card>
     </div>
-    <div class="submit-bar" @click="onSubmit">
+    <div class="star-submit-bar" @click="onSubmit">
       <van-icon size="25" name="delete" />
     </div>
   </div>
@@ -130,21 +130,21 @@ body {
   background: #fff;
   border-bottom: 1px solid #eee;
 }
-.cart-container {
+.star-container {
   background: #f7f8fa;
 }
 .van-nav-bar__title {
   color: #3750b2;
   font-weight: bolder;
 }
-.submit-bar {
+.star-submit-bar {
   position: fixed;
   top: 8px;
   right: 4px;
   z-index: 1000;
 }
-.card {
-  margin-top: 47px;
+.star-card {
+  margin-top: 55px;
   margin-bottom: 1rem;
 }
 .van-card__title .van-multi-ellipsis--l2 {
