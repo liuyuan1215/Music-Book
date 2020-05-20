@@ -217,8 +217,8 @@ export default {
           console.log(res, res.data.code);
           if (res.data.code == 200) {
             this.$toast.success("提交订单成功");
-            console.log(this.$router.history.current.name);
-            // this.delAllproductList();
+            // console.log(this.$router.history.current.name);
+            this.delAllproductList();
             this.$router.push("/pay");
           }
         })

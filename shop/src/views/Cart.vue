@@ -2,6 +2,7 @@
   <div class="cart-container">
     <!-- <van-nav-bar class="top-nav" title="购物车" :num="num"></van-nav-bar> -->
     <div class="top-nav" :num="num">购物车（{{num}}）</div>
+
     <van-notice-bar
       class="van-notice-bar"
       color="#1989fa"
@@ -9,22 +10,31 @@
       text="通知内容通知内容通知内容"
       left-icon="volume-o"
     />
-    <div class="cart-card">
-      <van-card
-        v-for="(item, index) in productList"
-        :key="index"
-        :price="item.price"
-        :desc="item.company"
-        :title="item.name"
-        :thumb="item.img"
-        @click-thumb="goDetail(item._id)"
-      >
-        <div slot="footer">
-          <van-button size="mini" @click="delCart(item._id, index)">删除</van-button>
-        </div>
-      </van-card>
-    </div>
-    <van-submit-bar class="cart-submit-bar" :price="totalPrice" button-text="去结算" @submit="onSubmit" />
+
+    <van-pull-refresh v-model="isLoading" @refresh="onRefresh">
+      <div v-if="isShow" style="height:100px;"></div>
+      <div id="divcard" class="cart-card">
+        <van-card
+          v-for="(item, index) in productList"
+          :key="index"
+          :price="item.price"
+          :desc="item.company"
+          :title="item.name"
+          :thumb="item.img"
+          @click-thumb="goDetail(item._id)"
+        >
+          <div slot="footer">
+            <van-button size="mini" @click="delCart(item._id, index)">删除</van-button>
+          </div>
+        </van-card>
+      </div>
+    </van-pull-refresh>
+    <van-submit-bar
+      class="cart-submit-bar"
+      :price="totalPrice"
+      button-text="去结算"
+      @submit="onSubmit"
+    />
   </div>
 </template>
 
@@ -35,7 +45,9 @@ import url from "@/service.config.js";
 export default {
   data() {
     return {
-      productList: []
+      productList: [],
+      isLoading: false, // 上拉加载
+      isShow: true
     };
   },
   computed: {
@@ -73,6 +85,12 @@ export default {
           console.log(res);
           for (let item of res.data) {
             this.productList.push(item.productId);
+            for (let item of res.data) {
+              if (item.length != 0) {
+                this.isShow = false;
+              }
+            }
+            this.isShow = false;
           }
         })
         .catch(err => {
@@ -81,6 +99,37 @@ export default {
     }
   },
   methods: {
+    getCartList() {
+      this.isLoading = true;
+      axios({
+        url: url.getCart,
+        method: "get",
+        params: {
+          userId: this.userInfo._id
+        }
+      })
+        .then(res => {
+          console.log(res);
+          for (let item of res.data) {
+            // this.productList.push(item.productId);
+            if (item.length != 0) {
+              this.productList = this.productList.concat(item.productId);
+              this.isShow = false;
+            }
+          }
+          this.isShow = false;
+          this.isLoading = false;
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
+    onRefresh() {
+      setTimeout(() => {
+        this.productList = [];
+        this.getCartList();
+      }, 1500);
+    },
     onSubmit() {
       axios({
         url: url.submitOrder,
@@ -91,7 +140,7 @@ export default {
         }
       })
         .then(res => {
-          console.log(res,res.data.code);
+          console.log(res, res.data.code);
           if (res.data.code == 200) {
             // this.$toast.success("提交订单成功");
             // this.productList = [];
@@ -107,12 +156,13 @@ export default {
         url: url.delCart,
         method: "post",
         data: {
-          productId: this._id
+          productId: this.$route.query.id
         }
       })
         .then(res => {
           console.log(res);
           this.productList.splice(index, 1);
+          this.getCartList();
         })
         .catch(err => {
           console.log(err);
