@@ -39,7 +39,7 @@
         <div class="card-order-address-mes">
           <div class="card-order-address-mes-title">订单信息</div>
           <div class="card-order-address-mes-num">订单编号：{{item._id}}</div>
-          <div class="card-order-address-mes-time">创建时间：{{item.createDate}}</div>
+          <div class="card-order-address-mes-time">创建时间：{{formatTime(item.createDate)}}</div>
           <div class="card-order-address-mes-pay">支付方式：{{item.message}}</div>
           <div class="card-order-address-mes-statu">订单状态：{{item.statu}}</div>
         </div>
@@ -52,6 +52,7 @@
 import axios from "axios";
 import url from "@/service.config.js";
 import { mapState } from "vuex";
+import Moment from 'moment';
 export default {
   data() {
     return {
@@ -86,6 +87,9 @@ export default {
     }
   },
   methods: {
+    formatTime(value) {
+      return Moment(value).format('YYYY-MM-DD HH:mm:ss')
+    },
     goLast() {
       this.$router.push("/mine");
     }

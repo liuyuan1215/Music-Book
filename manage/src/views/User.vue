@@ -9,7 +9,7 @@
     <div v-for="(item, index) in users" :key="index" class="user-userlist">
       <div class="user-userlist-one">{{index+1}}</div>
       <div class="user-userlist-two">{{item.userName}}</div>
-      <div class="user-userlist-three">{{item.createDate}}</div>
+      <div class="user-userlist-three">{{formatTime(item.createDate)}}</div>
     </div>
   </div>
 </template>
@@ -18,6 +18,7 @@
 import axios from "axios";
 import url from "@/service.config.js";
 import { mapState } from "vuex";
+import Moment from 'moment';
 export default {
   data() {
     return {
@@ -48,7 +49,12 @@ export default {
         console.log(err);
       });
     // }
-  }
+  },
+  methods: {
+    formatTime(value) {
+      return Moment(value).format('YYYY-MM-DD HH:mm:ss')
+    }
+  },
 };
 </script>
 
