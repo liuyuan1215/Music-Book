@@ -8,7 +8,7 @@
       <div class="card-address-item" v-for="(item, index) in list" :key="index">
         <!-- <div class="card-address-item-input">
           <input type="radio" name="sex" />
-        </div> -->
+        </div>-->
         <div class="card-address-item-text">
           <p class="card-address-item-text-one">{{item.name+" "+item.tel}}</p>
           <p class="card-address-item-text-two">{{item.value+" "+item.address}}</p>
@@ -71,7 +71,7 @@ export default {
         url: url.delAddress,
         method: "post",
         data: {
-          addressId: this._id
+          addressId: this.$route.query.id
         }
       })
         .then(res => {
@@ -84,7 +84,7 @@ export default {
     },
     onAdd() {
       this.$router.push("/addressedit");
-    },
+    }
   }
 };
 </script>

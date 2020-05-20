@@ -90,7 +90,7 @@ export default {
         url: url.delStar,
         method: "post",
         data: {
-          productId: this._id
+          productId: this.$route.query.id
         }
       })
         .then(res => {
