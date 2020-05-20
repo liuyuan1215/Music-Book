@@ -163,14 +163,6 @@ export default {
         });
     }
   },
-  beforeRouteEnter(to, from, next) {
-      console.log(to);
-      console.log(from);
-    next(() => {
-      //  这里的vm指的就是vue实例，可以用来当做this使用
-      
-    });
-  },
   methods: {
     goLast() {
       this.$router.push("/cart");
@@ -226,8 +218,8 @@ export default {
           if (res.data.code == 200) {
             this.$toast.success("提交订单成功");
             console.log(this.$router.history.current.name);
-              this.delAllproductList();
-              this.$router.push("/cart");
+            // this.delAllproductList();
+            this.$router.push("/pay");
           }
         })
         .catch(err => {
@@ -318,7 +310,7 @@ body {
   border-radius: 25px;
   text-align: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 50px;
   margin-top: 70px;
 }
