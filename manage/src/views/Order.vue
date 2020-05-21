@@ -14,7 +14,7 @@
     <div v-for="(item, index) in orders" :key="index" class="order-userlist">
       <div class="order-userlist-one">{{index+1}}</div>
       <div class="order-userlist-two">{{item.statu}}</div>
-      <div class="order-userlist-three">{{item.createDate}}</div>
+      <div class="order-userlist-three">{{formatTime(item.createDate)}}</div>
       <div class="order-userlist-four" style="position:relative;">
         <div
           class="order-userlist-four-a"
@@ -50,7 +50,8 @@
 import axios from "axios";
 import url from "@/service.config.js";
 import { mapState } from "vuex";
-import { Toast } from 'vant';
+import { Toast } from "vant";
+import Moment from "moment";
 export default {
   data() {
     return {
@@ -83,6 +84,23 @@ export default {
     // }
   },
   methods: {
+    formatTime(value) {
+      return Moment(value).format("YYYY-MM-DD HH:mm:ss");
+    },
+    getSuccessOrderList() {
+      axios({
+        url: url.getSuccessOrders,
+        method: "get",
+        params: {}
+      })
+        .then(res => {
+          console.log(res);
+          this.orders = res.data;
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
     updateStatu(id) {
       axios({
         url: url.updateStatu,
@@ -95,16 +113,17 @@ export default {
           console.log(res);
           console.log(id);
           if (res.data.code == 200) {
-            Toast.success('处理成功');
+            this.getSuccessOrderList();
+            Toast.success("处理成功");
           } else {
-            Toast.fail('处理失败');
+            Toast.fail("处理失败");
           }
         })
         .catch(err => {
           console.log(err);
         });
-    },
-  },
+    }
+  }
 };
 </script>
 
