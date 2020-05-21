@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <div class="welcome">请 开 始 你 的 工 作 !</div>
+    <div class="welcome">Online Book City</div>
   </div>
 </template>
 

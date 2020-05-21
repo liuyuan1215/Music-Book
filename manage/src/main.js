@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import { Button, Icon, Sidebar, SidebarItem, NavBar, Tabbar, TabbarItem, Swipe, SwipeItem, Lazyload, Tabs, Tab, CellGroup, Field, Toast, Col, Row, List, PullRefresh, GoodsAction, GoodsActionButton, GoodsActionIcon, NoticeBar, Card, SubmitBar, Sku, Search, AddressList, AddressEdit, Area, Form, Popup, RadioGroup, Radio, Cell} from 'vant';
+import { Uploader, Button, Icon, Sidebar, SidebarItem, NavBar, Tabbar, TabbarItem, Swipe, SwipeItem, Lazyload, Tabs, Tab, CellGroup, Field, Toast, Col, Row, List, PullRefresh, GoodsAction, GoodsActionButton, GoodsActionIcon, NoticeBar, Card, SubmitBar, Sku, Search, AddressList, AddressEdit, Area, Form, Popup, RadioGroup, Radio, Cell} from 'vant';
 import '@/assets/css/reset.css'
 import '@/assets/js/rem.js'
 import '@/assets/css/scrollbar.css'
@@ -45,6 +45,7 @@ Vue.use(Popup);
 Vue.use(Radio);
 Vue.use(RadioGroup);
 Vue.use(Cell);
+Vue.use(Uploader);
 
 new Vue({
   router,
