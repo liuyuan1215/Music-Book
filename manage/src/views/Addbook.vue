@@ -9,13 +9,29 @@
           placeholder="书籍名称"
           :rules="[{ required: true, message: '请填写书籍名称' }]"
         />
-        <van-field
+        <!-- <van-field
           v-model="img"
           name="主图"
           label="主图"
           placeholder="主图"
           :rules="[{ required: true, message: '请填写主图链接' }]"
-        />
+        />-->
+        <div class="addImg">
+          <div class="img">
+            <div class="img-one">主图</div>
+            <van-uploader class="img-two" required v-model="fileList1" multiple :max-count="1" />
+          </div>
+          <div class="detailImg">
+            <div class="detailImg-one">详情图</div>
+            <van-uploader
+              class="detailImg-two"
+              required
+              v-model="fileList2"
+              multiple
+              :max-count="1"
+            />
+          </div>
+        </div>
         <van-field
           v-model="price"
           type="number"
@@ -46,13 +62,13 @@
           placeholder="ISBN编号"
           :rules="[{ required: true, message: '请输入ISBN编号' }]"
         />
-        <van-field
+        <!-- <van-field
           v-model="detailImg"
           name="详情图"
           label="详情图"
           placeholder="详情图"
           :rules="[{ required: true, message: '请填写详情图链接' }]"
-        />
+        />-->
         <van-field
           v-model="type"
           type="number"
@@ -83,7 +99,9 @@ export default {
       city: "",
       idnum: "",
       detailImg: "",
-      type: ""
+      type: "",
+      fileList1: [],
+      fileList2: []
     };
   },
   computed: {
@@ -96,20 +114,25 @@ export default {
         method: "post",
         data: {
           name: this.name,
-          img: this.img,
+          // img: this.img,
           price: this.price,
           company: this.company,
           city: this.city,
           idnum: this.idnum,
-          detailImg: this.detailImg,
-          type: this.type
+          // detailImg: this.detailImg,
+          type: this.type,
+          fileList1: this.fileList1,
+          fileList2: this.fileList2
         }
       })
         .then(res => {
           console.log(res);
           if (res.data.code == 200) {
-            this.name = this.img = this.price = this.company = this.city = this.idnum = this.detailImg = this.type =
+            // this.name = this.img = this.price = this.company = this.city = this.idnum = this.detailImg = this.type =
+            //   "";
+            this.name = this.price = this.company = this.city = this.idnum = this.type =
               "";
+            this.fileList1 = this.fileList2 = [];
             this.$toast.success("添加成功");
           } else {
             this.$toast.fail("添加失败1");
@@ -129,5 +152,32 @@ export default {
   margin-bottom: 1vh;
   margin-right: 60vh;
   margin-left: 1vh;
+}
+.addImg {
+  display: flex;
+}
+.img {
+  display: flex;
+  padding: 10px 30px 10px 16px;
+  &-one {
+    width: 90px;
+    height: 80px;
+    line-height: 80px;
+  }
+  &-two {
+    flex: 1;
+  }
+}
+.detailImg {
+  display: flex;
+  padding: 10px 16px;
+  &-one {
+    width: 90px;
+    height: 80px;
+    line-height: 80px;
+  }
+  &-two {
+    flex: 1;
+  }
 }
 </style>

@@ -16,15 +16,18 @@
     <div v-for="(item, index) in products" :key="index" class="booklist-products">
       <div class="booklist-products-one">{{index+1}}</div>
       <div class="booklist-products-two">{{item.name}}</div>
-      <div class="booklist-products-three">
-        <img :src="item.img" alt />
+      <div class="booklist-products-three" v-for="(a, index1) in item.fileList1" :key="index1">
+        <img :src="a.content" alt />
       </div>
       <div class="booklist-products-four">{{item.price}}</div>
       <div class="booklist-products-five">{{item.company}}</div>
       <div class="booklist-products-six">{{item.city}}</div>
       <div class="booklist-products-seven">{{item.idnum}}</div>
-      <div class="booklist-products-eight">
+      <!-- <div class="booklist-products-eight">
         <img :src="item.detailImg" alt />
+      </div> -->
+      <div class="booklist-products-eight" v-for="(b, index2) in item.fileList2" :key="index2">
+        <img :src="b.content" alt="">
       </div>
       <div class="booklist-products-nine">{{item.type}}</div>
       <div class="booklist-products-ten" @click="delProduct(item._id,index)">下架</div>
