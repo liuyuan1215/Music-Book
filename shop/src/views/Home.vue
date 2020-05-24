@@ -34,7 +34,7 @@
       <swiper class="hot-swiper" :options="swiperOption">
         <swiper-slide v-for="(item,index) in hotProducts" :key="index">
           <div class="hot-swiper-content" @click="goDetail(item._id)">
-            <img :src="item.img" alt />
+            <img :src="item.fileList1[0].content" alt />
             <div class="hot-swiper-content-name">{{ item.name }}</div>
             <div class="hot-swiper-content-price">￥{{ item.price }}</div>
           </div>
@@ -54,7 +54,7 @@
           v-for="(item,index) in varietyItem"
           :key="index"
         >
-          <img :src="item.img" alt />
+          <img :src="item.fileList1[0].content" alt />
           <p class="variety-item-name">{{ item.name }}</p>
           <p class="variety-item-price">￥{{ item.price }}</p>
         </li>

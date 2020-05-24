@@ -29,7 +29,7 @@
             :price="itemProductList.price"
             :desc="itemProductList.company"
             :title="itemProductList.name"
-            :thumb="itemProductList.img"
+            :thumb="itemProductList.fileList1[0].content"
           ></van-card>
         </div>
         <div class="card-order-address-price">

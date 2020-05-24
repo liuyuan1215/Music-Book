@@ -28,7 +28,7 @@
                 v-for="(item, index) in productList"
                 :key="index"
               >
-                <img :src="item.img" alt />
+                <img :src="item.fileList1[0].content" alt />
                 <p class="content-item-name">{{item.name}}</p>
                 <p class="content-item-price">￥{{item.price}}</p>
               </div>

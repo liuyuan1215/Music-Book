@@ -18,7 +18,7 @@
         :price="item.price"
         :desc="item.company"
         :title="item.name"
-        :thumb="item.img"
+        :thumb="item.fileList1[0].content"
         @click="goDetail(item._id)"
       ></van-card>
       <div class="card-toast" v-if="isShowTip">没有搜索到匹配结果</div>

@@ -2,7 +2,7 @@
   <div class="detail-container">
     <van-nav-bar class="top-nav" title="商品详情" left-text="返回" @click-left="$router.go(-1)"></van-nav-bar>
     <div class="detail-container-bg">
-      <img :src="detail.img" alt class="detail-img" />
+      <img :src="detail.fileList1[0].content" alt class="detail-img" />
       <div class="detail">
         <div class="detail-top">
           <p class="detail-top-price">￥{{detail.price}}</p>
@@ -30,7 +30,7 @@
     </div>
     <div class="detail-detailImg">
       <div class="detail-detailImg-text">宝贝详情</div>
-      <img :src="detail.detailImg" alt />
+      <img :src="detail.fileList2[0].content" alt />
     </div>
 
     <div class="toolbar">

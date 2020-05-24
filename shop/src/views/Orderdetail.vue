@@ -54,7 +54,7 @@
             :price="item.price"
             :desc="item.company"
             :title="item.name"
-            :thumb="item.img"
+            :thumb="item.fileList1[0].content"
             @click-thumb="goDetail(item._id)"
           ></van-card>
         </div>

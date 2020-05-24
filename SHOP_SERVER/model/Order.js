@@ -7,12 +7,12 @@ const orderSchema = new Schema({
     productList: [{
         _id: String,
         name: String,
-        img: String,
+        fileList1: [{ content: String, message: String, status: String, file: Object }],
         price: Number,
         company: String,
         city: String,
         idnum: Number,
-        detailImg: String
+        fileList2: [{ content: String, message: String, status: String, file: Object }],
     }],
     userId: ObjectId,
     createDate: { type: Date, default: Date.now() }
