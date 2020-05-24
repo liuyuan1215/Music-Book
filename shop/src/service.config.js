@@ -17,6 +17,7 @@ const URL = {
     getStar: SERVERURL + 'star/getStar',
     delStar: SERVERURL + 'star/delStar',
     delAllStar: SERVERURL + 'star/delAllStar',
+    getProductList: SERVERURL + 'product/getProductList',
     getProductList1: SERVERURL + 'product/getProductList1',
     getProductList2: SERVERURL + 'product/getProductList2',
     submitOrder: SERVERURL + 'order/submitOrder',
