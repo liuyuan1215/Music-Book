@@ -71,7 +71,7 @@ export default {
         url: url.delAddress,
         method: "post",
         data: {
-          addressId: this.$route.query.id
+          addressId: id
         }
       })
         .then(res => {

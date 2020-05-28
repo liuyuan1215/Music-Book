@@ -31,7 +31,8 @@ router.post('/delAddress', async (ctx) => {
     const Address = mongoose.model('Address');
     let body = ctx.request.body;
     let addressId = body.addressId;
-    await Address.findOneAndDelete({ 'ObjectId': addressId }).then(() => {
+    console.log(addressId);
+    await Address.findOneAndDelete({ '_id': addressId }).then(() => {
         ctx.body = {
             code: 200,
             message: '删除成功'
