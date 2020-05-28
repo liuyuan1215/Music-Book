@@ -54,6 +54,7 @@ export default {
     return {
       detail: {},
       isStar: false,
+      val: 1
     };
   },
   created() {
@@ -137,7 +138,8 @@ export default {
           method: "post",
           data: {
             productId: this.detail._id,
-            userId: this.userInfo._id
+            userId: this.userInfo._id,
+            val: this.val
           }
         })
           .then(res => {

@@ -11,6 +11,7 @@ const URL = {
     getProductsByType: SERVERURL + 'product/getProductsByType',
     getDetail: SERVERURL + 'product/getDetail',
     addCart: SERVERURL + 'cart/addCart',
+    editCart: SERVERURL + 'cart/editCart',
     getCart: SERVERURL + 'cart/getCart',
     delCart: SERVERURL + 'cart/delCart',
     addStar: SERVERURL + 'star/addStar',
