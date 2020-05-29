@@ -8,6 +8,7 @@ const cartSchema = new Schema({
         type: ObjectId,
         ref: 'Product' // 指向联合查询的model
     },
+    val: Number,
     userId: ObjectId,
     createDate: { type: Date, default: Date.now() }
 });

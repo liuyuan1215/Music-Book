@@ -13,6 +13,7 @@ const orderSchema = new Schema({
         city: String,
         idnum: Number,
         fileList2: [{ content: String, message: String, status: String, file: Object }],
+        val: Number
     }],
     userId: ObjectId,
     createDate: { type: Date, default: Date.now() }
