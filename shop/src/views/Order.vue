@@ -26,6 +26,7 @@
           <van-card
             v-for="(itemProductList, j) in successorder[index].productList"
             :key="j"
+            :num="itemProductList.val"
             :price="itemProductList.price"
             :desc="itemProductList.company"
             :title="itemProductList.name"
@@ -52,7 +53,7 @@
 import axios from "axios";
 import url from "@/service.config.js";
 import { mapState } from "vuex";
-import Moment from 'moment';
+import Moment from "moment";
 export default {
   data() {
     return {
@@ -88,7 +89,7 @@ export default {
   },
   methods: {
     formatTime(value) {
-      return Moment(value).format('YYYY-MM-DD HH:mm:ss')
+      return Moment(value).format("YYYY-MM-DD HH:mm:ss");
     },
     goLast() {
       this.$router.push("/mine");
@@ -128,16 +129,15 @@ body {
 .card-order {
   padding-top: 47px;
 }
-.card-order-item{
-  
+.card-order-item {
 }
-.card-order-item-title{
+.card-order-item-title {
   background: #fff;
   margin-top: 10px;
   padding: 10px;
   text-align: center;
   font-weight: bold;
-  font-size:18px;
+  font-size: 18px;
   color: #3750b2;
 }
 .card-order-address-con {

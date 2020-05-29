@@ -5,7 +5,7 @@
       <div class="order-userlisttop-one">订单编号</div>
       <div class="order-userlisttop-two">订单状态</div>
       <div class="order-userlisttop-three">生成订单时间</div>
-      <div class="order-userlisttop-four">ISBN编号</div>
+      <div class="order-userlisttop-four">ISBN编号&nbsp;——&nbsp;数量</div>
       <div class="order-userlisttop-five">总价</div>
       <div class="order-userlisttop-six">支付方式</div>
       <div class="order-userlisttop-seven">收货地址</div>
@@ -24,7 +24,7 @@
             class="order-userlist-four-a-goods"
             v-for="(itemProductList, j) in orders[index].productList"
             :key="j"
-          >{{itemProductList.idnum}}</div>
+          >{{itemProductList.idnum}}&nbsp;——&nbsp;{{itemProductList.val}}</div>
         </div>
       </div>
 

@@ -15,15 +15,25 @@
       <div v-if="isShow" style="height:100px;"></div>
       <div id="divcard" class="cart-card">
         <van-card
-          v-for="(item, index) in productList"
+          v-for="(item, index) in productList0"
           :key="index"
-          :price="item.price"
-          :desc="item.company"
-          :title="item.name"
-          :thumb="item.fileList1[0].content"
-          @click-thumb="goDetail(item._id)"
+          :num="item.val"
+          :price="item.productId.price"
+          :desc="item.productId.company"
+          :title="item.productId.name"
+          :thumb="item.productId.fileList1[0].content"
+          @click-thumb="goDetail(item.productId._id)"
         >
           <div slot="footer">
+            <span @click="reduceCount(item,item.val)">
+              <van-button size="mini">-</van-button>
+            </span>
+            <span @click="showModal(item)" class="input">
+              <span class="input-edit">{{item.val}}</span>
+            </span>
+            <span @click="addCount(item,item.val)">
+              <van-button size="mini">+</van-button>
+            </span>
             <van-button size="mini" @click="delCart(item._id, index)">删除</van-button>
           </div>
         </van-card>
@@ -42,10 +52,13 @@
 import { mapState } from "vuex";
 import axios from "axios";
 import url from "@/service.config.js";
+import { Toast } from "vant";
+// import { handleError } from "../utils/utils";
 export default {
   data() {
     return {
       productList: [],
+      productList0: [],
       isLoading: false, // 上拉加载
       isShow: true
     };
@@ -54,8 +67,8 @@ export default {
     ...mapState(["userInfo"]),
     totalPrice() {
       return (
-        this.productList.reduce((sum, elem) => {
-          sum += elem.price;
+        this.productList0.reduce((sum, elem) => {
+          sum += elem.productId.price * elem.val;
           return sum;
         }, 0) *
         10 *
@@ -63,7 +76,7 @@ export default {
       );
     },
     num() {
-      return this.productList.length;
+      return this.productList0.length;
     }
   },
   created() {
@@ -83,15 +96,30 @@ export default {
       })
         .then(res => {
           console.log(res);
+          // for (let item of res.data) {
+          // this.productList0.push(item);
+          // this.productList = [...res.data.map(item=>item.productId),...res.data.map(item=>item.val)]
+          // let a = res.data.map(item => item.productId);
+          // let b = res.data.map(item => item.val);
+          // a.forEach(item => {
+          //   item.val = "";
+          // });
+          // for (let x = 0; x < b.length; x++) {
+          //   for (let y = 0; y < a.length; y++) {
+          //     a[y].val = b[y]
+          //   }
+          // }
+          // console.log(a);
+          // console.log(b);
+          // this.productList = a;
+          this.productList0 = res.data;
           for (let item of res.data) {
-            this.productList.push(item.productId);
-            for (let item of res.data) {
-              if (item.length != 0) {
-                this.isShow = false;
-              }
+            if (item.length != 0) {
+              this.isShow = false;
             }
-            this.isShow = false;
           }
+          this.isShow = false;
+          // }
         })
         .catch(err => {
           console.log(err);
@@ -99,6 +127,91 @@ export default {
     }
   },
   methods: {
+    // 更新购物车数量
+    updateCartCountThrottle(_id, val) {
+      clearTimeout(this.timer);
+      this.timer = setTimeout(() => {
+        this.updateCartCount(_id, val);
+      }, 500);
+    },
+    updateCartCount(_id, val) {
+      axios({
+        url: url.editCart,
+        method: "post",
+        data: { _id, val }
+      })
+        .then(res => {
+          if (res.data.code == 200) {
+            this.getCartList();
+            console.log("正在更新");
+          }
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
+    // async updateCartCount(_id, val) {
+    //   try {
+    //     let res = await axios({
+    //       url: url.editCart,
+    //       method: "post",
+    //       data: { _id, val }
+    //     });
+    //     if (res.errorCode == 200) {
+    //       this.getCartList();
+    //       console.log('正在更新')
+    //     } else {
+    //       // this.$notify({
+    //       //   message: res.errorMsg
+    //       // });
+    //     }
+    //   } catch (err) {
+    //     handleError(err, this.$router);
+    //   }
+    // },
+    addCount(good, val) {
+      if (!val && val !== 0) {
+        Toast({
+          position: "bottom",
+          message: "数值不正确~"
+        });
+        return;
+      }
+      if (val >= 10) {
+        Toast({
+          position: "bottom",
+          message: "限购10本~"
+        });
+        return;
+      }
+      val++;
+      good.val = val;
+      this.updateCartCountThrottle(good._id, val);
+    },
+    showModal(item) {
+      this.modalShow = true;
+      this.editGood = item;
+      this.editNum = item.val;
+    },
+    reduceCount(good, val) {
+      if (!val && val !== 0) {
+        Toast({
+          position: "bottom",
+          message: "数值不正确~"
+        });
+        return;
+      }
+      if (val <= 1) {
+        Toast({
+          position: "bottom",
+          message: "不能再少了~"
+        });
+        return;
+      }
+      val--;
+      good.val = val;
+      this.updateCartCountThrottle(good._id, val);
+    },
     getCartList() {
       this.isLoading = true;
       axios({
@@ -110,10 +223,24 @@ export default {
       })
         .then(res => {
           console.log(res);
+          let a = res.data.map(item => item.productId);
+          let b = res.data.map(item => item.val);
+          a.forEach(item => {
+            item.val = "";
+          });
+          for (let x = 0; x < b.length; x++) {
+            for (let y = 0; y < a.length; y++) {
+              a[y].val = b[y];
+            }
+          }
+          console.log(a);
+          this.productList = a;
+          this.productList0 = res.data;
           for (let item of res.data) {
             // this.productList.push(item.productId);
             if (item.length != 0) {
-              this.productList = this.productList.concat(item.productId);
+              // this.productList0.push(item);
+              // this.productList0 = this.productList0.concat(item);
               this.isShow = false;
             }
           }
@@ -126,7 +253,7 @@ export default {
     },
     onRefresh() {
       setTimeout(() => {
-        this.productList = [];
+        this.productList0 = [];
         this.getCartList();
       }, 1500);
     },
@@ -142,8 +269,6 @@ export default {
         .then(res => {
           console.log(res, res.data.code);
           if (res.data.code == 200) {
-            // this.$toast.success("提交订单成功");
-            // this.productList = [];
             this.$router.push("/orderdetail");
           }
         })
@@ -156,12 +281,12 @@ export default {
         url: url.delCart,
         method: "post",
         data: {
-          productId: this.$route.query.id
+          ID: id
         }
       })
         .then(res => {
           console.log(res);
-          this.productList.splice(index, 1);
+          this.productList0.splice(index, 1);
           this.getCartList();
         })
         .catch(err => {

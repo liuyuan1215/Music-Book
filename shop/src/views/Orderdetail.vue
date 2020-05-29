@@ -49,12 +49,13 @@
       <div class="card-container">
         <div>
           <van-card
-            v-for="(item, index) in productList"
+            v-for="(item, index) in productList0"
             :key="index"
-            :price="item.price"
-            :desc="item.company"
-            :title="item.name"
-            :thumb="item.fileList1[0].content"
+            :num="item.val"
+            :price="item.productId.price"
+            :desc="item.productId.company"
+            :title="item.productId.name"
+            :thumb="item.productId.fileList1[0].content"
             @click-thumb="goDetail(item._id)"
           ></van-card>
         </div>
@@ -91,21 +92,22 @@ export default {
       radio: "1",
       message: "请选择",
       productList: [],
+      productList0: [],
       statu: "未处理"
     };
   },
   computed: {
     ...mapState(["userInfo"]),
     totalPrice() {
-      return this.productList.reduce((sum, elem) => {
-        sum += elem.price;
+      return this.productList0.reduce((sum, elem) => {
+        sum += elem.productId.price * elem.val;
         return sum;
       }, 0);
     },
     totalPrice2() {
       return (
-        this.productList.reduce((sum, elem) => {
-          sum += elem.price;
+        this.productList0.reduce((sum, elem) => {
+          sum += elem.productId.price * elem.val;
           return sum;
         }, 0) *
         10 *
@@ -113,7 +115,7 @@ export default {
       );
     },
     num() {
-      return this.productList.length;
+      return this.productList0.length;
     }
   },
   created() {
@@ -154,8 +156,20 @@ export default {
       })
         .then(res => {
           console.log(res);
+          let a = res.data.map(item => item.productId);
+          let b = res.data.map(item => item.val);
+          a.forEach(item => {
+            item.val = "";
+          });
+          for (let x = 0; x < b.length; x++) {
+            for (let y = 0; y < a.length; y++) {
+              a[y].val = b[y];
+            }
+          }
+          console.log(a);
+          this.productList = a;
           for (let item of res.data) {
-            this.productList.push(item.productId);
+            this.productList0.push(item);
           }
         })
         .catch(err => {
@@ -194,13 +208,39 @@ export default {
       })
         .then(res => {
           console.log(res);
-          this.productList = [];
+          this.productList0 = [];
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    },
+    getCartList() {
+      this.isLoading = true;
+      axios({
+        url: url.getCart,
+        method: "get",
+        params: {
+          userId: this.userInfo._id
+        }
+      })
+        .then(res => {
+          console.log(res);
+          for (let item of res.data) {
+            this.productList.push(item.productId);
+            if (item.length != 0) {
+              this.productList0 = res.data;
+              this.isShow = false;
+            }
+          }
+          this.isShow = false;
+          this.isLoading = false;
         })
         .catch(err => {
           console.log(err);
         });
     },
     onSubmit() {
+      this.getCartList();
       axios({
         url: url.successOrder,
         method: "post",
