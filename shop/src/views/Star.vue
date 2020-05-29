@@ -8,11 +8,11 @@
       <van-card
         v-for="(item, index) in productList"
         :key="index"
-        :price="item.price"
-        :desc="item.company"
-        :title="item.name"
-        :thumb="item.fileList1[0].content"
-        @click-thumb="goDetail(item._id)"
+        :price="item.productId.price"
+        :desc="item.productId.company"
+        :title="item.productId.name"
+        :thumb="item.productId.fileList1[0].content"
+        @click-thumb="goDetail(item.productId._id)"
       >
         <div slot="footer">
           <van-button size="mini" @click="delStar(item._id, index)">删除</van-button>
@@ -59,7 +59,8 @@ export default {
         .then(res => {
           console.log(res);
           for (let item of res.data) {
-            this.productList.push(item.productId);
+            // this.productList.push(item.productId);
+            this.productList.push(item);
           }
         })
         .catch(err => {
@@ -90,7 +91,7 @@ export default {
         url: url.delStar,
         method: "post",
         data: {
-          productId: this.$route.query.id
+          ID: id
         }
       })
         .then(res => {

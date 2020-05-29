@@ -30,9 +30,9 @@ router.get('/getStar', async (ctx) => {
 router.post('/delStar', async (ctx) => {
     const Star = mongoose.model('Star');
     let body = ctx.request.body;
-    let productId = body.productId;
-    console.log(productId);
-    await Star.findOneAndDelete({ 'ObjectId': productId }).then(() => {
+    let ID = body.ID;
+    console.log(ID);
+    await Star.findOneAndDelete({ '_id': ID }).then(() => {
         // console.log('11122');
         ctx.body = {
             code: 200,
